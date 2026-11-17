@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="9" failures="0" disabled="0" errors="0" time="10.824" timestamp="2026-11-17T22:43:59" name="AllTests">
+  <testsuite name="NavigationScenarios" tests="9" failures="0" disabled="0" errors="0" time="10.818" timestamp="2026-11-17T22:43:59">
+    <testcase name="PassStandingPersonWithSeventyFiveCentimetreSideGap" status="run" result="completed" time="1.526" timestamp="2026-11-17T22:43:59" classname="NavigationScenarios" />
+    <testcase name="TightStraightPassage" status="run" result="completed" time="1.398" timestamp="2026-11-17T22:44:01" classname="NavigationScenarios" />
+    <testcase name="FinalHeadingConvergesWithoutRepeatedReversals" status="run" result="completed" time="0.212" timestamp="2026-11-17T22:44:02" classname="NavigationScenarios" />
+    <testcase name="BlockedCorridorNeverBecomesPassableByTuning" status="run" result="completed" time="4.411" timestamp="2026-11-17T22:44:02" classname="NavigationScenarios" />
+    <testcase name="MirroredPersonDetourAndOppositeFinalHeading" status="run" result="completed" time="1.582" timestamp="2026-11-17T22:44:07" classname="NavigationScenarios" />
+    <testcase name="SmallFinalYawErrorDoesNotStall" status="run" result="completed" time="0.041" timestamp="2026-11-17T22:44:08" classname="NavigationScenarios" />
+    <testcase name="NearPiFinalHeadingConverges" status="run" result="completed" time="0.229" timestamp="2026-11-17T22:44:08" classname="NavigationScenarios" />
+    <testcase name="LargeInitialHeadingStillTurnsBeforeDriving" status="run" result="completed" time="0.841" timestamp="2026-11-17T22:44:08" classname="NavigationScenarios" />
+    <testcase name="CenterGradientKeepsCollisionRejectionAndCacheParity" status="run" result="completed" time="0.578" timestamp="2026-11-17T22:44:09" classname="NavigationScenarios" />
+  </testsuite>
+</testsuites>

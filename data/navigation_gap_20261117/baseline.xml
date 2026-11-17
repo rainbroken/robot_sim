@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="2" disabled="0" errors="0" time="4.783" timestamp="2026-11-17T23:03:27" name="AllTests">
+  <testsuite name="NavigationScenarios" tests="4" failures="2" disabled="0" errors="0" time="4.78" timestamp="2026-11-17T23:03:27">
+    <testcase name="PassStandingPersonWithSeventyFiveCentimetreSideGap" status="run" result="completed" time="2.165" timestamp="2026-11-17T23:03:27" classname="NavigationScenarios">
+      <failure message="/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:271&#x0A;Value of: out.reached&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:271
+Value of: out.reached
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="TightStraightPassage" status="run" result="completed" time="0.357" timestamp="2026-11-17T23:03:29" classname="NavigationScenarios" />
+    <testcase name="FinalHeadingConvergesWithoutRepeatedReversals" status="run" result="completed" time="0.127" timestamp="2026-11-17T23:03:30" classname="NavigationScenarios">
+      <failure message="/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:289&#x0A;Expected: (out.reversals) &lt;= (1), actual: 4 vs 1" type=""><![CDATA[/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:289
+Expected: (out.reversals) <= (1), actual: 4 vs 1]]></failure>
+    </testcase>
+    <testcase name="BlockedCorridorNeverBecomesPassableByTuning" status="run" result="completed" time="2.131" timestamp="2026-11-17T23:03:30" classname="NavigationScenarios" />
+  </testsuite>
+</testsuites>

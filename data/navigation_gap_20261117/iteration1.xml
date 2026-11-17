@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="1" disabled="0" errors="0" time="7.278" timestamp="2026-11-17T22:29:23" name="AllTests">
+  <testsuite name="NavigationScenarios" tests="4" failures="1" disabled="0" errors="0" time="7.272" timestamp="2026-11-17T22:29:23">
+    <testcase name="PassStandingPersonWithSeventyFiveCentimetreSideGap" status="run" result="completed" time="1.53" timestamp="2026-11-17T22:29:23" classname="NavigationScenarios">
+      <failure message="/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:207&#x0A;Expected: (out.failures) &lt; (8), actual: 20 vs 8" type=""><![CDATA[/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:207
+Expected: (out.failures) < (8), actual: 20 vs 8]]></failure>
+      <failure message="/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:208&#x0A;Expected: (out.min_clearance) &gt; (.02), actual: 0.0149348 vs 0.02" type=""><![CDATA[/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:208
+Expected: (out.min_clearance) > (.02), actual: 0.0149348 vs 0.02]]></failure>
+    </testcase>
+    <testcase name="TightStraightPassage" status="run" result="completed" time="1.401" timestamp="2026-11-17T22:29:24" classname="NavigationScenarios" />
+    <testcase name="FinalHeadingConvergesWithoutRepeatedReversals" status="run" result="completed" time="0.301" timestamp="2026-11-17T22:29:26" classname="NavigationScenarios" />
+    <testcase name="BlockedCorridorNeverBecomesPassableByTuning" status="run" result="completed" time="4.04" timestamp="2026-11-17T22:29:26" classname="NavigationScenarios" />
+  </testsuite>
+</testsuites>

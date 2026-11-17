@@ -1,0 +1,11 @@
+{
+  "page_errors": [],
+  "mobile_document_width": 390,
+  "mobile_viewport_width": 390,
+  "latest_phase": "idle after verified workflow",
+  "earlier_drag_test": {
+    "target_x": "2.95",
+    "target_y": "0.00",
+    "target_yaw_deg": "33.7"
+  }
+}

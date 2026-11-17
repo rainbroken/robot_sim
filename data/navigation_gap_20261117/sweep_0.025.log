@@ -1,0 +1,60 @@
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+Note: Google Test filter = NavigationScenarios.PassStandingPersonWithSeventyFiveCentimetreSideGap
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationScenarios
+[ RUN      ] NavigationScenarios.PassStandingPersonWithSeventyFiveCentimetreSideGap
+[INFO] [1794925872.530069218] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925872.531174775] [scenario_costmap.scenario_costmap]: 
+	scenario_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925872.531423447] [scenario_costmap.scenario_costmap]: Creating Costmap
+[INFO] [1794925873.065239796] [controller_server]: Setting transform_tolerance to 0.500000
+[INFO] [1794925873.068070063] [controller_server]: Velocity iterator: BPX threshold enforcement disabled (threshold 0.210)
+[INFO] [1794925873.068172715] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[INFO] [1794925873.068189344] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[INFO] [1794925873.068193876] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068207645] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[INFO] [1794925873.068254391] [controller_server]: RotateToPath critic enabled: enter 68.8 deg, exit 25.8 deg, disabled within 0.30 m of goal
+[INFO] [1794925873.068264992] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068279126] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[INFO] [1794925873.068339716] [controller_server]: Stable final-pose critic: enter 0.15 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.05..0.60 rad/s
+[INFO] [1794925873.068345210] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068362027] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1794925873.068398613] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068413674] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[INFO] [1794925873.068430588] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068444207] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[INFO] [1794925873.068471788] [controller_server]: Forward progress critic enabled: minimum x 0.10 m/s, goal distance 0.30 m, heading error 40.1 deg
+[INFO] [1794925873.068476331] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068489205] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[INFO] [1794925873.068507307] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[INFO] [1794925873.068510979] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068523072] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1794925873.068593795] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068606528] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1794925873.068664642] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068677929] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1794925873.068728511] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.068741901] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1794925873.068790682] [controller_server]: Critic plugin initialized
+[INFO] [1794925873.942233191] [controller_server]: Stable final-pose mode APPROACH -> ROTATING (distance 0.147 m, speed 0.080 m/s, yaw error -36.9 deg)
+SCENARIO reached=1 seconds=16.8667 failures=0 longest_failure_streak=0 reversals=8 clearance=0.0149348 final=1.68091,-0.0796317,0.148222
+[INFO] [1794925874.030648910] [scenario_costmap.scenario_costmap]: Destroying
+[INFO] [1794925874.031582432] [controller_server]: Destroying
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:242: Failure
+Expected: (out.min_clearance) > (.02), actual: 0.0149348 vs 0.02
+[  FAILED  ] NavigationScenarios.PassStandingPersonWithSeventyFiveCentimetreSideGap (1509 ms)
+[----------] 1 test from NavigationScenarios (1509 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1516 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] NavigationScenarios.PassStandingPersonWithSeventyFiveCentimetreSideGap
+
+ 1 FAILED TEST

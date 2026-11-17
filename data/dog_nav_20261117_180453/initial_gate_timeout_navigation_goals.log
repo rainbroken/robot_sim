@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/rain/ros_ws/baobao/scripts/test_navigation_sim.py", line 113, in <module>
+    main()
+  File "/home/rain/ros_ws/baobao/scripts/test_navigation_sim.py", line 75, in main
+    raise RuntimeError('Nav2 did not activate after localization')
+RuntimeError: Nav2 did not activate after localization

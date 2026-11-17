@@ -1,0 +1,16 @@
+[INFO] [1794934496.684151910] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794934496.684290161] [map_saver]: Creating
+[INFO] [1794934496.684357597] [map_saver]: Configuring
+[INFO] [1794934496.685778940] [map_saver]: Saving map from 'map' topic to 'data/mapping_quality_20261118/partial/occupancy' file
+[WARN] [1794934496.685820611] [map_saver]: Free threshold unspecified. Setting it to default value: 0.196000
+[WARN] [1794934496.685832531] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[WARN] [1794934496.698347633] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1794934496.698417716] [map_io]: Received a 316 X 236 map @ 0.05 m/pix
+[INFO] [1794934496.733770361] [map_io]: Writing map occupancy data to data/mapping_quality_20261118/partial/occupancy.pgm
+[INFO] [1794934496.734189684] [map_io]: Writing map metadata to data/mapping_quality_20261118/partial/occupancy.yaml
+[INFO] [1794934496.734253013] [map_io]: Map saved
+[INFO] [1794934496.734259138] [map_saver]: Map saved successfully
+[INFO] [1794934496.734787722] [map_saver]: Destroying

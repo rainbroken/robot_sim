@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    input_topic: /fastlio/odom
+    output_topic: /fastlio/base_odom
+    base_frame: base_footprint
+    sensor_frame_override: imu_link
+    leveling_mode: gravity
+    imu_topic: /livox/imu
+    minimum_stationary_duration_sec: 3.0
+    minimum_samples: 120
+    expected_acceleration_norm: 9.81
+    acceleration_norm_tolerance: 1.0
+    max_gyro_norm_rad_s: 0.05
+    minimum_mean_stability_duration_sec: 2.0
+    max_imu_odom_age_sec: 0.15
+    cloud_input_topic: /cloud_registered
+    cloud_output_topic: /slam/leveled_cloud
+    body_cloud_output_topic: /slam/body_cloud

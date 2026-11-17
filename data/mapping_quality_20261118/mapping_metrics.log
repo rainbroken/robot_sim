@@ -1,0 +1,51 @@
+{
+  "counts": {
+    "/odom": 7529,
+    "/map": 31,
+    "/fastlio/base_odom": 1506,
+    "/mapping/optimized_odom": 1506,
+    "/slam/body_cloud": 1506,
+    "/gazebo/model_states": 2997,
+    "/livox/lidar": 1498
+  },
+  "state_transitions": [],
+  "map_xy_error_max": 0.09375413017262413,
+  "map_xy_error_mean": 0.03189287930599213,
+  "map_xy_error_last": 0.022554470632119086,
+  "occupancy": {
+    "width": 318,
+    "height": 236,
+    "resolution": 0.05000000074505806,
+    "known_cells": 59153,
+    "occupied_cells": 3875
+  }
+}
+Traceback (most recent call last):
+  File "/home/rain/ros_ws/baobao/scripts/check_slam_sim.py", line 48, in main
+    rclpy.spin_once(node, timeout_sec=0.05)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 208, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 677, in _wait_for_ready_callbacks
+    wait_set.wait(timeout_nsec)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rain/ros_ws/baobao/scripts/check_slam_sim.py", line 92, in <module>
+    main()
+  File "/home/rain/ros_ws/baobao/scripts/check_slam_sim.py", line 88, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

@@ -1,0 +1,21 @@
+[0.254s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'robot_navigation' is in: /home/rain/ros_ws/baobao/install/robot_navigation
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding robot_navigation
+
+This may be promoted to an error in a future release of colcon-override-check.
+Starting >>> robot_navigation
+--- stderr: robot_navigation
+/home/rain/ros_ws/baobao/src/robot_navigation/src/parallel_dwb_local_planner.cpp: In member function ‘virtual dwb_msgs::msg::TrajectoryScore dog_nav::ParallelDwbLocalPlanner::coreScoringAlgorithm(const Pose2D&, nav_2d_msgs::msg::Twist2D, std::shared_ptr<dwb_msgs::msg::LocalPlanEvaluation_<std::allocator<void> > >&)’:
+/home/rain/ros_ws/baobao/src/robot_navigation/src/parallel_dwb_local_planner.cpp:84:54: warning: converting to ‘const Twist2D’ {aka ‘const nav_2d_msgs::msg::Twist2D_<std::allocator<void> >’} from initializer list would use explicit constructor ‘nav_2d_msgs::msg::Twist2D_<ContainerAllocator>::Twist2D_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   84 |       stop.traj = traj_generator_->generateTrajectory(pose, velocity, {});
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_navigation/src/parallel_dwb_local_planner.cpp:84:54: note: in C++11 and above a default constructor can be explicit
+---
+Finished <<< robot_navigation [16.2s]
+
+Summary: 1 package finished [16.4s]
+  1 package had stderr output: robot_navigation

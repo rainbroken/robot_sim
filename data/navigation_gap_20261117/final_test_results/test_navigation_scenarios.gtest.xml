@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="9" failures="0" disabled="0" errors="0" time="16.928" timestamp="2026-11-17T23:01:25" name="AllTests">
+  <testsuite name="NavigationScenarios" tests="9" failures="0" disabled="0" errors="0" time="16.924" timestamp="2026-11-17T23:01:25">
+    <testcase name="PassStandingPersonWithSeventyFiveCentimetreSideGap" status="run" result="completed" time="2.257" timestamp="2026-11-17T23:01:25" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="TightStraightPassage" status="run" result="completed" time="1.564" timestamp="2026-11-17T23:01:28" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="FinalHeadingConvergesWithoutRepeatedReversals" status="run" result="completed" time="0.538" timestamp="2026-11-17T23:01:29" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="BlockedCorridorNeverBecomesPassableByTuning" status="run" result="completed" time="8.031" timestamp="2026-11-17T23:01:30" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="MirroredPersonDetourAndOppositeFinalHeading" status="run" result="completed" time="2.064" timestamp="2026-11-17T23:01:38" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="SmallFinalYawErrorDoesNotStall" status="run" result="completed" time="0.085" timestamp="2026-11-17T23:01:40" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="NearPiFinalHeadingConverges" status="run" result="completed" time="0.498" timestamp="2026-11-17T23:01:40" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="LargeInitialHeadingStillTurnsBeforeDriving" status="run" result="completed" time="1.865" timestamp="2026-11-17T23:01:40" classname="robot_navigation.NavigationScenarios" />
+    <testcase name="CenterGradientKeepsCollisionRejectionAndCacheParity" status="run" result="completed" time="0.022" timestamp="2026-11-17T23:01:42" classname="robot_navigation.NavigationScenarios" />
+  </testsuite>
+</testsuites>

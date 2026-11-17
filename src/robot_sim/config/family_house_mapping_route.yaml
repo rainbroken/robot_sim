@@ -1,0 +1,7 @@
+# Generated from generate_family_house.cpp; 0.38 m geometric clearance.
+# Scene-specific waypoint tour, not autonomous exploration.
+mapping_route:
+  ros__parameters:
+    use_sim_time: true
+    speed: 0.30
+    waypoints: [-5.300, 0.000, -5.300, 2.200, -5.300, 3.300, 0.000, 3.300, 0.000, 2.200, 0.000, 0.000, 5.300, 0.000, 5.300, 2.200, 5.300, 3.300, 0.000, 3.300, 0.000, 0.000, -5.300, 0.000, -5.300, -2.200, -5.300, -3.000, -3.300, -3.000, -3.300, -3.300, 0.000, -3.300, 0.000, -2.200, 0.000, 0.000, 5.300, 0.000, 5.300, -2.200, 5.300, -3.300, 0.000, -3.300, 0.000, 0.000]

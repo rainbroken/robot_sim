@@ -1,0 +1,51 @@
+<library path="robot_navigation_dwb_plugins">
+  <class
+    type="dog_nav::GoalApproachMotionCritic"
+    base_class_type="dwb_core::TrajectoryCritic">
+    <description>
+      Rejects reverse and lateral commands outside the final goal approach area.
+    </description>
+  </class>
+  <class
+    type="dog_nav::CachedObstacleFootprintCritic"
+    base_class_type="dwb_core::TrajectoryCritic">
+    <description>
+      Parallel cached footprint and costmap scoring for DWB trajectories.
+    </description>
+  </class>
+  <class
+    type="dog_nav::BpxTrajectoryGenerator"
+    base_class_type="dwb_core::TrajectoryGenerator">
+    <description>
+      DWB velocity sampling with explicit stops and optional BPX firmware dead-zone enforcement.
+    </description>
+  </class>
+  <class
+    type="dog_nav::RotateToPathCritic"
+    base_class_type="dwb_core::TrajectoryCritic">
+    <description>
+      Requires an in-place turn when the body diverges from the local global-path tangent.
+    </description>
+  </class>
+  <class
+    type="dog_nav::LateralVelocityCritic"
+    base_class_type="dwb_core::TrajectoryCritic">
+    <description>
+      Softly discourages lateral velocity away from the goal without making lateral trajectories illegal.
+    </description>
+  </class>
+  <class
+    type="dog_nav::ForwardProgressCritic"
+    base_class_type="dwb_core::TrajectoryCritic">
+    <description>
+      Softly prefers executable forward motion while the robot is aligned with a distant path goal.
+    </description>
+  </class>
+  <class
+    type="dog_nav::StableRotateToGoalCritic"
+    base_class_type="dwb_core::TrajectoryCritic">
+    <description>
+      Persistent final-pose controller that survives global-path replanning and bounds terminal rotation.
+    </description>
+  </class>
+</library>

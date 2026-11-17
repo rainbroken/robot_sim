@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="9" failures="1" disabled="0" errors="0" time="11.43" timestamp="2026-11-17T22:37:50" name="AllTests">
+  <testsuite name="NavigationScenarios" tests="9" failures="1" disabled="0" errors="0" time="11.426" timestamp="2026-11-17T22:37:50">
+    <testcase name="PassStandingPersonWithSeventyFiveCentimetreSideGap" status="run" result="completed" time="1.67" timestamp="2026-11-17T22:37:50" classname="NavigationScenarios">
+      <failure message="/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:254&#x0A;Expected: (out.min_clearance) &gt; (.02), actual: 0.0188688 vs 0.02" type=""><![CDATA[/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:254
+Expected: (out.min_clearance) > (.02), actual: 0.0188688 vs 0.02]]></failure>
+    </testcase>
+    <testcase name="TightStraightPassage" status="run" result="completed" time="1.535" timestamp="2026-11-17T22:37:51" classname="NavigationScenarios" />
+    <testcase name="FinalHeadingConvergesWithoutRepeatedReversals" status="run" result="completed" time="0.236" timestamp="2026-11-17T22:37:53" classname="NavigationScenarios" />
+    <testcase name="BlockedCorridorNeverBecomesPassableByTuning" status="run" result="completed" time="4.711" timestamp="2026-11-17T22:37:53" classname="NavigationScenarios" />
+    <testcase name="MirroredPersonDetourAndOppositeFinalHeading" status="run" result="completed" time="1.62" timestamp="2026-11-17T22:37:58" classname="NavigationScenarios" />
+    <testcase name="SmallFinalYawErrorDoesNotStall" status="run" result="completed" time="0.043" timestamp="2026-11-17T22:37:59" classname="NavigationScenarios" />
+    <testcase name="NearPiFinalHeadingConverges" status="run" result="completed" time="0.218" timestamp="2026-11-17T22:37:59" classname="NavigationScenarios" />
+    <testcase name="LargeInitialHeadingStillTurnsBeforeDriving" status="run" result="completed" time="0.826" timestamp="2026-11-17T22:38:00" classname="NavigationScenarios" />
+    <testcase name="CenterGradientKeepsCollisionRejectionAndCacheParity" status="run" result="completed" time="0.567" timestamp="2026-11-17T22:38:00" classname="NavigationScenarios" />
+  </testsuite>
+</testsuites>

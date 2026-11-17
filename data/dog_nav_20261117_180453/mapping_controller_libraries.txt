@@ -1,0 +1,1 @@
+/home/rain/ros_ws/baobao/build/robot_navigation/librobot_navigation_dwb_plugins.so

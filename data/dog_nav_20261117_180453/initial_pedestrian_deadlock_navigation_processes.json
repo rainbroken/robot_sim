@@ -1,0 +1,41 @@
+[
+  {
+    "pid": 111323,
+    "executable": "/opt/ros/humble/lib/nav2_map_server/map_server",
+    "libraries": []
+  },
+  {
+    "pid": 111325,
+    "executable": "/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager",
+    "libraries": []
+  },
+  {
+    "pid": 111327,
+    "executable": "/opt/ros/humble/lib/nav2_planner/planner_server",
+    "libraries": [
+      "/opt/ros/humble/lib/libnav2_smac_planner_2d.so"
+    ]
+  },
+  {
+    "pid": 111329,
+    "executable": "/opt/ros/humble/lib/nav2_controller/controller_server",
+    "libraries": [
+      "/home/rain/ros_ws/baobao/build/robot_navigation/librobot_navigation_dwb_plugins.so"
+    ]
+  },
+  {
+    "pid": 111331,
+    "executable": "/opt/ros/humble/lib/nav2_behaviors/behavior_server",
+    "libraries": []
+  },
+  {
+    "pid": 111333,
+    "executable": "/opt/ros/humble/lib/nav2_bt_navigator/bt_navigator",
+    "libraries": []
+  },
+  {
+    "pid": 111341,
+    "executable": "/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager",
+    "libraries": []
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "prefixes": {
+    "robot_web": "/home/rain/ros_ws/baobao/install/robot_web",
+    "robot_navigation": "/home/rain/ros_ws/baobao/install/robot_navigation",
+    "nav2_controller": "/opt/ros/humble",
+    "nav2_planner": "/opt/ros/humble",
+    "nav2_map_server": "/opt/ros/humble",
+    "nav2_bt_navigator": "/opt/ros/humble"
+  },
+  "navigation2_commit": "3c3db59d6969d8ecee8e68468693d006397f4a0c",
+  "navigation2_branch": "humble",
+  "source_overlay_enabled": false
+}

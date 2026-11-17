@@ -1,0 +1,366 @@
+[INFO] [launch]: All log files can be found below /home/rain/.ros/log/2026-11-18-00-52-38-432945-rain-44955
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [44974]
+[INFO] [robot_state_publisher-2]: process started with pid [44976]
+[INFO] [ukf_node-3]: process started with pid [44978]
+[INFO] [command_watchdog-4]: process started with pid [44980]
+[INFO] [cloud_to_scan-5]: process started with pid [44982]
+[INFO] [spawn_entity.py-6]: process started with pid [44984]
+[INFO] [fastlio_mapping-7]: process started with pid [44986]
+[INFO] [odometry_frame_converter-8]: process started with pid [44988]
+[INFO] [loop_closure_mapper-9]: process started with pid [44990]
+[INFO] [mapping_tf_bridge-10]: process started with pid [44992]
+[odometry_frame_converter-8] [INFO] [1794934358.776283593] [odometry_frame_converter]: Waiting for stationary IMU samples on /livox/imu before publishing mapping data
+[robot_state_publisher-2] [INFO] [1794934358.798364604] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-2] [INFO] [1794934358.798457926] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1794934358.798463214] [robot_state_publisher]: got segment front_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794934358.798466162] [robot_state_publisher]: got segment front_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794934358.798468534] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1794934358.798470730] [robot_state_publisher]: got segment left_hand_link
+[robot_state_publisher-2] [INFO] [1794934358.798472754] [robot_state_publisher]: got segment left_wheel_link
+[robot_state_publisher-2] [INFO] [1794934358.798474774] [robot_state_publisher]: got segment mid360_link
+[robot_state_publisher-2] [INFO] [1794934358.798476776] [robot_state_publisher]: got segment rear_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794934358.798479145] [robot_state_publisher]: got segment rear_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794934358.798482496] [robot_state_publisher]: got segment right_hand_link
+[robot_state_publisher-2] [INFO] [1794934358.798485354] [robot_state_publisher]: got segment right_wheel_link
+[robot_state_publisher-2] [INFO] [1794934358.798487937] [robot_state_publisher]: got segment scan_link
+[fastlio_mapping-7] [INFO] [1794934358.819242237] [fastlio_frontend]: Scan matching threads: 2
+[fastlio_mapping-7] [INFO] [1794934358.820556251] [fastlio_frontend]: p_pre->lidar_type 5
+[fastlio_mapping-7] [INFO] [1794934358.827669004] [fastlio_frontend]: Node init finished.
+[loop_closure_mapper-9] [INFO] [1794934358.828558297] [loop_closure_mapper]: Loop mapper ready: SOLiD=40x60x32, small_gicp threads=2, confirmations=2
+[spawn_entity.py-6] [INFO] [1794934359.002208291] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-6] [INFO] [1794934359.002416935] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-6] [INFO] [1794934359.003542636] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-6] [INFO] [1794934359.014281223] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-6] [INFO] [1794934359.014434427] [spawn_entity]: Waiting for service /spawn_entity
+[gzserver-1] [INFO] [1794934359.451462533] [gazebo.gazebo_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-1] [INFO] [1794934359.451875342] [gazebo.gazebo_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[spawn_entity.py-6] [INFO] [1794934359.516936895] [spawn_entity]: Calling service /spawn_entity
+[gzserver-1] [INFO] [1794934359.793704808] [Mid360Plugin]: 加载扫描模式文件: /home/rain/ros_ws/baobao/install/mid360_simulation/share/mid360_simulation/scan_mode/mid360.csv
+[gzserver-1] [CsvReader] 成功读取 800000 条扫描数据
+[gzserver-1] [INFO] [1794934360.143173554] [Mid360Plugin]: ROS 话题: /livox/lidar
+[gzserver-1] [INFO] [1794934360.153447131] [Mid360Plugin]: 扫描点数: 800000
+[gzserver-1] [INFO] [1794934360.153810086] [Mid360Plugin]: 采样数: 20000, 降采样: 5
+[gzserver-1] [INFO] [1794934360.614567781] [Mid360Plugin]: Mid-360 仿真插件加载完成
+[spawn_entity.py-6] [INFO] [1794934360.628609068] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [robot]
+[gzserver-1] [INFO] [1794934360.650687659] [baobao_diff_drive]: Wheel pair 1 separation set to [0.350000m]
+[gzserver-1] [INFO] [1794934360.650720079] [baobao_diff_drive]: Wheel pair 1 diameter set to [0.130000m]
+[gzserver-1] [INFO] [1794934360.651501573] [baobao_diff_drive]: Subscribed to [/cmd_vel_safe]
+[gzserver-1] [INFO] [1794934360.652819864] [baobao_diff_drive]: Advertise odometry on [/wheel_odom]
+[gzserver-1] [INFO] [1794934360.659076665] [baobao_joint_states]: Going to publish joint [left_wheel_joint]
+[gzserver-1] [INFO] [1794934360.659102496] [baobao_joint_states]: Going to publish joint [right_wheel_joint]
+[gzserver-1] [INFO] [1794934360.659106083] [baobao_joint_states]: Going to publish joint [left_hand_joint]
+[gzserver-1] [INFO] [1794934360.659109231] [baobao_joint_states]: Going to publish joint [right_hand_joint]
+[gzserver-1] [INFO] [1794934360.659111939] [baobao_joint_states]: Going to publish joint [front_caster_swivel_joint]
+[gzserver-1] [INFO] [1794934360.659116273] [baobao_joint_states]: Going to publish joint [front_caster_roll_joint]
+[gzserver-1] [INFO] [1794934360.659120422] [baobao_joint_states]: Going to publish joint [rear_caster_swivel_joint]
+[gzserver-1] [INFO] [1794934360.659123154] [baobao_joint_states]: Going to publish joint [rear_caster_roll_joint]
+[INFO] [spawn_entity.py-6]: process has finished cleanly [pid 44984]
+[fastlio_mapping-7] Multi thread started 
+[fastlio_mapping-7] IMU Initial Done
+[fastlio_mapping-7] [WARN] [1794934360.894126091] [fastlio_frontend]: No point, skip this scan!
+[fastlio_mapping-7] 
+[fastlio_mapping-7] [INFO] [1794934361.010747998] [fastlio_frontend]: Initialize the map kdtree
+[odometry_frame_converter-8] [INFO] [1794934366.161443474] [odometry_frame_converter]: Collecting stationary gravity samples: 866 samples, 4.33 s; last reset: mean gravity direction stable for 1.33 of 2.00 s
+[odometry_frame_converter-8] [WARN] [1794934366.247848885] [odometry_frame_converter]: Waiting for gravity alignment before publishing the leveled cloud
+[odometry_frame_converter-8] [INFO] [1794934366.948439954] [odometry_frame_converter]: Gravity alignment locked: 1001 samples over 5.00 s, accel norm 9.8110 (input units), gyro RMS 0.0021 rad/s, direction spread 0.590 deg, up=(-0.50053, -0.00101, 0.86572), correction rpy=(-0.067, 30.035, 0.040) deg
+[loop_closure_mapper-9] [WARN] [1794934406.747767065] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=0 current=20 translation=1.041/3.000 m rotation=3.140/0.350 rad solid=0.789 overlap=0.895 rmse=0.169
+[loop_closure_mapper-9] [WARN] [1794934408.145768139] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=0 current=21 translation=1.411/3.000 m rotation=3.142/0.350 rad solid=0.798 overlap=0.907 rmse=0.162
+[loop_closure_mapper-9] [WARN] [1794934410.944508449] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=0 current=23 translation=2.120/3.000 m rotation=3.141/0.350 rad solid=0.833 overlap=0.862 rmse=0.158
+[loop_closure_mapper-9] [WARN] [1794934412.342476061] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=0 current=24 translation=2.509/3.000 m rotation=3.140/0.350 rad solid=0.803 overlap=0.833 rmse=0.157
+[loop_closure_mapper-9] [WARN] [1794934415.141931361] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=3 current=26 translation=3.258/3.000 m rotation=3.141/0.350 rad solid=0.840 overlap=0.745 rmse=0.164
+[loop_closure_mapper-9] [WARN] [1794934416.548498041] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=7 current=27 translation=2.263/3.000 m rotation=1.567/0.350 rad solid=0.900 overlap=0.634 rmse=0.214
+[loop_closure_mapper-9] [INFO] [1794934417.962950836] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=6 current=28 solid=0.923 overlap=0.571 rmse=0.192
+[loop_closure_mapper-9] [WARN] [1794934419.357816668] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=4 current=29 translation=5.938/3.000 m rotation=3.140/0.350 rad solid=0.915 overlap=0.688 rmse=0.187
+[loop_closure_mapper-9] [WARN] [1794934420.743782143] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=4 current=30 translation=5.391/3.000 m rotation=3.141/0.350 rad solid=0.962 overlap=0.806 rmse=0.179
+[loop_closure_mapper-9] [WARN] [1794934420.749419353] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=7 current=30 translation=4.708/3.000 m rotation=2.069/0.350 rad solid=0.960 overlap=0.448 rmse=0.257
+[loop_closure_mapper-9] [WARN] [1794934420.756497595] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=6 current=30 translation=4.715/3.000 m rotation=2.043/0.350 rad solid=0.952 overlap=0.436 rmse=0.248
+[loop_closure_mapper-9] [WARN] [1794934422.244850540] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=1 current=31 translation=5.400/3.000 m rotation=3.141/0.350 rad solid=0.974 overlap=0.867 rmse=0.192
+[loop_closure_mapper-9] [WARN] [1794934422.259204359] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=2 current=31 translation=5.398/3.000 m rotation=3.141/0.350 rad solid=0.971 overlap=0.865 rmse=0.185
+[loop_closure_mapper-9] [WARN] [1794934422.269280624] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=3 current=31 translation=5.386/3.000 m rotation=3.141/0.350 rad solid=0.956 overlap=0.871 rmse=0.181
+[loop_closure_mapper-9] [WARN] [1794934423.885361750] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=0 current=32 translation=5.363/3.000 m rotation=3.141/0.350 rad solid=0.967 overlap=0.891 rmse=0.171
+[loop_closure_mapper-9] [WARN] [1794934423.905733235] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=3 current=32 translation=5.373/3.000 m rotation=3.141/0.350 rad solid=0.934 overlap=0.887 rmse=0.162
+[loop_closure_mapper-9] [WARN] [1794934424.243220047] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=0 current=33 translation=5.384/3.000 m rotation=3.141/0.350 rad solid=0.958 overlap=0.897 rmse=0.166
+[loop_closure_mapper-9] [WARN] [1794934424.249277043] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=2 current=33 translation=5.385/3.000 m rotation=3.141/0.350 rad solid=0.952 overlap=0.903 rmse=0.165
+[loop_closure_mapper-9] [WARN] [1794934424.592530105] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=4 current=34 translation=5.393/3.000 m rotation=3.141/0.350 rad solid=0.958 overlap=0.904 rmse=0.162
+[loop_closure_mapper-9] [WARN] [1794934424.607927517] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=3 current=34 translation=5.397/3.000 m rotation=3.141/0.350 rad solid=0.951 overlap=0.906 rmse=0.163
+[loop_closure_mapper-9] [INFO] [1794934424.607956604] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=13 current=34 solid=0.966 overlap=0.478 rmse=0.148
+[loop_closure_mapper-9] [WARN] [1794934424.935859002] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=35 translation=5.390/3.000 m rotation=3.139/0.350 rad solid=0.951 overlap=0.900 rmse=0.157
+[loop_closure_mapper-9] [WARN] [1794934424.946782343] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=4 current=35 translation=5.387/3.000 m rotation=3.140/0.350 rad solid=0.947 overlap=0.896 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934424.947097813] [loop_closure_mapper]: LOOP ACCEPT target=13 current=35 solid=0.959 overlap=0.496 rmse=0.148 inliers=263 min_eigen=2.889e+00 condition=2.992e+02
+[loop_closure_mapper-9] [WARN] [1794934425.284221851] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=36 translation=5.343/3.000 m rotation=3.139/0.350 rad solid=0.940 overlap=0.899 rmse=0.150
+[loop_closure_mapper-9] [INFO] [1794934425.297943598] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=13 current=36 solid=0.946 overlap=0.523 rmse=0.142
+[loop_closure_mapper-9] [WARN] [1794934425.628093447] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=37 translation=5.384/3.000 m rotation=3.139/0.350 rad solid=0.943 overlap=0.899 rmse=0.157
+[loop_closure_mapper-9] [WARN] [1794934426.096076896] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=38 translation=5.386/3.000 m rotation=3.139/0.350 rad solid=0.949 overlap=0.881 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934426.103235481] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=6 current=38 translation=5.373/3.000 m rotation=3.140/0.350 rad solid=0.949 overlap=0.883 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934426.111663514] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=13 current=38 translation=5.895/3.000 m rotation=3.140/0.350 rad solid=0.946 overlap=0.831 rmse=0.179
+[loop_closure_mapper-9] [INFO] [1794934426.120400547] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=12 current=38 solid=0.943 overlap=0.593 rmse=0.134
+[loop_closure_mapper-9] [WARN] [1794934426.796825948] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=39 translation=5.385/3.000 m rotation=3.139/0.350 rad solid=0.966 overlap=0.860 rmse=0.160
+[loop_closure_mapper-9] [WARN] [1794934426.803614875] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=12 current=39 translation=5.385/3.000 m rotation=3.139/0.350 rad solid=0.962 overlap=0.860 rmse=0.152
+[loop_closure_mapper-9] [WARN] [1794934426.811332238] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=6 current=39 translation=5.388/3.000 m rotation=3.139/0.350 rad solid=0.960 overlap=0.862 rmse=0.155
+[loop_closure_mapper-9] [WARN] [1794934426.811731958] [loop_closure_mapper]: LOOP ACCEPT target=13 current=39 solid=0.967 overlap=0.584 rmse=0.144 inliers=330 min_eigen=1.792e+00 condition=8.723e+02
+[loop_closure_mapper-9] [WARN] [1794934428.311104058] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=40 translation=5.925/3.000 m rotation=3.140/0.350 rad solid=0.968 overlap=0.729 rmse=0.185
+[loop_closure_mapper-9] [WARN] [1794934428.331456792] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=6 current=40 translation=5.380/3.000 m rotation=3.140/0.350 rad solid=0.959 overlap=0.803 rmse=0.166
+[loop_closure_mapper-9] [INFO] [1794934428.341178717] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=12 current=40 solid=0.961 overlap=0.468 rmse=0.143
+[loop_closure_mapper-9] [WARN] [1794934429.731031148] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=6 current=41 translation=5.372/3.000 m rotation=3.140/0.350 rad solid=0.921 overlap=0.677 rmse=0.185
+[loop_closure_mapper-9] [WARN] [1794934429.740915622] [loop_closure_mapper]: LOOP ACCEPT target=11 current=41 solid=0.906 overlap=0.353 rmse=0.170 inliers=234 min_eigen=1.166e+00 condition=1.478e+03
+[loop_closure_mapper-9] [WARN] [1794934431.112433812] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=6 current=42 translation=4.656/3.000 m rotation=2.703/0.350 rad solid=0.889 overlap=0.501 rmse=0.239
+[loop_closure_mapper-9] [WARN] [1794934432.528604185] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=12 current=43 translation=4.191/3.000 m rotation=2.510/0.350 rad solid=0.866 overlap=0.541 rmse=0.249
+[loop_closure_mapper-9] [INFO] [1794934441.599775827] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=29 current=49 solid=0.749 overlap=0.683 rmse=0.186
+[loop_closure_mapper-9] [WARN] [1794934441.950542430] [loop_closure_mapper]: LOOP ACCEPT target=29 current=50 solid=0.772 overlap=0.662 rmse=0.190 inliers=349 min_eigen=3.680e+00 condition=9.498e+01
+[loop_closure_mapper-9] [INFO] [1794934442.304737882] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=29 current=51 solid=0.800 overlap=0.656 rmse=0.187
+[loop_closure_mapper-9] [WARN] [1794934442.978996387] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=29 current=53 translation=10.789/3.000 m rotation=3.136/0.350 rad solid=0.791 overlap=0.467 rmse=0.192
+[loop_closure_mapper-9] [WARN] [1794934444.171440824] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=55 translation=5.439/3.000 m rotation=1.509/0.350 rad solid=0.805 overlap=0.477 rmse=0.223
+[loop_closure_mapper-9] [INFO] [1794934444.171512318] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=29 current=55 solid=0.818 overlap=0.619 rmse=0.202
+[loop_closure_mapper-9] [INFO] [1794934445.677963016] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=36 current=56 solid=0.891 overlap=0.699 rmse=0.193
+[loop_closure_mapper-9] [WARN] [1794934447.083292949] [loop_closure_mapper]: LOOP ACCEPT target=35 current=57 solid=0.884 overlap=0.591 rmse=0.187 inliers=275 min_eigen=1.618e+00 condition=3.566e+02
+[loop_closure_mapper-9] [WARN] [1794934451.285131106] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=12 current=60 translation=4.883/3.000 m rotation=1.601/0.350 rad solid=0.969 overlap=0.746 rmse=0.191
+[loop_closure_mapper-9] [WARN] [1794934452.713157615] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=30 current=61 translation=5.803/3.000 m rotation=3.136/0.350 rad solid=0.969 overlap=0.535 rmse=0.207
+[loop_closure_mapper-9] [INFO] [1794934452.733381852] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=40 current=61 solid=0.962 overlap=0.757 rmse=0.192
+[loop_closure_mapper-9] [WARN] [1794934453.999101135] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=40 current=62 translation=3.973/3.000 m rotation=1.576/0.350 rad solid=0.974 overlap=0.765 rmse=0.225
+[loop_closure_mapper-9] [WARN] [1794934454.009143371] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=62 translation=4.273/3.000 m rotation=0.469/0.350 rad solid=0.968 overlap=0.503 rmse=0.245
+[loop_closure_mapper-9] [WARN] [1794934454.018197276] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=12 current=62 translation=4.786/3.000 m rotation=1.579/0.350 rad solid=0.966 overlap=0.577 rmse=0.220
+[loop_closure_mapper-9] [WARN] [1794934454.028432903] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=29 current=62 translation=6.117/3.000 m rotation=2.628/0.350 rad solid=0.963 overlap=0.498 rmse=0.240
+[loop_closure_mapper-9] [WARN] [1794934455.514966165] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=41 current=63 translation=4.002/3.000 m rotation=1.580/0.350 rad solid=0.983 overlap=0.811 rmse=0.214
+[loop_closure_mapper-9] [WARN] [1794934455.533659581] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=42 current=63 translation=4.017/3.000 m rotation=1.585/0.350 rad solid=0.946 overlap=0.811 rmse=0.215
+[loop_closure_mapper-9] [WARN] [1794934458.328226408] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=29 current=65 translation=5.795/3.000 m rotation=3.141/0.350 rad solid=0.952 overlap=0.615 rmse=0.196
+[loop_closure_mapper-9] [WARN] [1794934458.335770304] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=27 current=65 translation=5.803/3.000 m rotation=3.140/0.350 rad solid=0.950 overlap=0.623 rmse=0.202
+[loop_closure_mapper-9] [WARN] [1794934459.741947881] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=41 current=66 translation=2.591/3.000 m rotation=1.571/0.350 rad solid=0.948 overlap=0.629 rmse=0.205
+[loop_closure_mapper-9] [WARN] [1794934461.133689607] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=43 current=67 translation=3.047/3.000 m rotation=1.581/0.350 rad solid=0.966 overlap=0.601 rmse=0.227
+[loop_closure_mapper-9] [WARN] [1794934461.146278798] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=42 current=67 translation=2.294/3.000 m rotation=1.376/0.350 rad solid=0.954 overlap=0.647 rmse=0.241
+[loop_closure_mapper-9] [INFO] [1794934461.146316365] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=45 current=67 solid=0.962 overlap=0.627 rmse=0.210
+[loop_closure_mapper-9] [WARN] [1794934462.541388122] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=44 current=68 translation=2.609/3.000 m rotation=1.572/0.350 rad solid=0.969 overlap=0.594 rmse=0.219
+[loop_closure_mapper-9] [WARN] [1794934462.547548725] [loop_closure_mapper]: LOOP ACCEPT target=45 current=68 solid=0.984 overlap=0.631 rmse=0.206 inliers=373 min_eigen=5.375e+00 condition=1.146e+02
+[loop_closure_mapper-9] [WARN] [1794934464.069692422] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=49 current=69 translation=5.302/3.000 m rotation=0.020/0.350 rad solid=0.982 overlap=0.823 rmse=0.166
+[loop_closure_mapper-9] [INFO] [1794934464.073874728] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=48 current=69 solid=0.986 overlap=0.543 rmse=0.202
+[loop_closure_mapper-9] [WARN] [1794934465.707494341] [loop_closure_mapper]: LOOP ACCEPT target=48 current=70 solid=0.985 overlap=0.526 rmse=0.191 inliers=299 min_eigen=3.981e+00 condition=1.447e+02
+[loop_closure_mapper-9] [INFO] [1794934466.065084389] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=48 current=71 solid=0.976 overlap=0.544 rmse=0.204
+[loop_closure_mapper-9] [WARN] [1794934466.395533560] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=51 current=72 translation=4.222/3.000 m rotation=1.672/0.350 rad solid=0.989 overlap=0.663 rmse=0.205
+[loop_closure_mapper-9] [WARN] [1794934466.406896718] [loop_closure_mapper]: LOOP ACCEPT target=48 current=72 solid=0.981 overlap=0.535 rmse=0.212 inliers=311 min_eigen=4.465e+00 condition=1.685e+02
+[loop_closure_mapper-9] [WARN] [1794934466.757312717] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=50 current=73 translation=4.212/3.000 m rotation=1.680/0.350 rad solid=0.983 overlap=0.666 rmse=0.192
+[loop_closure_mapper-9] [INFO] [1794934467.111379767] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=53 current=74 solid=0.991 overlap=0.522 rmse=0.212
+[loop_closure_mapper-9] [WARN] [1794934467.457149739] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=53 current=75 translation=4.203/3.000 m rotation=1.666/0.350 rad solid=0.985 overlap=0.654 rmse=0.201
+[loop_closure_mapper-9] [WARN] [1794934467.457815695] [loop_closure_mapper]: LOOP ACCEPT target=51 current=75 solid=0.986 overlap=0.513 rmse=0.220 inliers=292 min_eigen=1.249e+00 condition=7.258e+02
+[loop_closure_mapper-9] [WARN] [1794934467.919221274] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=52 current=76 translation=4.191/3.000 m rotation=1.651/0.350 rad solid=0.977 overlap=0.619 rmse=0.196
+[loop_closure_mapper-9] [WARN] [1794934467.926706027] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=53 current=76 translation=4.202/3.000 m rotation=1.654/0.350 rad solid=0.976 overlap=0.624 rmse=0.195
+[loop_closure_mapper-9] [WARN] [1794934468.609402123] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=54 current=77 translation=4.173/3.000 m rotation=1.642/0.350 rad solid=0.982 overlap=0.639 rmse=0.197
+[loop_closure_mapper-9] [WARN] [1794934468.616777386] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=53 current=77 translation=4.004/3.000 m rotation=1.579/0.350 rad solid=0.977 overlap=0.661 rmse=0.217
+[loop_closure_mapper-9] [WARN] [1794934468.626564524] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=52 current=77 translation=4.128/3.000 m rotation=1.630/0.350 rad solid=0.977 overlap=0.623 rmse=0.193
+[loop_closure_mapper-9] [WARN] [1794934468.635703820] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=51 current=77 translation=6.197/3.000 m rotation=2.313/0.350 rad solid=0.971 overlap=0.454 rmse=0.256
+[loop_closure_mapper-9] [WARN] [1794934470.006769360] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=56 current=78 translation=4.122/3.000 m rotation=1.629/0.350 rad solid=0.971 overlap=0.674 rmse=0.193
+[loop_closure_mapper-9] [WARN] [1794934470.020606856] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=52 current=78 translation=8.859/3.000 m rotation=3.136/0.350 rad solid=0.965 overlap=0.533 rmse=0.225
+[loop_closure_mapper-9] [INFO] [1794934470.020654649] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=55 current=78 solid=0.971 overlap=0.571 rmse=0.229
+[loop_closure_mapper-9] [WARN] [1794934473.624760290] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=46 current=80 translation=7.376/3.000 m rotation=3.134/0.350 rad solid=0.976 overlap=0.554 rmse=0.204
+[loop_closure_mapper-9] [WARN] [1794934473.637321029] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=45 current=80 translation=7.388/3.000 m rotation=3.131/0.350 rad solid=0.963 overlap=0.568 rmse=0.201
+[loop_closure_mapper-9] [WARN] [1794934473.642947155] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=47 current=80 translation=7.384/3.000 m rotation=3.138/0.350 rad solid=0.959 overlap=0.537 rmse=0.201
+[loop_closure_mapper-9] [WARN] [1794934475.025998251] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=52 current=81 translation=6.522/3.000 m rotation=2.811/0.350 rad solid=0.972 overlap=0.605 rmse=0.230
+[loop_closure_mapper-9] [WARN] [1794934475.030592523] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=51 current=81 translation=6.509/3.000 m rotation=2.806/0.350 rad solid=0.972 overlap=0.607 rmse=0.225
+[loop_closure_mapper-9] [WARN] [1794934475.039214821] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=53 current=81 translation=6.505/3.000 m rotation=2.803/0.350 rad solid=0.967 overlap=0.600 rmse=0.236
+[loop_closure_mapper-9] [WARN] [1794934477.851577407] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=29 current=83 translation=5.444/3.000 m rotation=1.557/0.350 rad solid=0.943 overlap=0.394 rmse=0.202
+[loop_closure_mapper-9] [INFO] [1794934477.851625285] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=12 current=83 solid=0.946 overlap=0.808 rmse=0.143
+[loop_closure_mapper-9] [WARN] [1794934479.255188553] [loop_closure_mapper]: LOOP ACCEPT target=11 current=84 solid=0.962 overlap=0.951 rmse=0.134 inliers=640 min_eigen=1.420e+01 condition=1.039e+02
+[loop_closure_mapper-9] [INFO] [1794934480.666283372] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=9 current=85 solid=0.968 overlap=0.995 rmse=0.118
+[loop_closure_mapper-9] [WARN] [1794934483.010123904] [loop_closure_mapper]: LOOP ACCEPT target=10 current=86 solid=0.987 overlap=1.000 rmse=0.112 inliers=668 min_eigen=7.663e+00 condition=2.469e+02
+[loop_closure_mapper-9] [INFO] [1794934483.370545932] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=7 current=87 solid=0.993 overlap=1.000 rmse=0.112
+[loop_closure_mapper-9] [WARN] [1794934483.720978987] [loop_closure_mapper]: LOOP ACCEPT target=6 current=88 solid=0.997 overlap=1.000 rmse=0.114 inliers=639 min_eigen=8.645e+00 condition=1.750e+02
+[loop_closure_mapper-9] [WARN] [1794934484.052735433] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=12 current=89 translation=0.412/3.000 m rotation=1.236/0.350 rad solid=0.996 overlap=0.473 rmse=0.244
+[loop_closure_mapper-9] [INFO] [1794934484.072079301] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=6 current=89 solid=0.994 overlap=1.000 rmse=0.112
+[loop_closure_mapper-9] [WARN] [1794934484.422084658] [loop_closure_mapper]: LOOP ACCEPT target=4 current=90 solid=0.994 overlap=1.000 rmse=0.109 inliers=616 min_eigen=7.815e+00 condition=2.166e+02
+[loop_closure_mapper-9] [INFO] [1794934484.780869270] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=2 current=91 solid=0.992 overlap=1.000 rmse=0.115
+[loop_closure_mapper-9] [WARN] [1794934485.120492036] [loop_closure_mapper]: LOOP ACCEPT target=3 current=92 solid=0.989 overlap=1.000 rmse=0.114 inliers=610 min_eigen=6.008e+00 condition=2.359e+02
+[loop_closure_mapper-9] [WARN] [1794934485.708059610] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=16 current=93 translation=0.039/3.000 m rotation=3.137/0.350 rad solid=0.991 overlap=0.907 rmse=0.158
+[loop_closure_mapper-9] [INFO] [1794934485.708090480] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=2 current=93 solid=0.991 overlap=1.000 rmse=0.117
+[loop_closure_mapper-9] [WARN] [1794934487.320773909] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=18 current=94 translation=0.045/3.000 m rotation=3.138/0.350 rad solid=0.978 overlap=0.970 rmse=0.136
+[loop_closure_mapper-9] [WARN] [1794934487.327040058] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=16 current=94 translation=0.039/3.000 m rotation=3.138/0.350 rad solid=0.973 overlap=0.970 rmse=0.140
+[loop_closure_mapper-9] [WARN] [1794934490.110813620] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=20 current=96 translation=0.041/3.000 m rotation=3.135/0.350 rad solid=0.977 overlap=0.985 rmse=0.102
+[loop_closure_mapper-9] [WARN] [1794934490.113846161] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=21 current=96 translation=0.045/3.000 m rotation=3.136/0.350 rad solid=0.970 overlap=0.985 rmse=0.116
+[loop_closure_mapper-9] [WARN] [1794934490.117417072] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=22 current=96 translation=0.041/3.000 m rotation=3.136/0.350 rad solid=0.960 overlap=0.988 rmse=0.126
+[loop_closure_mapper-9] [WARN] [1794934490.120512221] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=19 current=96 translation=0.043/3.000 m rotation=3.135/0.350 rad solid=0.951 overlap=0.985 rmse=0.101
+[loop_closure_mapper-9] [WARN] [1794934491.512529506] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=20 current=97 translation=0.043/3.000 m rotation=3.136/0.350 rad solid=0.941 overlap=0.990 rmse=0.107
+[loop_closure_mapper-9] [WARN] [1794934492.912716890] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=20 current=98 translation=0.027/3.000 m rotation=3.137/0.350 rad solid=0.945 overlap=0.988 rmse=0.128
+[loop_closure_mapper-9] [WARN] [1794934492.919692504] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=22 current=98 translation=0.030/3.000 m rotation=3.138/0.350 rad solid=0.932 overlap=0.988 rmse=0.107
+[loop_closure_mapper-9] [WARN] [1794934494.326055927] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=22 current=99 translation=0.015/3.000 m rotation=3.138/0.350 rad solid=0.981 overlap=0.968 rmse=0.103
+[loop_closure_mapper-9] [WARN] [1794934494.336456226] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=21 current=99 translation=0.796/3.000 m rotation=3.135/0.350 rad solid=0.951 overlap=0.913 rmse=0.155
+[loop_closure_mapper-9] [WARN] [1794934495.737495578] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=23 current=100 translation=0.011/3.000 m rotation=3.139/0.350 rad solid=0.985 overlap=0.961 rmse=0.110
+[loop_closure_mapper-9] [WARN] [1794934495.741704746] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=22 current=100 translation=0.817/3.000 m rotation=3.138/0.350 rad solid=0.982 overlap=0.885 rmse=0.164
+[loop_closure_mapper-9] [WARN] [1794934495.744014513] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=24 current=100 translation=0.012/3.000 m rotation=3.139/0.350 rad solid=0.982 overlap=0.961 rmse=0.110
+[loop_closure_mapper-9] [WARN] [1794934497.150327991] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=26 current=101 translation=0.018/3.000 m rotation=3.140/0.350 rad solid=0.987 overlap=0.957 rmse=0.125
+[loop_closure_mapper-9] [WARN] [1794934497.158488074] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=24 current=101 translation=0.019/3.000 m rotation=3.140/0.350 rad solid=0.968 overlap=0.957 rmse=0.116
+[loop_closure_mapper-9] [WARN] [1794934497.162010663] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=23 current=101 translation=0.813/3.000 m rotation=3.137/0.350 rad solid=0.960 overlap=0.870 rmse=0.178
+[loop_closure_mapper-9] [WARN] [1794934498.557164914] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=25 current=102 translation=0.011/3.000 m rotation=3.141/0.350 rad solid=0.965 overlap=0.973 rmse=0.117
+[loop_closure_mapper-9] [WARN] [1794934499.964827181] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=25 current=103 translation=0.026/3.000 m rotation=3.140/0.350 rad solid=0.966 overlap=0.961 rmse=0.126
+[loop_closure_mapper-9] [WARN] [1794934501.362424736] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=27 current=104 translation=0.027/3.000 m rotation=3.139/0.350 rad solid=0.977 overlap=0.969 rmse=0.135
+[loop_closure_mapper-9] [WARN] [1794934502.772210763] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=28 current=105 translation=0.038/3.000 m rotation=3.137/0.350 rad solid=0.980 overlap=0.975 rmse=0.141
+[loop_closure_mapper-9] [WARN] [1794934504.160628771] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=30 current=106 translation=0.038/3.000 m rotation=3.137/0.350 rad solid=0.990 overlap=0.961 rmse=0.137
+[loop_closure_mapper-9] [WARN] [1794934504.178866201] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=13 current=106 translation=5.396/3.000 m rotation=3.138/0.350 rad solid=0.976 overlap=0.789 rmse=0.183
+[loop_closure_mapper-9] [INFO] [1794934504.189649810] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=4 current=106 solid=0.979 overlap=0.416 rmse=0.152
+[loop_closure_mapper-9] [WARN] [1794934505.588209412] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=32 current=107 translation=0.038/3.000 m rotation=3.136/0.350 rad solid=0.989 overlap=0.953 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934505.600214720] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=34 current=107 translation=0.036/3.000 m rotation=3.136/0.350 rad solid=0.959 overlap=0.953 rmse=0.153
+[loop_closure_mapper-9] [WARN] [1794934507.441851417] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=32 current=108 translation=0.086/3.000 m rotation=3.137/0.350 rad solid=0.986 overlap=0.928 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934507.447895928] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=33 current=108 translation=0.095/3.000 m rotation=3.137/0.350 rad solid=0.980 overlap=0.928 rmse=0.151
+[loop_closure_mapper-9] [WARN] [1794934507.456360861] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=16 current=108 translation=5.386/3.000 m rotation=3.139/0.350 rad solid=0.969 overlap=0.934 rmse=0.176
+[loop_closure_mapper-9] [WARN] [1794934507.794592070] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=32 current=109 translation=0.047/3.000 m rotation=3.137/0.350 rad solid=0.979 overlap=0.898 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934507.800889842] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=33 current=109 translation=0.048/3.000 m rotation=3.136/0.350 rad solid=0.975 overlap=0.900 rmse=0.151
+[loop_closure_mapper-9] [WARN] [1794934507.807855607] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=31 current=109 translation=0.053/3.000 m rotation=3.137/0.350 rad solid=0.962 overlap=0.903 rmse=0.157
+[loop_closure_mapper-9] [WARN] [1794934507.816266055] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=34 current=109 translation=0.049/3.000 m rotation=3.136/0.350 rad solid=0.958 overlap=0.907 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934508.516760241] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=37 current=111 translation=0.078/3.000 m rotation=3.134/0.350 rad solid=0.986 overlap=0.725 rmse=0.161
+[loop_closure_mapper-9] [WARN] [1794934508.836180449] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=35 current=112 translation=10.603/3.000 m rotation=0.018/0.350 rad solid=0.998 overlap=0.795 rmse=0.182
+[loop_closure_mapper-9] [WARN] [1794934508.842723778] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=36 current=112 translation=0.142/3.000 m rotation=3.133/0.350 rad solid=0.996 overlap=0.762 rmse=0.167
+[loop_closure_mapper-9] [WARN] [1794934508.851047008] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=37 current=112 translation=0.106/3.000 m rotation=3.133/0.350 rad solid=0.994 overlap=0.692 rmse=0.161
+[loop_closure_mapper-9] [WARN] [1794934509.191498408] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=35 current=113 translation=0.074/3.000 m rotation=3.135/0.350 rad solid=0.995 overlap=0.801 rmse=0.162
+[loop_closure_mapper-9] [WARN] [1794934509.199847221] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=36 current=113 translation=0.152/3.000 m rotation=3.135/0.350 rad solid=0.994 overlap=0.744 rmse=0.167
+[loop_closure_mapper-9] [WARN] [1794934509.209133885] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=37 current=113 translation=0.169/3.000 m rotation=3.135/0.350 rad solid=0.992 overlap=0.685 rmse=0.169
+[loop_closure_mapper-9] [WARN] [1794934509.217163622] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=38 current=113 translation=10.606/3.000 m rotation=0.015/0.350 rad solid=0.986 overlap=0.808 rmse=0.176
+[loop_closure_mapper-9] [WARN] [1794934509.657871539] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=35 current=114 translation=0.090/3.000 m rotation=3.136/0.350 rad solid=0.996 overlap=0.802 rmse=0.171
+[loop_closure_mapper-9] [WARN] [1794934509.668093211] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=36 current=114 translation=10.597/3.000 m rotation=0.013/0.350 rad solid=0.993 overlap=0.757 rmse=0.168
+[loop_closure_mapper-9] [WARN] [1794934509.677436865] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=34 current=114 translation=10.578/3.000 m rotation=0.016/0.350 rad solid=0.992 overlap=0.748 rmse=0.175
+[loop_closure_mapper-9] [WARN] [1794934509.707047192] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=39 current=114 translation=10.599/3.000 m rotation=0.014/0.350 rad solid=0.991 overlap=0.762 rmse=0.174
+[loop_closure_mapper-9] [WARN] [1794934510.355076986] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=39 current=115 translation=10.589/3.000 m rotation=0.011/0.350 rad solid=0.995 overlap=0.737 rmse=0.167
+[loop_closure_mapper-9] [WARN] [1794934510.379691428] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=34 current=115 translation=10.573/3.000 m rotation=0.011/0.350 rad solid=0.989 overlap=0.729 rmse=0.180
+[loop_closure_mapper-9] [WARN] [1794934511.870311229] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=40 current=116 translation=10.582/3.000 m rotation=0.010/0.350 rad solid=0.997 overlap=0.747 rmse=0.161
+[loop_closure_mapper-9] [WARN] [1794934511.876243081] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=39 current=116 translation=10.571/3.000 m rotation=0.009/0.350 rad solid=0.976 overlap=0.747 rmse=0.161
+[loop_closure_mapper-9] [WARN] [1794934511.883591691] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=62 current=116 translation=9.569/3.000 m rotation=1.578/0.350 rad solid=0.976 overlap=0.704 rmse=0.211
+[loop_closure_mapper-9] [WARN] [1794934511.890209684] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=61 current=116 translation=9.558/3.000 m rotation=1.580/0.350 rad solid=0.976 overlap=0.710 rmse=0.211
+[loop_closure_mapper-9] [WARN] [1794934513.278151824] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=41 current=117 translation=10.597/3.000 m rotation=0.013/0.350 rad solid=0.998 overlap=0.750 rmse=0.171
+[loop_closure_mapper-9] [WARN] [1794934513.283355991] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=63 current=117 translation=9.577/3.000 m rotation=1.577/0.350 rad solid=0.985 overlap=0.735 rmse=0.227
+[loop_closure_mapper-9] [WARN] [1794934513.289795794] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=42 current=117 translation=10.595/3.000 m rotation=0.012/0.350 rad solid=0.977 overlap=0.748 rmse=0.173
+[loop_closure_mapper-9] [WARN] [1794934513.296742755] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=64 current=117 translation=9.580/3.000 m rotation=1.577/0.350 rad solid=0.969 overlap=0.732 rmse=0.229
+[loop_closure_mapper-9] [WARN] [1794934514.673012343] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=42 current=118 translation=10.601/3.000 m rotation=0.008/0.350 rad solid=0.996 overlap=0.826 rmse=0.157
+[loop_closure_mapper-9] [WARN] [1794934514.684099406] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=43 current=118 translation=10.587/3.000 m rotation=0.005/0.350 rad solid=0.985 overlap=0.828 rmse=0.159
+[loop_closure_mapper-9] [WARN] [1794934514.690014402] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=44 current=118 translation=10.590/3.000 m rotation=0.007/0.350 rad solid=0.967 overlap=0.833 rmse=0.162
+[loop_closure_mapper-9] [WARN] [1794934516.085519499] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=42 current=119 translation=10.617/3.000 m rotation=0.013/0.350 rad solid=0.995 overlap=0.830 rmse=0.155
+[loop_closure_mapper-9] [WARN] [1794934516.092475182] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=44 current=119 translation=10.596/3.000 m rotation=0.008/0.350 rad solid=0.990 overlap=0.828 rmse=0.154
+[loop_closure_mapper-9] [WARN] [1794934516.099172895] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=66 current=119 translation=9.594/3.000 m rotation=1.599/0.350 rad solid=0.980 overlap=0.784 rmse=0.218
+[loop_closure_mapper-9] [WARN] [1794934517.488496009] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=44 current=120 translation=10.595/3.000 m rotation=0.007/0.350 rad solid=0.995 overlap=0.799 rmse=0.159
+[loop_closure_mapper-9] [WARN] [1794934517.495586550] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=43 current=120 translation=10.600/3.000 m rotation=0.007/0.350 rad solid=0.990 overlap=0.798 rmse=0.160
+[loop_closure_mapper-9] [WARN] [1794934517.503044273] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=42 current=120 translation=10.616/3.000 m rotation=0.012/0.350 rad solid=0.980 overlap=0.803 rmse=0.167
+[loop_closure_mapper-9] [WARN] [1794934517.509303655] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=66 current=120 translation=9.574/3.000 m rotation=1.581/0.350 rad solid=0.977 overlap=0.795 rmse=0.225
+[loop_closure_mapper-9] [WARN] [1794934519.585861079] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=45 current=121 translation=10.612/3.000 m rotation=0.016/0.350 rad solid=0.994 overlap=0.779 rmse=0.172
+[loop_closure_mapper-9] [WARN] [1794934519.603981496] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=68 current=121 translation=9.589/3.000 m rotation=1.583/0.350 rad solid=0.988 overlap=0.774 rmse=0.235
+[loop_closure_mapper-9] [WARN] [1794934519.614520762] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=67 current=121 translation=9.564/3.000 m rotation=1.579/0.350 rad solid=0.979 overlap=0.776 rmse=0.231
+[loop_closure_mapper-9] [WARN] [1794934521.013461179] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=46 current=122 translation=10.617/3.000 m rotation=0.018/0.350 rad solid=0.996 overlap=0.688 rmse=0.214
+[loop_closure_mapper-9] [WARN] [1794934521.023112823] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=45 current=122 translation=10.618/3.000 m rotation=0.021/0.350 rad solid=0.992 overlap=0.695 rmse=0.215
+[loop_closure_mapper-9] [WARN] [1794934521.039250288] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=80 current=122 translation=7.263/3.000 m rotation=3.130/0.350 rad solid=0.980 overlap=0.688 rmse=0.212
+[loop_closure_mapper-9] [WARN] [1794934522.405290228] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=46 current=123 translation=10.603/3.000 m rotation=0.041/0.350 rad solid=0.993 overlap=0.713 rmse=0.212
+[loop_closure_mapper-9] [WARN] [1794934522.410370591] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=47 current=123 translation=10.601/3.000 m rotation=0.050/0.350 rad solid=0.988 overlap=0.706 rmse=0.202
+[loop_closure_mapper-9] [WARN] [1794934522.428081181] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=80 current=123 translation=7.259/3.000 m rotation=3.138/0.350 rad solid=0.976 overlap=0.689 rmse=0.209
+[loop_closure_mapper-9] [WARN] [1794934524.729010122] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=47 current=124 translation=10.594/3.000 m rotation=0.024/0.350 rad solid=0.999 overlap=0.679 rmse=0.214
+[loop_closure_mapper-9] [WARN] [1794934524.757077551] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=48 current=124 translation=10.605/3.000 m rotation=0.016/0.350 rad solid=0.991 overlap=0.679 rmse=0.212
+[loop_closure_mapper-9] [WARN] [1794934525.075184660] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=47 current=125 translation=10.600/3.000 m rotation=0.028/0.350 rad solid=0.996 overlap=0.691 rmse=0.217
+[loop_closure_mapper-9] [WARN] [1794934525.091590209] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=70 current=125 translation=8.715/3.000 m rotation=3.139/0.350 rad solid=0.990 overlap=0.859 rmse=0.183
+[loop_closure_mapper-9] [WARN] [1794934525.432872839] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=47 current=126 translation=10.582/3.000 m rotation=0.021/0.350 rad solid=0.995 overlap=0.697 rmse=0.212
+[loop_closure_mapper-9] [WARN] [1794934525.437846035] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=70 current=126 translation=8.716/3.000 m rotation=3.140/0.350 rad solid=0.994 overlap=0.861 rmse=0.184
+[loop_closure_mapper-9] [WARN] [1794934525.445658750] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=69 current=126 translation=8.709/3.000 m rotation=3.140/0.350 rad solid=0.993 overlap=0.861 rmse=0.187
+[loop_closure_mapper-9] [WARN] [1794934525.774738453] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=51 current=127 translation=12.439/3.000 m rotation=1.452/0.350 rad solid=0.999 overlap=0.723 rmse=0.220
+[loop_closure_mapper-9] [WARN] [1794934525.786225029] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=50 current=127 translation=12.455/3.000 m rotation=1.455/0.350 rad solid=0.997 overlap=0.719 rmse=0.220
+[loop_closure_mapper-9] [WARN] [1794934526.127986042] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=70 current=128 translation=8.711/3.000 m rotation=3.138/0.350 rad solid=0.998 overlap=0.860 rmse=0.176
+[loop_closure_mapper-9] [WARN] [1794934526.139305430] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=69 current=128 translation=8.708/3.000 m rotation=3.138/0.350 rad solid=0.997 overlap=0.875 rmse=0.183
+[loop_closure_mapper-9] [WARN] [1794934526.474743422] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=70 current=129 translation=8.716/3.000 m rotation=3.138/0.350 rad solid=0.996 overlap=0.845 rmse=0.176
+[loop_closure_mapper-9] [WARN] [1794934526.484513276] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=69 current=129 translation=8.710/3.000 m rotation=3.137/0.350 rad solid=0.994 overlap=0.851 rmse=0.183
+[loop_closure_mapper-9] [WARN] [1794934526.494408717] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=75 current=129 translation=8.702/3.000 m rotation=3.137/0.350 rad solid=0.993 overlap=0.843 rmse=0.174
+[loop_closure_mapper-9] [WARN] [1794934526.944829476] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=51 current=130 translation=10.962/3.000 m rotation=1.996/0.350 rad solid=0.996 overlap=0.550 rmse=0.222
+[loop_closure_mapper-9] [WARN] [1794934526.951732843] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=70 current=130 translation=8.637/3.000 m rotation=3.138/0.350 rad solid=0.996 overlap=0.812 rmse=0.169
+[loop_closure_mapper-9] [WARN] [1794934526.959387996] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=69 current=130 translation=8.644/3.000 m rotation=3.138/0.350 rad solid=0.995 overlap=0.818 rmse=0.175
+[loop_closure_mapper-9] [WARN] [1794934527.639427257] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=69 current=131 translation=8.692/3.000 m rotation=3.136/0.350 rad solid=0.997 overlap=0.779 rmse=0.172
+[loop_closure_mapper-9] [WARN] [1794934527.647048744] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=72 current=131 translation=8.702/3.000 m rotation=3.138/0.350 rad solid=0.997 overlap=0.781 rmse=0.170
+[loop_closure_mapper-9] [WARN] [1794934527.655249075] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=74 current=131 translation=8.620/3.000 m rotation=3.135/0.350 rad solid=0.997 overlap=0.777 rmse=0.171
+[loop_closure_mapper-9] [WARN] [1794934529.150743258] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=55 current=132 translation=6.891/3.000 m rotation=3.135/0.350 rad solid=0.992 overlap=0.744 rmse=0.162
+[loop_closure_mapper-9] [WARN] [1794934529.156602462] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=70 current=132 translation=8.621/3.000 m rotation=3.132/0.350 rad solid=0.989 overlap=0.755 rmse=0.170
+[loop_closure_mapper-9] [WARN] [1794934529.160819063] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=69 current=132 translation=8.610/3.000 m rotation=3.132/0.350 rad solid=0.988 overlap=0.763 rmse=0.179
+[loop_closure_mapper-9] [WARN] [1794934530.564248635] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=56 current=133 translation=6.887/3.000 m rotation=3.132/0.350 rad solid=0.977 overlap=0.791 rmse=0.176
+[loop_closure_mapper-9] [WARN] [1794934531.976851372] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=65 current=134 translation=7.354/3.000 m rotation=3.141/0.350 rad solid=0.952 overlap=0.598 rmse=0.181
+[loop_closure_mapper-9] [INFO] [1794934531.976897734] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=66 current=134 solid=0.954 overlap=0.549 rmse=0.199
+[loop_closure_mapper-9] [WARN] [1794934533.400640653] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=59 current=135 translation=6.910/3.000 m rotation=3.136/0.350 rad solid=0.980 overlap=0.884 rmse=0.176
+[loop_closure_mapper-9] [WARN] [1794934533.418629473] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=37 current=135 translation=9.650/3.000 m rotation=1.575/0.350 rad solid=0.962 overlap=0.754 rmse=0.189
+[loop_closure_mapper-9] [WARN] [1794934534.803315532] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=60 current=136 translation=6.937/3.000 m rotation=3.141/0.350 rad solid=0.987 overlap=0.870 rmse=0.167
+[loop_closure_mapper-9] [WARN] [1794934534.809035360] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=12 current=136 translation=4.995/3.000 m rotation=1.583/0.350 rad solid=0.986 overlap=0.706 rmse=0.199
+[loop_closure_mapper-9] [WARN] [1794934534.815082455] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=5 current=136 translation=4.981/3.000 m rotation=1.586/0.350 rad solid=0.983 overlap=0.704 rmse=0.202
+[loop_closure_mapper-9] [WARN] [1794934536.214676774] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=40 current=137 translation=9.617/3.000 m rotation=1.569/0.350 rad solid=0.987 overlap=0.749 rmse=0.195
+[loop_closure_mapper-9] [INFO] [1794934536.219525724] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=62 current=137 solid=0.991 overlap=0.740 rmse=0.152
+[loop_closure_mapper-9] [WARN] [1794934537.614743349] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=117 current=138 translation=3.568/3.000 m rotation=1.487/0.350 rad solid=0.989 overlap=0.813 rmse=0.213
+[loop_closure_mapper-9] [WARN] [1794934537.619232534] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=118 current=138 translation=3.566/3.000 m rotation=1.489/0.350 rad solid=0.985 overlap=0.817 rmse=0.215
+[loop_closure_mapper-9] [WARN] [1794934537.623315427] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=41 current=138 translation=9.583/3.000 m rotation=1.569/0.350 rad solid=0.983 overlap=0.723 rmse=0.205
+[loop_closure_mapper-9] [WARN] [1794934537.628110244] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=42 current=138 translation=9.587/3.000 m rotation=1.570/0.350 rad solid=0.980 overlap=0.716 rmse=0.204
+[loop_closure_mapper-9] [WARN] [1794934538.904584093] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=117 current=139 translation=3.840/3.000 m rotation=1.559/0.350 rad solid=0.987 overlap=0.852 rmse=0.213
+[loop_closure_mapper-9] [WARN] [1794934538.909339224] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=63 current=139 translation=6.943/3.000 m rotation=3.136/0.350 rad solid=0.986 overlap=0.848 rmse=0.172
+[loop_closure_mapper-9] [WARN] [1794934538.921210615] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=118 current=139 translation=3.806/3.000 m rotation=1.552/0.350 rad solid=0.985 overlap=0.848 rmse=0.210
+[loop_closure_mapper-9] [WARN] [1794934540.311395599] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=63 current=140 translation=6.949/3.000 m rotation=3.141/0.350 rad solid=0.978 overlap=0.829 rmse=0.165
+[loop_closure_mapper-9] [WARN] [1794934540.323520863] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=118 current=140 translation=3.825/3.000 m rotation=1.557/0.350 rad solid=0.975 overlap=0.835 rmse=0.214
+[loop_closure_mapper-9] [WARN] [1794934541.809554927] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=119 current=141 translation=3.822/3.000 m rotation=1.545/0.350 rad solid=0.986 overlap=0.810 rmse=0.215
+[loop_closure_mapper-9] [WARN] [1794934541.815680850] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=120 current=141 translation=3.678/3.000 m rotation=1.559/0.350 rad solid=0.986 overlap=0.816 rmse=0.224
+[loop_closure_mapper-9] [WARN] [1794934541.820598928] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=65 current=141 translation=6.949/3.000 m rotation=3.139/0.350 rad solid=0.981 overlap=0.797 rmse=0.166
+[loop_closure_mapper-9] [INFO] [1794934541.820628164] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=66 current=141 solid=0.993 overlap=0.841 rmse=0.142
+[loop_closure_mapper-9] [WARN] [1794934543.226602531] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=119 current=142 translation=3.808/3.000 m rotation=1.537/0.350 rad solid=0.988 overlap=0.792 rmse=0.222
+[loop_closure_mapper-9] [WARN] [1794934543.232377235] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=120 current=142 translation=3.798/3.000 m rotation=1.529/0.350 rad solid=0.986 overlap=0.792 rmse=0.220
+[loop_closure_mapper-9] [WARN] [1794934543.238623827] [loop_closure_mapper]: LOOP ACCEPT target=66 current=142 solid=0.993 overlap=0.830 rmse=0.143 inliers=498 min_eigen=4.314e+00 condition=1.422e+02
+[loop_closure_mapper-9] [WARN] [1794934544.629254336] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=68 current=143 translation=6.939/3.000 m rotation=3.142/0.350 rad solid=0.984 overlap=0.765 rmse=0.167
+[loop_closure_mapper-9] [WARN] [1794934544.644475041] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=67 current=143 translation=6.940/3.000 m rotation=3.141/0.350 rad solid=0.981 overlap=0.763 rmse=0.163
+[loop_closure_mapper-9] [WARN] [1794934546.031278151] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=68 current=144 translation=6.945/3.000 m rotation=3.141/0.350 rad solid=0.997 overlap=0.753 rmse=0.159
+[loop_closure_mapper-9] [WARN] [1794934546.037672231] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=67 current=144 translation=6.948/3.000 m rotation=3.140/0.350 rad solid=0.993 overlap=0.756 rmse=0.161
+[loop_closure_mapper-9] [WARN] [1794934546.042447587] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=121 current=144 translation=3.273/3.000 m rotation=1.520/0.350 rad solid=0.989 overlap=0.616 rmse=0.238
+[loop_closure_mapper-9] [WARN] [1794934547.670214783] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=74 current=145 translation=6.948/3.000 m rotation=3.140/0.350 rad solid=0.998 overlap=0.740 rmse=0.176
+[loop_closure_mapper-9] [WARN] [1794934547.674515941] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=69 current=145 translation=6.947/3.000 m rotation=3.141/0.350 rad solid=0.998 overlap=0.747 rmse=0.167
+[loop_closure_mapper-9] [INFO] [1794934547.682132197] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=73 current=145 solid=0.997 overlap=0.780 rmse=0.136
+[loop_closure_mapper-9] [WARN] [1794934548.977853035] [loop_closure_mapper]: LOOP ACCEPT target=70 current=146 solid=0.996 overlap=0.726 rmse=0.133 inliers=422 min_eigen=3.532e+00 condition=1.997e+02
+[loop_closure_mapper-9] [WARN] [1794934549.339263484] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=71 current=147 translation=5.018/3.000 m rotation=1.568/0.350 rad solid=0.999 overlap=0.751 rmse=0.186
+[loop_closure_mapper-9] [INFO] [1794934549.339301663] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=74 current=147 solid=1.000 overlap=0.796 rmse=0.133
+[loop_closure_mapper-9] [WARN] [1794934549.690759122] [loop_closure_mapper]: LOOP ACCEPT target=69 current=148 solid=0.996 overlap=0.729 rmse=0.131 inliers=430 min_eigen=4.155e+00 condition=2.092e+02
+[loop_closure_mapper-9] [WARN] [1794934550.026568575] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=74 current=149 translation=5.011/3.000 m rotation=1.566/0.350 rad solid=0.998 overlap=0.756 rmse=0.181
+[loop_closure_mapper-9] [WARN] [1794934550.033720813] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=73 current=149 translation=5.013/3.000 m rotation=1.566/0.350 rad solid=0.997 overlap=0.753 rmse=0.176
+[loop_closure_mapper-9] [INFO] [1794934550.044906395] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=69 current=149 solid=0.996 overlap=0.745 rmse=0.137
+[loop_closure_mapper-9] [WARN] [1794934550.396200841] [loop_closure_mapper]: LOOP ACCEPT target=73 current=150 solid=0.999 overlap=0.870 rmse=0.133 inliers=508 min_eigen=6.329e+00 condition=8.468e+01
+[loop_closure_mapper-9] [WARN] [1794934550.757063110] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=73 current=151 translation=5.014/3.000 m rotation=1.566/0.350 rad solid=0.998 overlap=0.734 rmse=0.179
+[loop_closure_mapper-9] [INFO] [1794934550.771297644] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=75 current=151 solid=0.998 overlap=0.883 rmse=0.135
+[loop_closure_mapper-9] [WARN] [1794934551.233392359] [loop_closure_mapper]: LOOP ACCEPT target=72 current=152 solid=0.996 overlap=0.877 rmse=0.131 inliers=514 min_eigen=9.155e+00 condition=6.184e+01
+[loop_closure_mapper-9] [INFO] [1794934551.933124168] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=76 current=153 solid=0.998 overlap=0.968 rmse=0.123
+[loop_closure_mapper-9] [WARN] [1794934553.447015682] [loop_closure_mapper]: LOOP ACCEPT target=77 current=154 solid=0.989 overlap=0.992 rmse=0.109 inliers=496 min_eigen=1.135e+01 condition=5.417e+01
+[loop_closure_mapper-9] [INFO] [1794934554.857323266] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=79 current=155 solid=0.995 overlap=0.995 rmse=0.102
+[loop_closure_mapper-9] [WARN] [1794934556.255835736] [loop_closure_mapper]: LOOP ACCEPT target=79 current=156 solid=0.993 overlap=0.997 rmse=0.107 inliers=387 min_eigen=7.480e+00 condition=1.017e+02
+[loop_closure_mapper-9] [WARN] [1794934557.778954513] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=128 current=157 translation=4.889/3.000 m rotation=1.564/0.350 rad solid=0.984 overlap=0.748 rmse=0.184
+[loop_closure_mapper-9] [INFO] [1794934557.778988742] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=81 current=157 solid=0.998 overlap=1.000 rmse=0.106
+[loop_closure_mapper-9] [WARN] [1794934559.170871781] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=132 current=158 translation=4.878/3.000 m rotation=1.568/0.350 rad solid=0.980 overlap=0.745 rmse=0.188
+[loop_closure_mapper-9] [WARN] [1794934559.176950300] [loop_closure_mapper]: LOOP ACCEPT target=82 current=158 solid=0.993 overlap=1.000 rmse=0.110 inliers=466 min_eigen=1.058e+01 condition=8.260e+01
+[loop_closure_mapper-9] [WARN] [1794934560.581764828] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=119 current=159 translation=5.919/3.000 m rotation=3.141/0.350 rad solid=0.949 overlap=0.445 rmse=0.228
+[loop_closure_mapper-9] [INFO] [1794934560.581805399] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=84 current=159 solid=0.956 overlap=1.000 rmse=0.118
+[loop_closure_mapper-9] [WARN] [1794934561.980617749] [loop_closure_mapper]: LOOP ACCEPT target=85 current=160 solid=0.984 overlap=0.997 rmse=0.113 inliers=643 min_eigen=9.757e+00 condition=1.421e+02
+[loop_closure_mapper-9] [INFO] [1794934563.390394972] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=85 current=161 solid=0.996 overlap=0.997 rmse=0.119
+[loop_closure_mapper-9] [INFO] [1794934565.597016337] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=11 current=162 solid=0.990 overlap=0.998 rmse=0.118
+[loop_closure_mapper-9] [WARN] [1794934565.953110314] [loop_closure_mapper]: LOOP ACCEPT target=12 current=163 solid=0.996 overlap=0.998 rmse=0.119 inliers=647 min_eigen=7.580e+00 condition=2.214e+02
+[loop_closure_mapper-9] [INFO] [1794934566.333098552] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=11 current=164 solid=0.997 overlap=0.998 rmse=0.121
+[loop_closure_mapper-9] [WARN] [1794934566.648351584] [loop_closure_mapper]: LOOP ACCEPT target=13 current=165 solid=0.995 overlap=1.000 rmse=0.117 inliers=634 min_eigen=7.190e+00 condition=1.878e+02
+[loop_closure_mapper-9] [WARN] [1794934566.999397467] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=91 current=166 translation=0.023/3.000 m rotation=3.138/0.350 rad solid=0.990 overlap=0.835 rmse=0.160
+[loop_closure_mapper-9] [INFO] [1794934567.005777451] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=14 current=166 solid=0.995 overlap=1.000 rmse=0.123
+[loop_closure_mapper-9] [WARN] [1794934567.343109072] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=2 current=167 translation=0.012/3.000 m rotation=3.138/0.350 rad solid=0.993 overlap=0.874 rmse=0.166
+[loop_closure_mapper-9] [WARN] [1794934567.348949979] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=92 current=167 translation=0.027/3.000 m rotation=3.138/0.350 rad solid=0.992 overlap=0.846 rmse=0.159
+[loop_closure_mapper-9] [INFO] [1794934567.357377239] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=1 current=167 solid=0.996 overlap=0.691 rmse=0.163
+[loop_closure_mapper-9] [WARN] [1794934567.831157005] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=93 current=168 translation=0.025/3.000 m rotation=3.138/0.350 rad solid=0.996 overlap=0.889 rmse=0.150
+[loop_closure_mapper-9] [WARN] [1794934567.837528150] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=2 current=168 translation=0.012/3.000 m rotation=3.137/0.350 rad solid=0.996 overlap=0.940 rmse=0.163
+[loop_closure_mapper-9] [WARN] [1794934567.844708794] [loop_closure_mapper]: LOOP ACCEPT target=1 current=168 solid=0.999 overlap=0.660 rmse=0.164 inliers=416 min_eigen=1.292e+00 condition=8.306e+02
+[loop_closure_mapper-9] [WARN] [1794934568.530720650] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=2 current=169 translation=0.010/3.000 m rotation=3.137/0.350 rad solid=0.994 overlap=0.949 rmse=0.151
+[loop_closure_mapper-9] [WARN] [1794934568.535359581] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=1 current=169 translation=0.010/3.000 m rotation=3.137/0.350 rad solid=0.994 overlap=0.949 rmse=0.156
+[loop_closure_mapper-9] [WARN] [1794934568.543825811] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=93 current=169 translation=0.019/3.000 m rotation=3.138/0.350 rad solid=0.993 overlap=0.938 rmse=0.159
+[loop_closure_mapper-9] [WARN] [1794934569.946479848] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=94 current=170 translation=0.017/3.000 m rotation=3.138/0.350 rad solid=0.975 overlap=0.964 rmse=0.135
+[loop_closure_mapper-9] [WARN] [1794934569.966023920] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=1 current=170 translation=0.025/3.000 m rotation=3.137/0.350 rad solid=0.961 overlap=0.953 rmse=0.143
+[loop_closure_mapper-9] [INFO] [1794934569.966080358] [loop_closure_mapper]: Loop candidate pending confirmation 1/2: target=18 current=170 solid=0.962 overlap=1.000 rmse=0.118
+[loop_closure_mapper-9] [WARN] [1794934571.334692280] [loop_closure_mapper]: GLOBAL CONSISTENCY REJECT target=95 current=171 translation=0.036/3.000 m rotation=3.138/0.350 rad solid=0.993 overlap=0.995 rmse=0.124
+[loop_closure_mapper-9] [WARN] [1794934571.345107235] [loop_closure_mapper]: LOOP ACCEPT target=19 current=171 solid=0.992 overlap=1.000 rmse=0.106 inliers=381 min_eigen=6.540e+00 condition=2.101e+02
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[loop_closure_mapper-9] [INFO] [1794934571.966256853] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[odometry_frame_converter-8] [INFO] [1794934571.966252560] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[command_watchdog-4] [INFO] [1794934571.966253976] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[cloud_to_scan-5] [INFO] [1794934571.966254373] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ukf_node-3] [INFO] [1794934571.966251168] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1794934571.966264795] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[fastlio_mapping-7] [INFO] [1794934571.966476723] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[mapping_tf_bridge-10] [INFO] [1794934571.966593433] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [command_watchdog-4]: process has finished cleanly [pid 44980]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 44976]
+[INFO] [cloud_to_scan-5]: process has finished cleanly [pid 44982]
+[INFO] [odometry_frame_converter-8]: process has finished cleanly [pid 44988]
+[INFO] [mapping_tf_bridge-10]: process has finished cleanly [pid 44992]
+[INFO] [ukf_node-3]: process has finished cleanly [pid 44978]
+[fastlio_mapping-7] Rebuild thread terminated normally
+[INFO] [fastlio_mapping-7]: process has finished cleanly [pid 44986]
+[INFO] [gzserver-1]: process has finished cleanly [pid 44974]
+[INFO] [launch]: process[gzserver-1] was required: shutting down launched system
+[INFO] [loop_closure_mapper-9]: process has finished cleanly [pid 44990]

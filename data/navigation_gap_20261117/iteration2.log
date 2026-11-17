@@ -1,0 +1,190 @@
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from NavigationScenarios
+[ RUN      ] NavigationScenarios.PassStandingPersonWithSeventyFiveCentimetreSideGap
+[INFO] [1794925975.345648203] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925975.346782618] [scenario_costmap.scenario_costmap]: 
+	scenario_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925975.347038157] [scenario_costmap.scenario_costmap]: Creating Costmap
+[INFO] [1794925975.949517278] [controller_server]: Setting transform_tolerance to 0.500000
+[INFO] [1794925975.952609567] [controller_server]: Velocity iterator: BPX threshold enforcement disabled (threshold 0.210)
+[INFO] [1794925975.952764462] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[INFO] [1794925975.952784782] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[INFO] [1794925975.952790791] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.952809929] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[INFO] [1794925975.952857129] [controller_server]: RotateToPath critic enabled: enter 68.8 deg, exit 25.8 deg, disabled within 0.30 m of goal
+[INFO] [1794925975.952863745] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.952881428] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[INFO] [1794925975.952956023] [controller_server]: Stable final-pose critic: enter 0.15 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.05..0.60 rad/s
+[INFO] [1794925975.952963724] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.952988897] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1794925975.953036362] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.953052989] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[INFO] [1794925975.953083099] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.953098154] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[INFO] [1794925975.953130244] [controller_server]: Forward progress critic enabled: minimum x 0.10 m/s, goal distance 0.30 m, heading error 40.1 deg
+[INFO] [1794925975.953135627] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.953149190] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[INFO] [1794925975.953169987] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[INFO] [1794925975.953174146] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.953188034] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1794925975.953280299] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.953302182] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1794925975.953375469] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.953394601] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1794925975.953459723] [controller_server]: Critic plugin initialized
+[INFO] [1794925975.953475857] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1794925975.953546085] [controller_server]: Critic plugin initialized
+[INFO] [1794925976.856629234] [controller_server]: Stable final-pose mode APPROACH -> ROTATING (distance 0.148 m, speed 0.080 m/s, yaw error -36.2 deg)
+SCENARIO reached=1 seconds=16.8 failures=0 longest_failure_streak=0 reversals=6 clearance=0.0132839 final=1.67896,-0.0789367,0.149333
+[INFO] [1794925976.945461964] [scenario_costmap.scenario_costmap]: Destroying
+[INFO] [1794925976.946466268] [controller_server]: Destroying
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:242: Failure
+Expected: (out.min_clearance) > (.02), actual: 0.0132839 vs 0.02
+[  FAILED  ] NavigationScenarios.PassStandingPersonWithSeventyFiveCentimetreSideGap (1609 ms)
+[ RUN      ] NavigationScenarios.TightStraightPassage
+[INFO] [1794925976.950729807] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925976.951604670] [scenario_costmap.scenario_costmap]: 
+	scenario_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925976.951794994] [scenario_costmap.scenario_costmap]: Creating Costmap
+[INFO] [1794925977.660472701] [controller_server]: Setting transform_tolerance to 0.500000
+[INFO] [1794925977.661001351] [controller_server]: Velocity iterator: BPX threshold enforcement disabled (threshold 0.210)
+[INFO] [1794925977.661088259] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[INFO] [1794925977.661104330] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[INFO] [1794925977.661108621] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661123190] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[INFO] [1794925977.661163482] [controller_server]: RotateToPath critic enabled: enter 68.8 deg, exit 25.8 deg, disabled within 0.30 m of goal
+[INFO] [1794925977.661168979] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661182096] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[INFO] [1794925977.661244812] [controller_server]: Stable final-pose critic: enter 0.15 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.05..0.60 rad/s
+[INFO] [1794925977.661252768] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661266634] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1794925977.661297369] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661311865] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[INFO] [1794925977.661330989] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661343550] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[INFO] [1794925977.661372245] [controller_server]: Forward progress critic enabled: minimum x 0.10 m/s, goal distance 0.30 m, heading error 40.1 deg
+[INFO] [1794925977.661377051] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661389286] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[INFO] [1794925977.661407384] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[INFO] [1794925977.661411388] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661423918] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1794925977.661457250] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661469932] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1794925977.661508977] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661523246] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1794925977.661549760] [controller_server]: Critic plugin initialized
+[INFO] [1794925977.661562358] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1794925977.661587280] [controller_server]: Critic plugin initialized
+SCENARIO reached=1 seconds=10.7333 failures=0 longest_failure_streak=0 reversals=0 clearance=0.0719038 final=1.35199,0.00643998,-0.00333333
+[INFO] [1794925978.351313681] [scenario_costmap.scenario_costmap]: Destroying
+[INFO] [1794925978.352397165] [controller_server]: Destroying
+[       OK ] NavigationScenarios.TightStraightPassage (1406 ms)
+[ RUN      ] NavigationScenarios.FinalHeadingConvergesWithoutRepeatedReversals
+[INFO] [1794925978.356683450] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925978.357613472] [scenario_costmap.scenario_costmap]: 
+	scenario_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925978.357802359] [scenario_costmap.scenario_costmap]: Creating Costmap
+[INFO] [1794925978.385765606] [controller_server]: Setting transform_tolerance to 0.500000
+[INFO] [1794925978.386544677] [controller_server]: Velocity iterator: BPX threshold enforcement disabled (threshold 0.210)
+[INFO] [1794925978.386637567] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[INFO] [1794925978.386653773] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[INFO] [1794925978.386658343] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.386673386] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[INFO] [1794925978.386713859] [controller_server]: RotateToPath critic enabled: enter 68.8 deg, exit 25.8 deg, disabled within 0.30 m of goal
+[INFO] [1794925978.386719193] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.386732270] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[INFO] [1794925978.386790249] [controller_server]: Stable final-pose critic: enter 0.15 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.05..0.60 rad/s
+[INFO] [1794925978.386796353] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.386810258] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1794925978.386841312] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.386855946] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[INFO] [1794925978.386875742] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.386888273] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[INFO] [1794925978.386915609] [controller_server]: Forward progress critic enabled: minimum x 0.10 m/s, goal distance 0.30 m, heading error 40.1 deg
+[INFO] [1794925978.386920422] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.386932813] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[INFO] [1794925978.386952007] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[INFO] [1794925978.386955796] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.386968505] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1794925978.387002951] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.387016052] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1794925978.387048290] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.387062476] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1794925978.387088830] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.387101634] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1794925978.387128225] [controller_server]: Critic plugin initialized
+[INFO] [1794925978.501586337] [controller_server]: Stable final-pose mode APPROACH -> SLOWING (distance 0.149 m, speed 0.100 m/s, yaw error 89.8 deg)
+[INFO] [1794925978.503823530] [controller_server]: Stable final-pose mode SLOWING -> ROTATING (distance 0.144 m, speed 0.080 m/s, yaw error 89.5 deg)
+SCENARIO reached=1 seconds=6.26667 failures=0 longest_failure_streak=0 reversals=0 clearance=2.52476 final=-0.140001,0.000424294,1.42156
+[INFO] [1794925978.646988490] [scenario_costmap.scenario_costmap]: Destroying
+[INFO] [1794925978.647890959] [controller_server]: Destroying
+[       OK ] NavigationScenarios.FinalHeadingConvergesWithoutRepeatedReversals (295 ms)
+[ RUN      ] NavigationScenarios.BlockedCorridorNeverBecomesPassableByTuning
+[INFO] [1794925978.651592839] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925978.652506542] [scenario_costmap.scenario_costmap]: 
+	scenario_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794925978.652756699] [scenario_costmap.scenario_costmap]: Creating Costmap
+[INFO] [1794925979.357655568] [controller_server]: Setting transform_tolerance to 0.500000
+[INFO] [1794925979.358219887] [controller_server]: Velocity iterator: BPX threshold enforcement disabled (threshold 0.210)
+[INFO] [1794925979.358321918] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[INFO] [1794925979.358338225] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[INFO] [1794925979.358342859] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358358252] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[INFO] [1794925979.358398026] [controller_server]: RotateToPath critic enabled: enter 68.8 deg, exit 25.8 deg, disabled within 0.30 m of goal
+[INFO] [1794925979.358403715] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358416823] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[INFO] [1794925979.358472681] [controller_server]: Stable final-pose critic: enter 0.15 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.05..0.60 rad/s
+[INFO] [1794925979.358478556] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358491729] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1794925979.358522579] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358537686] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[INFO] [1794925979.358556908] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358569569] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[INFO] [1794925979.358596895] [controller_server]: Forward progress critic enabled: minimum x 0.10 m/s, goal distance 0.30 m, heading error 40.1 deg
+[INFO] [1794925979.358601819] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358614146] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[INFO] [1794925979.358636182] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[INFO] [1794925979.358639561] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358652152] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1794925979.358686782] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358698867] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1794925979.358730964] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358744802] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1794925979.358771118] [controller_server]: Critic plugin initialized
+[INFO] [1794925979.358783229] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1794925979.358814661] [controller_server]: Critic plugin initialized
+SCENARIO reached=0 seconds=65 failures=0 longest_failure_streak=0 reversals=0 clearance=0.0333333 final=-0.393333,-4.78549e-17,-8.02136e-16
+[INFO] [1794925982.910445712] [scenario_costmap.scenario_costmap]: Destroying
+[INFO] [1794925982.911366282] [controller_server]: Destroying
+[       OK ] NavigationScenarios.BlockedCorridorNeverBecomesPassableByTuning (4263 ms)
+[----------] 4 tests from NavigationScenarios (7573 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (7578 ms total)
+[  PASSED  ] 3 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] NavigationScenarios.PassStandingPersonWithSeventyFiveCentimetreSideGap
+
+ 1 FAILED TEST

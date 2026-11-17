@@ -1,0 +1,1 @@
+robot_interfaces.srv.SavePcdMap_Response(success=True, message='loop-optimized PCD maps saved', full_point_count=88400, localization_point_count=12174, colored_point_count=0, colored_keyframe_count=0, occupancy_empty=False, layer_base_z=0.0, layer_z_tolerance=0.0)

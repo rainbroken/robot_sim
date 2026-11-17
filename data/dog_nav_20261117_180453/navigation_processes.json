@@ -1,0 +1,56 @@
+[
+  {
+    "pid": 112874,
+    "executable": "/usr/bin/gzserver-11.10.2",
+    "libraries": []
+  },
+  {
+    "pid": 112888,
+    "executable": "/home/rain/ros_ws/baobao/build/robot_slam/odometry_frame_converter",
+    "libraries": []
+  },
+  {
+    "pid": 112890,
+    "executable": "/home/rain/ros_ws/baobao/build/robot_slam/open3d_localizer",
+    "libraries": []
+  },
+  {
+    "pid": 112892,
+    "executable": "/opt/ros/humble/lib/nav2_map_server/map_server",
+    "libraries": []
+  },
+  {
+    "pid": 112894,
+    "executable": "/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager",
+    "libraries": []
+  },
+  {
+    "pid": 112896,
+    "executable": "/opt/ros/humble/lib/nav2_planner/planner_server",
+    "libraries": [
+      "/opt/ros/humble/lib/libnav2_smac_planner_2d.so"
+    ]
+  },
+  {
+    "pid": 112898,
+    "executable": "/opt/ros/humble/lib/nav2_controller/controller_server",
+    "libraries": [
+      "/home/rain/ros_ws/baobao/build/robot_navigation/librobot_navigation_dwb_plugins.so"
+    ]
+  },
+  {
+    "pid": 112900,
+    "executable": "/opt/ros/humble/lib/nav2_behaviors/behavior_server",
+    "libraries": []
+  },
+  {
+    "pid": 112902,
+    "executable": "/opt/ros/humble/lib/nav2_bt_navigator/bt_navigator",
+    "libraries": []
+  },
+  {
+    "pid": 112950,
+    "executable": "/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager",
+    "libraries": []
+  }
+]

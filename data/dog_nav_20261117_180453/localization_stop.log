@@ -1,0 +1,9 @@
+{
+  "heartbeat_paused": true,
+  "gate_samples": 13,
+  "all_gate_false": true,
+  "safe_samples": 30,
+  "max_safe_linear": 0.0,
+  "max_safe_angular": 0.0,
+  "recovered": true
+}

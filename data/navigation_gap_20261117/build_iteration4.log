@@ -1,0 +1,37 @@
+[0.267s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'robot_navigation' is in: /home/rain/ros_ws/baobao/install/robot_navigation
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding robot_navigation
+
+This may be promoted to an error in a future release of colcon-override-check.
+Starting >>> robot_navigation
+--- stderr: robot_navigation
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_bpx_trajectory_generator.cpp: In member function ‘virtual void DifferentialSampling_DisablesFirmwareDeadZoneAndRetainsStop_Test::TestBody()’:
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_bpx_trajectory_generator.cpp:138:48: warning: converting to ‘const Twist2D’ {aka ‘const nav_2d_msgs::msg::Twist2D_<std::allocator<void> >’} from initializer list would use explicit constructor ‘nav_2d_msgs::msg::Twist2D_<ContainerAllocator>::Twist2D_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+  138 |   for (const auto & twist : generator.getTwists({})) {
+      |                             ~~~~~~~~~~~~~~~~~~~^~~~
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_bpx_trajectory_generator.cpp:138:48: note: in C++11 and above a default constructor can be explicit
+In file included from /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h:62,
+                 from /home/rain/ros_ws/baobao/src/robot_navigation/test/test_stable_rotate_to_goal_critic.cpp:6:
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_stable_rotate_to_goal_critic.cpp: In member function ‘virtual void StableFinalPoseScoring_InterpolationUsesShortestAngleAtPiBoundary_Test::TestBody()’:
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_stable_rotate_to_goal_critic.cpp:141:43: warning: converting to ‘const Trajectory2D’ {aka ‘const dwb_msgs::msg::Trajectory2D_<std::allocator<void> >’} from initializer list would use explicit constructor ‘dwb_msgs::msg::Trajectory2D_<ContainerAllocator>::Trajectory2D_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+  141 |   EXPECT_THROW(dog_nav::finalRotationScore({}, 0, .5), std::invalid_argument);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_stable_rotate_to_goal_critic.cpp:141:43: note: in C++11 and above a default constructor can be explicit
+In file included from /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h:62,
+                 from /home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:17:
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp: In member function ‘virtual void {anonymous}::NavigationScenarios_CenterGradientKeepsCollisionRejectionAndCacheParity_Test::TestBody()’:
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:325:29: warning: converting to ‘const Twist2D’ {aka ‘const nav_2d_msgs::msg::Twist2D_<std::allocator<void> >’} from initializer list would use explicit constructor ‘nav_2d_msgs::msg::Twist2D_<ContainerAllocator>::Twist2D_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+  325 |   ASSERT_TRUE(critic.prepare(Pose(), {}, Pose(), {}));
+      |               ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:325:29: note: in C++11 and above a default constructor can be explicit
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:325:29: warning: converting to ‘const Path2D’ {aka ‘const nav_2d_msgs::msg::Path2D_<std::allocator<void> >’} from initializer list would use explicit constructor ‘nav_2d_msgs::msg::Path2D_<ContainerAllocator>::Path2D_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+/home/rain/ros_ws/baobao/src/robot_navigation/test/test_navigation_scenarios.cpp:325:29: note: in C++11 and above a default constructor can be explicit
+---
+Finished <<< robot_navigation [12.1s]
+
+Summary: 1 package finished [12.3s]
+  1 package had stderr output: robot_navigation

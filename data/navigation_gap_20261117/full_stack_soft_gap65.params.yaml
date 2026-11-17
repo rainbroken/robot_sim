@@ -1,0 +1,238 @@
+bt_navigator:
+  ros__parameters:
+    use_sim_time: true
+    global_frame: map
+    robot_base_frame: base_footprint
+    odom_topic: /odom
+    transform_tolerance: 0.5
+    bt_loop_duration: 20
+    default_server_timeout: 30
+controller_server:
+  ros__parameters:
+    use_sim_time: true
+    odom_topic: /odom
+    controller_frequency: 15.0
+    min_x_velocity_threshold: 0.005
+    min_y_velocity_threshold: 0.005
+    min_theta_velocity_threshold: 0.005
+    # Allow the 2 Hz replanner one complete update before controller recovery.
+    failure_tolerance: 1.2
+    progress_checker_plugin: progress_checker
+    goal_checker_plugins: [general_goal_checker]
+    controller_plugins: [FollowPath]
+    progress_checker:
+      plugin: nav2_controller::SimpleProgressChecker
+      required_movement_radius: 0.08
+      movement_time_allowance: 15.0
+    #正常单点导航，有朝向限制
+    general_goal_checker:
+      plugin: nav2_controller::SimpleGoalChecker
+      stateful: true
+      xy_goal_tolerance: 0.15
+      yaw_goal_tolerance: 0.15
+    FollowPath:
+      plugin: dog_nav::ParallelDwbLocalPlanner
+      # On switchbacks, retaining 2 m behind can make DWB crop at the old leg
+      # before reaching the current leg. Keep the passed portion shorter than
+      # the distance between adjacent flights; retain 2 m of forward context.
+      # DWB 默认保留约 2 米已走路径。下完一段楼梯再折返时，旧路段重新进入局部范围，路径截取可能提前结束，导致评分器拿不到当前该走的路段，反而引导机器人朝旧路段转向。
+      prune_plan: true
+      prune_distance: 0.5
+      forward_prune_distance: 2.0
+      shorten_transformed_plan: true
+      publish_global_plan: true
+      publish_transformed_plan: true
+      trajectory_generator_name: dog_nav::BpxTrajectoryGenerator
+      bpx_startup_threshold: 0.21
+      # Gazebo differential drive has no quadruped BPX SDK dead zone.
+      # Keep explicit stop samples, but permit slow independent vx/wz commands.
+      bpx_enforce_startup_threshold: false
+      debug_trajectory_details: false
+      publish_evaluation: false
+      publish_trajectories: false
+
+      # Baobao is differential: no lateral/reverse samples.
+      min_vel_x: 0.0
+      max_vel_x: 0.30
+      min_vel_y: 0.0
+      max_vel_y: 0.0
+      max_vel_theta: 0.6
+      min_speed_xy: 0.0
+      max_speed_xy: 0.30
+      min_speed_theta: 0.05
+      acc_lim_x: 0.4
+      acc_lim_y: 0.0
+      acc_lim_theta: 0.8
+      decel_lim_x: -0.5
+      decel_lim_y: 0.0
+      decel_lim_theta: -1.0
+      vx_samples: 16
+      vy_samples: 1
+      vtheta_samples: 25
+      sim_time: 1.7
+      linear_granularity: 0.025
+      angular_granularity: 0.025
+      transform_tolerance: 0.5
+      trans_stopped_velocity: 0.08
+      short_circuit_trajectory_evaluation: true
+      stateful: true
+      default_critic_namespaces: [dwb_critics, dog_nav]
+      critics: [GoalApproachMotion, RotateToPath, StableRotateToGoal, Oscillation, PredictiveObstacle, CachedObstacleFootprint, ForwardProgress, LateralVelocity, GoalAlign, PathAlign, PathDist, GoalDist]
+      PredictiveObstacle.scale: 30.0
+      PredictiveObstacle.prediction_horizon: 1.7
+      PredictiveObstacle.prediction_margin: 0.06
+      PredictiveObstacle.minimum_speed: 0.05
+      PredictiveObstacle.maximum_speed: 0.8
+      GoalApproachMotion.scale: 1.0
+      GoalApproachMotion.enable_distance: 0.30
+      # Permit curved obstacle detours. Reserve mandatory in-place alignment
+      # for major heading changes; collision checks still gate every candidate.
+      RotateToPath.scale: 1.0
+      RotateToPath.enter_angle: 1.20
+      RotateToPath.exit_angle: 0.45
+      RotateToPath.lookahead_distance: 0.40
+      RotateToPath.goal_distance_threshold: 0.30
+      RotateToPath.goal_change_tolerance: 0.10
+      RotateToPath.max_translation_speed: 0.0
+      RotateToPath.min_rotation_speed: 0.05
+      StableRotateToGoal.scale: 18.0
+      StableRotateToGoal.enter_distance: 0.15
+      StableRotateToGoal.position_tolerance: 0.15
+      StableRotateToGoal.exit_distance: 0.20
+      StableRotateToGoal.reposition_yaw_tolerance: 0.30
+      StableRotateToGoal.yaw_tolerance: 0.15
+      StableRotateToGoal.min_rotation_speed: 0.05
+      StableRotateToGoal.max_rotation_speed: 0.6
+      StableRotateToGoal.slowing_factor: 4.0
+      # Short angular scoring horizon avoids a long, slow terminal rotation;
+      # collision checking still covers the full 1.7 second trajectory.
+      StableRotateToGoal.lookahead_time: 0.6
+      StableRotateToGoal.approach_distance: 0.30
+      StableRotateToGoal.approach_angular_scale: 0.5
+      StableRotateToGoal.goal_change_position_tolerance: 0.05
+      StableRotateToGoal.goal_change_yaw_tolerance: 0.10
+      # Raw footprint costs are 0..253; normalize their influence against
+      # path/goal distances. Lethal/unknown collisions remain illegal.
+      CachedObstacleFootprint.scale: 0.20
+      CachedObstacleFootprint.score_center: true
+      ForwardProgress.scale: 12.0
+      ForwardProgress.minimum_forward_speed: 0.10
+      ForwardProgress.goal_distance_threshold: 0.30
+      ForwardProgress.heading_error_threshold: 0.70
+      ForwardProgress.lookahead_distance: 0.40
+      LateralVelocity.scale: 20.0
+      LateralVelocity.deadband: 0.03
+      # Allow lateral alignment in the same area as GoalApproachMotion.
+      LateralVelocity.goal_distance_threshold: 0.30
+      PathAlign.scale: 8.0
+      PathAlign.forward_point_distance: 0.20
+      GoalAlign.scale: 0.0
+      GoalAlign.forward_point_distance: 0.15
+      PathDist.scale: 12.0
+      GoalDist.scale: 15.0
+      
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      use_sim_time: true
+      update_frequency: 10.0
+      publish_frequency: 3.0
+      global_frame: odom
+      robot_base_frame: base_footprint
+      rolling_window: true
+      width: 6
+      height: 6
+      resolution: 0.05
+      transform_tolerance: 0.5
+      # Neutral-arm collision envelope; measured meshes, not the reference car radius.
+      footprint: "[[0.24, 0.25], [0.24, -0.25], [-0.24, -0.25], [-0.24, 0.25]]"
+      footprint_padding: 0.02
+      plugins: [obstacle_layer, inflation_layer]
+      obstacle_layer:
+        plugin: nav2_costmap_2d::ObstacleLayer
+        observation_sources: scan
+        scan:
+          topic: /scan
+          data_type: LaserScan
+          expected_update_rate: 0.5
+          marking: true
+          clearing: true
+          inf_is_valid: false
+          min_obstacle_height: -0.1
+          max_obstacle_height: 1.0
+          obstacle_min_range: 0.0
+          obstacle_max_range: 5.0
+          raytrace_min_range: 0.0
+          raytrace_max_range: 8.0
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        cost_scaling_factor: 5.0
+        inflation_radius: 0.5
+      always_send_full_costmap: true
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      use_sim_time: true
+      update_frequency: 2.0
+      publish_frequency: 1.0
+      global_frame: map
+      robot_base_frame: base_footprint
+      resolution: 0.05
+      transform_tolerance: 0.5
+      track_unknown_space: true
+      footprint: "[[0.24, 0.25], [0.24, -0.25], [-0.24, -0.25], [-0.24, 0.25]]"
+      footprint_padding: 0.02
+      plugins: [static_layer, obstacle_layer, inflation_layer]
+      static_layer:
+        plugin: nav2_costmap_2d::StaticLayer
+        map_subscribe_transient_local: true
+      obstacle_layer:
+        plugin: nav2_costmap_2d::ObstacleLayer
+        observation_sources: scan
+        scan:
+          topic: /scan
+          data_type: LaserScan
+          expected_update_rate: 0.5
+          marking: true
+          clearing: true
+          inf_is_valid: false
+          min_obstacle_height: -0.1
+          max_obstacle_height: 1.0
+          obstacle_max_range: 8.0
+          raytrace_max_range: 10.0
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        cost_scaling_factor: 5.0
+        inflation_radius: 0.5
+      always_send_full_costmap: true
+planner_server:
+  ros__parameters:
+    use_sim_time: true
+    expected_planner_frequency: 2.2
+    planner_plugins: [GridBased]
+    GridBased:
+      plugin: nav2_smac_planner/SmacPlanner2D
+      tolerance: 0.15
+      downsample_costmap: false
+      allow_unknown: false
+      max_iterations: 1000000
+      max_on_approach_iterations: 1000
+      max_planning_time: 2.0
+      cost_travel_multiplier: 3.0
+      use_final_approach_orientation: false
+behavior_server:
+  ros__parameters:
+    use_sim_time: true
+    costmap_topic: local_costmap/costmap_raw
+    footprint_topic: local_costmap/published_footprint
+    cycle_frequency: 10.0
+    behavior_plugins: [spin, wait]
+    spin: {plugin: nav2_behaviors/Spin}
+    wait: {plugin: nav2_behaviors/Wait}
+    global_frame: odom
+    robot_base_frame: base_footprint
+    transform_tolerance: 0.5
+    simulate_ahead_time: 2.0
+    max_rotational_vel: 0.5
+    min_rotational_vel: 0.21
+    rotational_acc_lim: 1.0

@@ -1,0 +1,50 @@
+[
+  {
+    "goal": [
+      -5.3,
+      2.2,
+      1.5707963267948966
+    ],
+    "status": 4,
+    "succeeded": true,
+    "wall_seconds": 53.681061766999846,
+    "max_recoveries": 3,
+    "last_distance_remaining": 0.12071067839860916,
+    "final_map_pose": [
+      -5.221564669355344,
+      2.242527169798271,
+      1.7071865671884785
+    ],
+    "final_map_xy_goal_error": 0.08922253787237494,
+    "final_map_yaw_goal_error": 0.13639024039358197,
+    "final_gazebo_pose": [
+      -5.217101384439059,
+      2.2545673098994867,
+      1.7085898791879268
+    ]
+  },
+  {
+    "goal": [
+      0.0,
+      3.3,
+      0.0
+    ],
+    "status": 6,
+    "succeeded": false,
+    "wall_seconds": 103.23149427000135,
+    "max_recoveries": 19,
+    "last_distance_remaining": 0.0,
+    "final_map_pose": [
+      -2.2746048867439725,
+      3.3781349097503877,
+      0.05537132014193621
+    ],
+    "final_map_xy_goal_error": 2.275946496497943,
+    "final_map_yaw_goal_error": 0.05537132014193621,
+    "final_gazebo_pose": [
+      -2.305031278150105,
+      3.401128936612885,
+      0.05503685796143516
+    ]
+  }
+]

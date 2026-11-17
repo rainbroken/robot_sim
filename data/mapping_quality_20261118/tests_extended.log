@@ -1,0 +1,35 @@
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 13 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 13 tests from MapOccupancy
+[ RUN      ] MapOccupancy.FurnitureSurvivesRaysAboveIt
+[       OK ] MapOccupancy.FurnitureSurvivesRaysAboveIt (0 ms)
+[ RUN      ] MapOccupancy.EndpointOrderDoesNotChangeMap
+[       OK ] MapOccupancy.EndpointOrderDoesNotChangeMap (0 ms)
+[ RUN      ] MapOccupancy.SavedAndIncrementalMapsAgree
+[       OK ] MapOccupancy.SavedAndIncrementalMapsAgree (0 ms)
+[ RUN      ] MapOccupancy.ClearingStopsAtProjectedObstacle
+[       OK ] MapOccupancy.ClearingStopsAtProjectedObstacle (0 ms)
+[ RUN      ] MapOccupancy.LowObstacleHeightUsesBaseNotLidar
+[       OK ] MapOccupancy.LowObstacleHeightUsesBaseNotLidar (0 ms)
+[ RUN      ] MapOccupancy.RaysStartAtPhysicalLidarXY
+[       OK ] MapOccupancy.RaysStartAtPhysicalLidarXY (0 ms)
+[ RUN      ] MapOccupancy.UsesMappingCloudInsteadOfCoarseDescriptor
+[       OK ] MapOccupancy.UsesMappingCloudInsteadOfCoarseDescriptor (0 ms)
+[ RUN      ] MapOccupancy.EmptyAndOutOfHeightOrRangeStayUnknown
+[       OK ] MapOccupancy.EmptyAndOutOfHeightOrRangeStayUnknown (0 ms)
+[ RUN      ] MapOccupancy.RepeatedFreeObservationsCanClearAnOldObstacle
+[       OK ] MapOccupancy.RepeatedFreeObservationsCanClearAnOldObstacle (0 ms)
+[ RUN      ] MapOccupancy.KeyframeOrderDoesNotChangeEvidence
+[       OK ] MapOccupancy.KeyframeOrderDoesNotChangeEvidence (0 ms)
+[ RUN      ] MapOccupancy.LoopCorrectionRemovesOldEvidence
+[       OK ] MapOccupancy.LoopCorrectionRemovesOldEvidence (1 ms)
+[ RUN      ] MapOccupancy.LayerResetDoesNotLeakPreviousLayer
+[       OK ] MapOccupancy.LayerResetDoesNotLeakPreviousLayer (0 ms)
+[ RUN      ] MapOccupancy.IncrementalPatchMatchesSavedGrid
+[       OK ] MapOccupancy.IncrementalPatchMatchesSavedGrid (0 ms)
+[----------] 13 tests from MapOccupancy (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 13 tests.

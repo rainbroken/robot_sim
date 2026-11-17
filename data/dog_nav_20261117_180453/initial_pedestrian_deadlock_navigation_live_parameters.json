@@ -1,0 +1,21 @@
+{
+  "controller_server": {
+    "FollowPath.plugin": "dog_nav::ParallelDwbLocalPlanner",
+    "FollowPath.trajectory_generator_name": "dog_nav::BpxTrajectoryGenerator",
+    "FollowPath.bpx_startup_threshold": 0.21,
+    "FollowPath.min_vel_x": 0.0,
+    "FollowPath.max_vel_x": 0.3,
+    "FollowPath.min_vel_y": 0.0,
+    "FollowPath.max_vel_y": 0.0,
+    "FollowPath.max_vel_theta": 0.6
+  },
+  "planner_server": {
+    "GridBased.plugin": "nav2_smac_planner/SmacPlanner2D"
+  },
+  "behavior_server": {
+    "min_rotational_vel": 0.21
+  },
+  "command_watchdog": {
+    "require_localization": true
+  }
+}

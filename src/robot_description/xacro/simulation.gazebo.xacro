@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Horizontal virtual scan origin: same XY as the real sensor, on the floor.
+       Height limits in the projection node are therefore ground-relative. -->
+  <link name="scan_link"/>
+  <joint name="scan_joint" type="fixed">
+    <parent link="base_footprint"/><child link="scan_link"/>
+    <origin xyz="$(arg lidar_x) $(arg lidar_y) 0" rpy="0 0 0"/>
+  </joint>
+  <!-- Simulation assumption only: IMU axes and origin coincide with lidar.
+       Not a calibrated MID360 internal extrinsic. Change before real hardware. -->
+  <link name="imu_link">
+    <inertial><mass value="0.001"/><inertia ixx="1e-7" iyy="1e-7" izz="1e-7" ixy="0" ixz="0" iyz="0"/></inertial>
+  </link>
+  <joint name="imu_joint" type="fixed">
+    <parent link="mid360_link"/><child link="imu_link"/><origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  <gazebo reference="mid360_mount_joint"><preserveFixedJoint>true</preserveFixedJoint></gazebo>
+  <gazebo reference="imu_joint"><preserveFixedJoint>true</preserveFixedJoint></gazebo>
+  <gazebo reference="mid360_link">
+    <material>Gazebo/Black</material>
+    <sensor name="mid360_link" type="ray">
+      <pose>0 0 0 0 0 0</pose><always_on>true</always_on>
+      <visualize>false</visualize><update_rate>10</update_rate>
+      <!-- Small base RaySensor supplies the update callback. The plugin creates
+           its actual non-repetitive ODE rays from the vendored CSV sequence. -->
+      <ray><scan><horizontal><samples>2</samples><resolution>1</resolution><min_angle>0</min_angle><max_angle>0.01</max_angle></horizontal></scan>
+        <range><min>0.1</min><max>30</max><resolution>0.002</resolution></range></ray>
+      <plugin name="mid360_points" filename="libmid360_plugin.so">
+        <ros><namespace>/</namespace></ros>
+        <ray><scan>
+          <horizontal><samples>10</samples><resolution>1</resolution><min_angle>0</min_angle><max_angle>6.28318530718</max_angle></horizontal>
+          <vertical><samples>10</samples><resolution>1</resolution><min_angle>-0.126</min_angle><max_angle>0.964</max_angle></vertical>
+        </scan><range><min>0.1</min><max>30</max><resolution>0.002</resolution></range></ray>
+        <samples>20000</samples><downsample>$(arg lidar_downsample)</downsample>
+        <csv_file_name>$(find mid360_simulation)/scan_mode/mid360.csv</csv_file_name>
+        <topic>/livox/lidar</topic><noise_stddev>${0.01 * float('$(arg sensor_noise_scale)')}</noise_stddev>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="imu_link">
+    <sensor name="mid360_imu" type="imu">
+      <always_on>true</always_on><update_rate>200</update_rate>
+      <imu>
+        <angular_velocity>
+          <x><noise type="gaussian"><stddev>${0.001 * float('$(arg sensor_noise_scale)')}</stddev></noise></x>
+          <y><noise type="gaussian"><stddev>${0.001 * float('$(arg sensor_noise_scale)')}</stddev></noise></y>
+          <z><noise type="gaussian"><stddev>${0.001 * float('$(arg sensor_noise_scale)')}</stddev></noise></z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x><noise type="gaussian"><stddev>${0.01 * float('$(arg sensor_noise_scale)')}</stddev></noise></x>
+          <y><noise type="gaussian"><stddev>${0.01 * float('$(arg sensor_noise_scale)')}</stddev></noise></y>
+          <z><noise type="gaussian"><stddev>${0.01 * float('$(arg sensor_noise_scale)')}</stddev></noise></z>
+        </linear_acceleration>
+      </imu>
+      <plugin name="mid360_imu_ros" filename="libgazebo_ros_imu_sensor.so">
+        <ros><namespace>/</namespace><remapping>~/out:=/livox/imu</remapping></ros>
+        <frame_name>imu_link</frame_name><initial_orientation_as_reference>false</initial_orientation_as_reference>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <xacro:macro name="wheel_contact" params="link mu">
+    <gazebo reference="${link}">
+      <mu1>${mu}</mu1><mu2>${mu}</mu2><kp>1000000</kp><kd>10</kd>
+      <minDepth>0.0001</minDepth><maxVel>0.1</maxVel><material>Gazebo/Black</material>
+    </gazebo>
+  </xacro:macro>
+  <xacro:wheel_contact link="left_wheel_link" mu="1.0"/>
+  <xacro:wheel_contact link="right_wheel_link" mu="1.0"/>
+  <xacro:wheel_contact link="front_caster_wheel_link" mu="0.05"/>
+  <xacro:wheel_contact link="rear_caster_wheel_link" mu="0.05"/>
+  <gazebo>
+    <plugin name="baobao_diff_drive" filename="librobot_sim_diff_drive.so">
+      <ros><namespace>/</namespace><remapping>cmd_vel:=cmd_vel_safe</remapping><remapping>odom:=wheel_odom</remapping></ros>
+      <update_rate>100</update_rate><num_wheel_pairs>1</num_wheel_pairs>
+      <left_joint>left_wheel_joint</left_joint><right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.35</wheel_separation><wheel_diameter>0.13</wheel_diameter>
+      <max_wheel_torque>2.0</max_wheel_torque><max_wheel_acceleration>0.6</max_wheel_acceleration>
+      <publish_odom>true</publish_odom><publish_odom_tf>false</publish_odom_tf><publish_wheel_tf>false</publish_wheel_tf>
+      <odometry_source>0</odometry_source><odometry_frame>odom</odometry_frame><robot_base_frame>base_footprint</robot_base_frame>
+    </plugin>
+    <plugin name="baobao_joint_states" filename="libgazebo_ros_joint_state_publisher.so">
+      <ros><namespace>/</namespace></ros><update_rate>50</update_rate>
+      <joint_name>left_wheel_joint</joint_name><joint_name>right_wheel_joint</joint_name>
+      <joint_name>left_hand_joint</joint_name><joint_name>right_hand_joint</joint_name>
+      <joint_name>front_caster_swivel_joint</joint_name><joint_name>front_caster_roll_joint</joint_name>
+      <joint_name>rear_caster_swivel_joint</joint_name><joint_name>rear_caster_roll_joint</joint_name>
+    </plugin>
+  </gazebo>
+</robot>

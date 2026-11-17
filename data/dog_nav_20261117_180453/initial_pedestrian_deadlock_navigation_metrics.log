@@ -1,0 +1,67 @@
+{
+  "wall_seconds": 346.42604468599893,
+  "counts": {
+    "/cmd_vel_safe": 6921,
+    "/localization/status": 1015,
+    "/map": 1,
+    "/gazebo/model_states": 5774,
+    "/cmd_vel": 2060
+  },
+  "commands": {
+    "/cmd_vel_safe": {
+      "samples": 6921,
+      "nonzero": 2015,
+      "below_021": 0,
+      "startup_021": 112,
+      "max_abs_y": 0.0,
+      "min_nonzero_norm": 0.21,
+      "max_abs_x": 0.3,
+      "max_abs_yaw": 0.6
+    },
+    "/cmd_vel": {
+      "samples": 2060,
+      "nonzero": 1515,
+      "below_021": 0,
+      "startup_021": 86,
+      "max_abs_y": 0.0,
+      "min_nonzero_norm": 0.21,
+      "max_abs_x": 0.3,
+      "max_abs_yaw": 0.6
+    }
+  },
+  "transitions": [
+    {
+      "wall_seconds": 0.4046129829985148,
+      "state": "UNINITIALIZED",
+      "message": "map loaded; waiting for /initialpose"
+    },
+    {
+      "wall_seconds": 8.867207870998755,
+      "state": "LOCALIZING",
+      "message": "automatic localization from map origin; confirming with ICP"
+    },
+    {
+      "wall_seconds": 9.882692786999542,
+      "state": "TRACKING",
+      "message": "Open3D localization tracking; observation accepted"
+    }
+  ],
+  "measurement_note": "Latest TF versus latest Gazebo model_states; no strict time alignment or trajectory alignment. Diagnostic only.",
+  "xy_error_m": {
+    "mean": 0.028200195404261188,
+    "max": 0.12284565997730475,
+    "last": 0.029753683063447663
+  },
+  "yaw_error_rad": {
+    "mean": 0.002366693557401741,
+    "max": 0.021524119590964563,
+    "last": 0.0009855355115452671
+  },
+  "occupancy": {
+    "width": 317,
+    "height": 237,
+    "resolution": 0.05000000074505806,
+    "known": 70706,
+    "occupied": 3936
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "gtests": 43,
+  "files_sha256": {
+    "src/robot_navigation/config/nav2.yaml": "520220d6646d9eeff8a52ccdcb9bedc4f8630d196ed92a400cca7adb210ca538",
+    "src/robot_navigation/src/bpx_trajectory_generator.cpp": "13b4127b4d477c77544fe8dbe114f155de8690563c5190b5a850d5063794daf1",
+    "src/robot_navigation/src/cached_obstacle_footprint_critic.cpp": "744c28f03b5f2742349db8e6e09238a550d15594c9113510693902a5cbbcfa57",
+    "src/robot_navigation/src/stable_rotate_to_goal_critic.cpp": "4c4cac73dd30cb4712c6c3c847ac98449e660e636830b971af9d2786e68850eb",
+    "src/robot_navigation/src/parallel_dwb_local_planner.cpp": "6cae7902a0af264c890a47a472e12f82de665404b3ebb72d2793660f6228da5a",
+    "src/robot_navigation/behavior_trees/navigate_to_pose_no_backup.xml": "305bde766f5735ce2b800d3ce91a115b1112697276e60785349b0ac7e0d7a0b5",
+    "src/robot_navigation/behavior_trees/navigate_through_poses_no_backup.xml": "a3b447a63d8fdb5d303eb1ffb66c31ec8a980b066c44d544c44bef225ed0668a",
+    "scripts/test_navigation_synthetic.py": "adfaace28f6232c94ea077333b116cea79836c4e9216fd04e147a12eb2b4016d"
+  },
+  "full_stack": {
+    "final_res025_standing65": {
+      "model": "ideal differential plant + synthetic scans; real Nav2 servers/BT",
+      "person": "standing",
+      "wall": 0.85,
+      "status": 4,
+      "params_file": "/home/rain/ros_ws/baobao/data/navigation_gap_20261117/final_res025_standing65.params.yaml",
+      "succeeded": true,
+      "collision": false,
+      "min_padded_footprint_clearance": 0.01258755589929389,
+      "min_physical_footprint_clearance": 0.03258755589929391,
+      "padding_margin_violated": false,
+      "sim_seconds": 14.459999999999702,
+      "final_pose": [
+        1.6475722819248884,
+        -0.07920748049313414,
+        0.1215199999999993
+      ],
+      "max_recoveries": 0,
+      "matches_final_yaml": true
+    },
+    "final_res025_standing75": {
+      "model": "ideal differential plant + synthetic scans; real Nav2 servers/BT",
+      "person": "standing",
+      "wall": 0.95,
+      "status": 4,
+      "params_file": "/home/rain/ros_ws/baobao/data/navigation_gap_20261117/final_res025_standing75.params.yaml",
+      "succeeded": true,
+      "collision": false,
+      "min_padded_footprint_clearance": 0.024102915285469872,
+      "min_physical_footprint_clearance": 0.04410291528546989,
+      "padding_margin_violated": false,
+      "sim_seconds": 15.459999999999681,
+      "final_pose": [
+        1.65534677487082,
+        -0.08276930113257315,
+        1.4453599999999982
+      ],
+      "max_recoveries": 0,
+      "matches_final_yaml": true
+    },
+    "corridor_res025": {
+      "model": "ideal differential plant + synthetic scans; real Nav2 servers/BT",
+      "person": "none",
+      "wall": 0.35,
+      "status": 4,
+      "params_file": "/home/rain/ros_ws/baobao/data/navigation_gap_20261117/corridor_res025.params.yaml",
+      "succeeded": true,
+      "collision": false,
+      "min_padded_footprint_clearance": 0.06788471890547182,
+      "min_physical_footprint_clearance": 0.08795021120394322,
+      "padding_margin_violated": false,
+      "sim_seconds": 12.999999999999723,
+      "final_pose": [
+        1.6349415290434453,
+        -0.011263935006352331,
+        -0.0032800000000005555
+      ],
+      "max_recoveries": 0,
+      "matches_final_yaml": true
+    },
+    "final_res025_crossing": {
+      "model": "ideal differential plant + synthetic scans; real Nav2 servers/BT",
+      "person": "crossing",
+      "wall": 0.95,
+      "status": null,
+      "params_file": "/home/rain/ros_ws/baobao/data/navigation_gap_20261117/final_res025_crossing.params.yaml",
+      "succeeded": false,
+      "collision": true,
+      "min_padded_footprint_clearance": -0.020674423913407236,
+      "min_physical_footprint_clearance": -0.0006744239134072183,
+      "padding_margin_violated": true,
+      "sim_seconds": 5.819999999999887,
+      "final_pose": [
+        -0.2047002589694901,
+        -0.16772585318123126,
+        -0.10940000000000014
+      ],
+      "max_recoveries": 0,
+      "matches_final_yaml": true
+    }
+  }
+}

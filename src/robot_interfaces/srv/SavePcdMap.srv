@@ -1,0 +1,16 @@
+string output_directory
+bool occupancy_only
+bool skip_occupancy
+bool reset_occupancy
+# Save only the keyframes collected since the previous layer checkpoint.
+bool layer_snapshot
+---
+bool success
+string message
+uint64 full_point_count
+uint64 localization_point_count
+uint64 colored_point_count
+uint64 colored_keyframe_count
+bool occupancy_empty
+float64 layer_base_z
+float64 layer_z_tolerance

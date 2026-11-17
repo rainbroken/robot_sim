@@ -1,0 +1,13 @@
+[INFO] [1794934423.196313641] [mapping_route]: Reached waypoint 1/24 (-5.19, 0.00)
+[INFO] [1794934435.442140646] [mapping_route]: Reached waypoint 2/24 (-5.30, 2.09)
+[INFO] [1794934440.547483927] [mapping_route]: Reached waypoint 3/24 (-5.30, 3.18)
+[INFO] [1794934464.998546923] [mapping_route]: Reached waypoint 4/24 (-0.11, 3.30)
+[INFO] [1794934472.946099156] [mapping_route]: Reached waypoint 5/24 (-0.01, 2.31)
+[INFO] [1794934482.198182288] [mapping_route]: Reached waypoint 6/24 (0.01, 0.12)
+[INFO] [1794934506.748132159] [mapping_route]: Reached waypoint 7/24 (5.19, -0.00)
+[INFO] [1794934518.894449858] [mapping_route]: Reached waypoint 8/24 (5.29, 2.08)
+[INFO] [1794934524.044748853] [mapping_route]: Reached waypoint 9/24 (5.30, 3.19)
+[INFO] [1794934548.297065805] [mapping_route]: Reached waypoint 10/24 (0.11, 3.30)
+[INFO] [1794934564.899883025] [mapping_route]: Reached waypoint 11/24 (0.01, 0.12)
+[INFO] [1794934571.789529838] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ros2run]: Process exited with failure 1

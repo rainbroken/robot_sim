@@ -1,0 +1,1069 @@
+[INFO] [launch]: All log files can be found below /home/rain/.ros/log/2026-11-17-18-28-31-365034-rain-112854
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: JUNIOR custom DWB + BPX 0.21 + SmacPlanner2D; external localization owns map -> odom.
+[INFO] [gzserver-1]: process started with pid [112874]
+[INFO] [robot_state_publisher-2]: process started with pid [112876]
+[INFO] [ukf_node-3]: process started with pid [112878]
+[INFO] [command_watchdog-4]: process started with pid [112880]
+[INFO] [cloud_to_scan-5]: process started with pid [112882]
+[INFO] [spawn_entity.py-6]: process started with pid [112884]
+[INFO] [fastlio_mapping-7]: process started with pid [112886]
+[INFO] [odometry_frame_converter-8]: process started with pid [112888]
+[INFO] [open3d_localizer-9]: process started with pid [112890]
+[INFO] [map_server-10]: process started with pid [112892]
+[INFO] [lifecycle_manager-11]: process started with pid [112894]
+[INFO] [planner_server-12]: process started with pid [112896]
+[INFO] [controller_server-13]: process started with pid [112898]
+[INFO] [behavior_server-14]: process started with pid [112900]
+[INFO] [bt_navigator-15]: process started with pid [112902]
+[INFO] [lifecycle_manager-16]: process started with pid [112950]
+[INFO] [navigation_gate-17]: process started with pid [112980]
+[lifecycle_manager-11] [INFO] [1794911311.718651294] [lifecycle_manager_map]: Creating
+[lifecycle_manager-11] [INFO] [1794911311.726173501] [lifecycle_manager_map]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-12] [INFO] [1794911311.743729665] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1794911311.746263431] [planner_server]: Creating
+[odometry_frame_converter-8] [INFO] [1794911311.747674662] [odometry_frame_converter]: Waiting for stationary IMU samples on /livox/imu before publishing mapping data
+[lifecycle_manager-16] [INFO] [1794911311.749186084] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-16] [INFO] [1794911311.761176528] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-13] [INFO] [1794911311.761438103] [controller_server]: 
+[controller_server-13] 	controller_server lifecycle node launched. 
+[controller_server-13] 	Waiting on external lifecycle transitions to activate
+[controller_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1794911311.767319093] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1794911311.768892313] [global_costmap.global_costmap]: Creating Costmap
+[map_server-10] [INFO] [1794911311.770891303] [map_server]: 
+[map_server-10] 	map_server lifecycle node launched. 
+[map_server-10] 	Waiting on external lifecycle transitions to activate
+[map_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-10] [INFO] [1794911311.771018880] [map_server]: Creating
+[controller_server-13] [INFO] [1794911311.773862413] [controller_server]: Creating controller server
+[lifecycle_manager-11] [INFO] [1794911311.775594774] [lifecycle_manager_map]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-11] [INFO] [1794911311.775637785] [lifecycle_manager_map]: [34m[1mConfiguring map_server[0m[0m
+[map_server-10] [INFO] [1794911311.779709512] [map_server]: Configuring
+[map_server-10] [INFO] [1794911311.779790455] [map_io]: Loading yaml file: /home/rain/ros_ws/baobao/data/dog_nav_20261117_180453/map/occupancy.yaml
+[map_server-10] [INFO] [1794911311.780058493] [map_io]: resolution: 0.05
+[map_server-10] [INFO] [1794911311.780071400] [map_io]: origin[0]: -7.95
+[map_server-10] [INFO] [1794911311.780078051] [map_io]: origin[1]: -5.9
+[map_server-10] [INFO] [1794911311.780084433] [map_io]: origin[2]: 0
+[map_server-10] [INFO] [1794911311.780090953] [map_io]: free_thresh: 0.196
+[map_server-10] [INFO] [1794911311.780097269] [map_io]: occupied_thresh: 0.65
+[map_server-10] [INFO] [1794911311.780103934] [map_io]: mode: trinary
+[map_server-10] [INFO] [1794911311.780110437] [map_io]: negate: 0
+[map_server-10] [INFO] [1794911311.780305608] [map_io]: Loading image_file: /home/rain/ros_ws/baobao/data/dog_nav_20261117_180453/map/occupancy.pgm
+[behavior_server-14] [INFO] [1794911311.785549101] [behavior_server]: 
+[behavior_server-14] 	behavior_server lifecycle node launched. 
+[behavior_server-14] 	Waiting on external lifecycle transitions to activate
+[behavior_server-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[robot_state_publisher-2] [INFO] [1794911311.788093396] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-2] [INFO] [1794911311.788231076] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1794911311.788242181] [robot_state_publisher]: got segment front_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794911311.788247486] [robot_state_publisher]: got segment front_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794911311.788252389] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1794911311.788256781] [robot_state_publisher]: got segment left_hand_link
+[robot_state_publisher-2] [INFO] [1794911311.788260889] [robot_state_publisher]: got segment left_wheel_link
+[robot_state_publisher-2] [INFO] [1794911311.788264947] [robot_state_publisher]: got segment mid360_link
+[robot_state_publisher-2] [INFO] [1794911311.788269277] [robot_state_publisher]: got segment rear_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794911311.788273557] [robot_state_publisher]: got segment rear_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794911311.788277703] [robot_state_publisher]: got segment right_hand_link
+[robot_state_publisher-2] [INFO] [1794911311.788281826] [robot_state_publisher]: got segment right_wheel_link
+[robot_state_publisher-2] [INFO] [1794911311.788285459] [robot_state_publisher]: got segment scan_link
+[map_server-10] [INFO] [1794911311.791193031] [map_io]: Read map /home/rain/ros_ws/baobao/data/dog_nav_20261117_180453/map/occupancy.pgm: 317 X 237 map @ 0.05 m/cell
+[lifecycle_manager-11] [INFO] [1794911311.800415329] [lifecycle_manager_map]: [34m[1mActivating map_server[0m[0m
+[map_server-10] [INFO] [1794911311.800788338] [map_server]: Activating
+[map_server-10] [INFO] [1794911311.801602881] [map_server]: Creating bond (map_server) to lifecycle manager.
+[bt_navigator-15] [INFO] [1794911311.812793363] [bt_navigator]: 
+[bt_navigator-15] 	bt_navigator lifecycle node launched. 
+[bt_navigator-15] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-15] [INFO] [1794911311.812937462] [bt_navigator]: Creating
+[controller_server-13] [INFO] [1794911311.815149916] [local_costmap.local_costmap]: 
+[controller_server-13] 	local_costmap lifecycle node launched. 
+[controller_server-13] 	Waiting on external lifecycle transitions to activate
+[controller_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-13] [INFO] [1794911311.815784090] [local_costmap.local_costmap]: Creating Costmap
+[fastlio_mapping-7] [INFO] [1794911311.833699126] [fastlio_frontend]: Scan matching threads: 2
+[fastlio_mapping-7] [INFO] [1794911311.834523144] [fastlio_frontend]: p_pre->lidar_type 5
+[fastlio_mapping-7] [INFO] [1794911311.843813328] [fastlio_frontend]: Node init finished.
+[open3d_localizer-9] [INFO] [1794911311.857371414] [open3d_localizer]: Loaded Open3D map map with 11609 fine points
+[lifecycle_manager-11] [INFO] [1794911311.913971404] [lifecycle_manager_map]: Server map_server connected with bond.
+[lifecycle_manager-11] [INFO] [1794911311.914015062] [lifecycle_manager_map]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-11] [INFO] [1794911311.914022797] [lifecycle_manager_map]: [34m[1mCreating bond timer...[0m[0m
+[spawn_entity.py-6] [INFO] [1794911312.055980177] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-6] [INFO] [1794911312.056220066] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-6] [INFO] [1794911312.057812822] [spawn_entity]: Waiting for entity xml on robot_description
+[gzserver-1] [INFO] [1794911312.462925897] [gazebo.gazebo_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-1] [INFO] [1794911312.463866556] [gazebo.gazebo_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[spawn_entity.py-6] [INFO] [1794911313.022050208] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-6] [INFO] [1794911313.022323897] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-6] [INFO] [1794911313.024915105] [spawn_entity]: Calling service /spawn_entity
+[gzserver-1] [INFO] [1794911313.352358495] [Mid360Plugin]: 加载扫描模式文件: /home/rain/ros_ws/baobao/install/mid360_simulation/share/mid360_simulation/scan_mode/mid360.csv
+[gzserver-1] [CsvReader] 成功读取 800000 条扫描数据
+[gzserver-1] [INFO] [1794911313.779561645] [Mid360Plugin]: ROS 话题: /livox/lidar
+[gzserver-1] [INFO] [1794911313.791747949] [Mid360Plugin]: 扫描点数: 800000
+[gzserver-1] [INFO] [1794911313.792203413] [Mid360Plugin]: 采样数: 20000, 降采样: 5
+[gzserver-1] [INFO] [1794911314.372727567] [Mid360Plugin]: Mid-360 仿真插件加载完成
+[spawn_entity.py-6] [INFO] [1794911314.393702868] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [robot]
+[gzserver-1] [INFO] [1794911314.432239162] [baobao_diff_drive]: Wheel pair 1 separation set to [0.350000m]
+[gzserver-1] [INFO] [1794911314.432290769] [baobao_diff_drive]: Wheel pair 1 diameter set to [0.130000m]
+[gzserver-1] [INFO] [1794911314.433494138] [baobao_diff_drive]: Subscribed to [/cmd_vel_safe]
+[gzserver-1] [INFO] [1794911314.435119464] [baobao_diff_drive]: Advertise odometry on [/wheel_odom]
+[gzserver-1] [INFO] [1794911314.445583601] [baobao_joint_states]: Going to publish joint [left_wheel_joint]
+[gzserver-1] [INFO] [1794911314.445616146] [baobao_joint_states]: Going to publish joint [right_wheel_joint]
+[gzserver-1] [INFO] [1794911314.445620256] [baobao_joint_states]: Going to publish joint [left_hand_joint]
+[gzserver-1] [INFO] [1794911314.445623533] [baobao_joint_states]: Going to publish joint [right_hand_joint]
+[gzserver-1] [INFO] [1794911314.445626393] [baobao_joint_states]: Going to publish joint [front_caster_swivel_joint]
+[gzserver-1] [INFO] [1794911314.445629213] [baobao_joint_states]: Going to publish joint [front_caster_roll_joint]
+[gzserver-1] [INFO] [1794911314.445632021] [baobao_joint_states]: Going to publish joint [rear_caster_swivel_joint]
+[gzserver-1] [INFO] [1794911314.445634825] [baobao_joint_states]: Going to publish joint [rear_caster_roll_joint]
+[INFO] [spawn_entity.py-6]: process has finished cleanly [pid 112884]
+[fastlio_mapping-7] Multi thread started 
+[fastlio_mapping-7] IMU Initial Done
+[fastlio_mapping-7] [WARN] [1794911314.691336735] [fastlio_frontend]: No point, skip this scan!
+[fastlio_mapping-7] 
+[fastlio_mapping-7] [INFO] [1794911314.812671921] [fastlio_frontend]: Initialize the map kdtree
+[odometry_frame_converter-8] [INFO] [1794911319.712283444] [odometry_frame_converter]: Collecting stationary gravity samples: 777 samples, 3.88 s; last reset: mean gravity direction stable for 0.88 of 2.00 s
+[odometry_frame_converter-8] [WARN] [1794911319.752840261] [odometry_frame_converter]: Waiting for gravity alignment before publishing the leveled cloud
+[odometry_frame_converter-8] [INFO] [1794911321.117455753] [odometry_frame_converter]: Gravity alignment locked: 1001 samples over 5.00 s, accel norm 9.8102 (input units), gyro RMS 0.0021 rad/s, direction spread 0.592 deg, up=(-0.50105, -0.00109, 0.86542), correction rpy=(-0.072, 30.069, 0.023) deg
+[open3d_localizer-9] [INFO] [1794911321.313455115] [open3d_localizer]: Automatic localization started from map origin: x=0.00 y=0.00 z=0.00 yaw=0.00
+[lifecycle_manager-16] [INFO] [1794911322.553264548] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1794911322.553331076] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1794911322.553683405] [planner_server]: Configuring
+[planner_server-12] [INFO] [1794911322.553733387] [global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1794911322.557950341] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1794911322.561171258] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-12] [INFO] [1794911322.562435085] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1794911322.562462070] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1794911322.562910599] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1794911322.565315046] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1794911322.565353688] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1794911322.565922159] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1794911322.573289225] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 317 X 237 at 0.050000 m/pix
+[planner_server-12] [INFO] [1794911322.575494787] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlanner2D
+[planner_server-12] [INFO] [1794911322.575527941] [planner_server]: Configuring GridBased of type SmacPlanner2D
+[planner_server-12] [INFO] [1794911322.576979335] [planner_server]: Configured plugin GridBased of type SmacPlanner2D with tolerance 0.15, maximum iterations 1000000, max on approach iterations 1000, and not allowing unknown traversal.
+[planner_server-12] [INFO] [1794911322.577017316] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1794911322.584159796] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-13] [INFO] [1794911322.584364241] [controller_server]: Configuring controller interface
+[controller_server-13] [INFO] [1794911322.584546337] [controller_server]: getting goal checker plugins..
+[controller_server-13] [INFO] [1794911322.584636174] [controller_server]: Controller frequency set to 15.0000Hz
+[controller_server-13] [INFO] [1794911322.584676279] [local_costmap.local_costmap]: Configuring
+[controller_server-13] [INFO] [1794911322.589144797] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-13] [INFO] [1794911322.591006163] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-13] [INFO] [1794911322.592807055] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-13] [INFO] [1794911322.592836361] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-13] [INFO] [1794911322.593210036] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-13] [INFO] [1794911322.600098514] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-13] [INFO] [1794911322.600764336] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-13] [INFO] [1794911322.601012890] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-13] [INFO] [1794911322.604082146] [controller_server]: Created controller : FollowPath of type dog_nav::ParallelDwbLocalPlanner
+[controller_server-13] [INFO] [1794911322.604739719] [controller_server]: Setting transform_tolerance to 0.500000
+[controller_server-13] [INFO] [1794911322.610730177] [controller_server]: BPX velocity iterator enabled with combined startup threshold 0.210
+[controller_server-13] [INFO] [1794911322.611357940] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[controller_server-13] [INFO] [1794911322.611495490] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[controller_server-13] [INFO] [1794911322.611514648] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.611587232] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[controller_server-13] [INFO] [1794911322.611933140] [controller_server]: RotateToPath critic enabled: enter 34.4 deg, exit 14.3 deg, disabled within 0.30 m of goal
+[controller_server-13] [INFO] [1794911322.611952293] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.612027066] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[controller_server-13] [INFO] [1794911322.612363769] [controller_server]: Stable final-pose critic: enter 0.13 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.21..0.60 rad/s
+[controller_server-13] [INFO] [1794911322.612381456] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.612429216] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-13] [INFO] [1794911322.612802748] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.612912769] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[controller_server-13] [INFO] [1794911322.613049821] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.613139072] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[controller_server-13] [INFO] [1794911322.613461890] [controller_server]: Forward progress critic enabled: minimum x 0.21 m/s, goal distance 0.30 m, heading error 40.1 deg
+[controller_server-13] [INFO] [1794911322.613486672] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.613599932] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[controller_server-13] [INFO] [1794911322.613736764] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[controller_server-13] [INFO] [1794911322.613747619] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.613829318] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-13] [INFO] [1794911322.614188302] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.614311918] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-13] [INFO] [1794911322.614797497] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.614975665] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-13] [INFO] [1794911322.615331069] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.615528407] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-13] [INFO] [1794911322.615906163] [controller_server]: Critic plugin initialized
+[controller_server-13] [INFO] [1794911322.615933066] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1794911322.622907569] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-14] [INFO] [1794911322.623084247] [behavior_server]: Configuring
+[behavior_server-14] [INFO] [1794911322.627984540] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-14] [INFO] [1794911322.628758578] [behavior_server]: Configuring spin
+[behavior_server-14] [INFO] [1794911322.633160540] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-14] [INFO] [1794911322.634098590] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1794911322.638048918] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-15] [INFO] [1794911322.638176171] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1794911322.677555129] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1794911322.677705479] [planner_server]: Activating
+[planner_server-12] [INFO] [1794911322.677751867] [global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1794911322.677767452] [global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1794911322.677865860] [global_costmap.global_costmap]: start
+[planner_server-12] [INFO] [1794911323.228607861] [planner_server]: Activating plugin GridBased of type SmacPlanner2D
+[planner_server-12] [INFO] [1794911323.229694091] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1794911323.333487435] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1794911323.333533840] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-13] [INFO] [1794911323.333800294] [controller_server]: Activating
+[controller_server-13] [INFO] [1794911323.333852279] [local_costmap.local_costmap]: Activating
+[controller_server-13] [INFO] [1794911323.333870244] [local_costmap.local_costmap]: Checking transform
+[controller_server-13] [INFO] [1794911323.333993373] [local_costmap.local_costmap]: start
+[controller_server-13] [INFO] [1794911323.434820734] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1794911323.538654268] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1794911323.538696796] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-14] [INFO] [1794911323.538951926] [behavior_server]: Activating
+[behavior_server-14] [INFO] [1794911323.538989005] [behavior_server]: Activating spin
+[behavior_server-14] [INFO] [1794911323.539010187] [behavior_server]: Activating wait
+[behavior_server-14] [INFO] [1794911323.539027960] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1794911323.642502073] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1794911323.642536268] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-15] [INFO] [1794911323.642751689] [bt_navigator]: Activating
+[bt_navigator-15] [INFO] [1794911323.668230043] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[bt_navigator-15] [INFO] [1794911323.671025943] [bt_navigator]: Begin navigating from current location (-0.02, 0.01) to (-5.30, 2.20)
+[controller_server-13] [INFO] [1794911323.711600347] [controller_server]: Received a goal, begin computing control effort.
+[lifecycle_manager-16] [INFO] [1794911323.770683871] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1794911323.770723122] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1794911323.770729845] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[navigation_gate-17] [INFO] [1794911323.804711278] [navigation_gate]: Nav2 lifecycle startup success=True
+[controller_server-13] [WARN] [1794911324.115081987] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.115139839] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.115195639] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.181495820] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.181536782] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.181557472] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.247323789] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.247352631] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.247371691] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.314115175] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.314142999] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.314166940] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.380670452] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.380700396] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.380721016] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.447495656] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.447526421] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.447546823] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.514008933] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.514038819] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.514058185] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.580609750] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.580637947] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.580657307] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.647336120] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.647371340] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.647393315] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911324.714099754] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911324.714162701] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911324.714184222] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911324.714199756] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911324.714226246] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-13] [INFO] [1794911324.751473343] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-13] [INFO] [1794911324.751930388] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911324.842219754] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911324.846014452] [controller_server]: Control loop missed its desired rate of 15.0000Hz
+[controller_server-13] [WARN] [1794911325.287667567] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.287710819] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.287731202] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.354506290] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.354567953] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.354602254] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.422523773] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.422576188] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.422615127] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.488633335] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.488682197] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.488715740] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.554766186] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.554799122] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.554818275] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.621035777] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.621066031] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.621083579] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.687614236] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.687645006] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.687665536] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.754312517] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.754342788] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.754368666] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911325.821146525] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911325.821178118] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911325.821201687] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911325.885549362] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911326.220944252] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.221003370] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.221039135] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.287495740] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.287524999] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.287544467] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.354239386] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.354274726] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.354297771] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.421176766] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.421231140] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.421273966] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.488473496] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.488510229] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.488530962] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.554356108] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.554391156] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.554415826] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.621063351] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.621092257] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.621115747] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.687742591] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.687825939] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.687863823] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.754216282] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.754255952] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.754275723] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911326.820993637] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911326.821026670] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911326.821047225] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911326.821055969] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911326.821102615] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-13] [INFO] [1794911326.854194191] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-12] [INFO] [1794911326.854400848] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-13] [INFO] [1794911327.211469894] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [WARN] [1794911327.680766900] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911327.680816574] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911327.680851482] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911327.747762228] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911327.747800081] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911327.747820333] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911327.813804472] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911327.813844624] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911327.813879693] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911327.881864937] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911327.881916803] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911327.881953258] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911327.948198407] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911327.948240582] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911327.948276170] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.014831351] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.014870091] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.014903502] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.081663961] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.081709155] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.081745101] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.148245387] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.148286058] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.148316927] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.214952246] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.214990860] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.215025675] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911328.278455159] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911328.613872243] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.613901141] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.613921867] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.680834763] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.680862488] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.680898270] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.747306940] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.747349420] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.747377224] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.814048553] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.814082496] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.814111203] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.880765022] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.880796312] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.880817436] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911328.947302653] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911328.947333310] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911328.947353406] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.013856570] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.013890260] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.013912292] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.080672442] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.080702062] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.080721706] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.147348890] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.147379398] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.147398465] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.214091225] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.214118543] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.214137800] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911329.214146083] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911329.214179697] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-13] [INFO] [1794911329.251348555] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-13] [INFO] [1794911329.251820299] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911329.342124207] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911329.344658187] [controller_server]: Control loop missed its desired rate of 15.0000Hz
+[controller_server-13] [WARN] [1794911329.587538441] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.587575432] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.587596632] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.654098853] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.654175583] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.654198800] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.720895905] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.720937514] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.720974883] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.787686604] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.787727271] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.787748456] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.854319147] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.854350585] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.854370625] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.921116546] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.921144630] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.921162915] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911329.987785620] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911329.987821346] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911329.987841628] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911330.054367008] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911330.054400664] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911330.054419580] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911330.121004928] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911330.121031929] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911330.121050561] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911330.121062816] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911330.121114055] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-14] [INFO] [1794911330.151607458] [behavior_server]: Running spin
+[behavior_server-14] [INFO] [1794911330.151762531] [behavior_server]: Turning 1.57 for spin behavior.
+[behavior_server-14] [INFO] [1794911334.552032158] [behavior_server]: spin completed successfully
+[controller_server-13] [INFO] [1794911334.651421120] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911335.718397017] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911336.320678458] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911336.320742691] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911336.320775637] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911336.387141409] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911336.387169794] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911336.387188530] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911336.453930319] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911336.453972380] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911336.453997897] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911336.520636174] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911336.520676136] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911336.520701701] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911336.587439957] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911336.587484573] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911336.587513766] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911336.653802640] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911336.653836594] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911336.653861348] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911336.720411586] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911336.720445766] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911336.720478138] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911336.785107394] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911337.851732100] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911338.918399384] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911339.985066586] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911340.987089285] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911340.987130985] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911340.987152299] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911341.051729689] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911342.051732829] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911343.118397513] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911343.520500653] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.520534665] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.520556077] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911343.587179919] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.587210270] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.587228963] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911343.653742346] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.653773532] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.653795172] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911343.720550682] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.720582206] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.720606759] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911343.787002338] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.787038789] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.787057574] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911343.853648341] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.853683464] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.853703751] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911343.920539188] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.920569116] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.920590393] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911343.987041614] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911343.987111102] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911343.987142903] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911344.053713260] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911344.053757713] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911344.053780623] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911344.120459302] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911344.120497030] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911344.120525599] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911344.120534352] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911344.120595552] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-13] [INFO] [1794911344.151285548] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-13] [INFO] [1794911344.151764721] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911344.242125319] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911344.244471082] [controller_server]: Control loop missed its desired rate of 15.0000Hz
+[controller_server-13] [INFO] [1794911345.285414425] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911346.352069881] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911347.352110450] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911348.418733118] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911349.485407664] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911350.552107653] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911351.618741005] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911352.685410212] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911353.752104257] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911354.818737520] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911355.885434982] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911356.952103530] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911357.952106110] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911359.018739795] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911360.085406461] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911361.152067677] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911362.218732690] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911363.285437770] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911364.352108539] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911365.418738069] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911366.485440856] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911367.552108596] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911368.552110796] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911369.618735508] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911370.685412505] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911371.752072090] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911372.818735231] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911373.885450266] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911374.952078807] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911376.018736431] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911377.085403089] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911378.152070803] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911379.152066241] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911379.685463207] [controller_server]: Stable final-pose mode APPROACH -> SLOWING (distance 0.122 m, speed 0.129 m/s, yaw error -116.0 deg)
+[controller_server-13] [INFO] [1794911379.952174291] [controller_server]: Stable final-pose mode SLOWING -> ROTATING (distance 0.101 m, speed 0.075 m/s, yaw error -115.5 deg)
+[controller_server-13] [INFO] [1794911380.218734306] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911381.285438642] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911382.352072417] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911383.418739186] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911384.485439093] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911385.087099721] [controller_server]: Reached the goal!
+[bt_navigator-15] [INFO] [1794911385.151213979] [bt_navigator]: Goal succeeded
+[bt_navigator-15] [INFO] [1794911385.152214060] [bt_navigator]: Begin navigating from current location (-5.23, 2.23) to (0.00, 3.30)
+[controller_server-13] [INFO] [1794911385.192642692] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911385.193002696] [controller_server]: Stable final-pose mode ROTATING -> APPROACH (distance 5.308 m, speed 0.000 m/s, yaw error -97.6 deg)
+[controller_server-13] [INFO] [1794911386.259572923] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911387.326275154] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911388.392943886] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911389.459572338] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911390.526254040] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911391.592946438] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911392.592906600] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911393.659578768] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911394.726293308] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911395.792912555] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911396.859605622] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911397.926275331] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911398.992943787] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911399.992904877] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911401.059579653] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911402.126244777] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911403.192907040] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911404.259580300] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911405.326291342] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911405.995996148] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911405.996047644] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911405.996093621] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.063885794] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.063958856] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.064010499] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.130302211] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.130357357] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.130409312] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.196708708] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.196771019] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.196816880] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.263237372] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.263282864] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.263322294] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.329848293] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.329901286] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.329946069] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911406.392915133] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911406.795184172] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.795219032] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.795241690] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.861814622] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.861841571] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.861859758] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.928488473] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.928532309] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.928555203] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911406.995094647] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911406.995125283] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911406.995146780] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911407.061964754] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911407.062003419] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911407.062025694] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911407.128393703] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911407.128422727] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911407.128442904] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911407.194918889] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911407.194951945] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911407.194971812] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911407.261656463] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911407.261686908] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911407.261711822] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911407.328586591] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911407.328621355] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911407.328644037] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911407.395624716] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911407.395667099] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911407.395693125] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911407.395703183] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911407.395774541] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-13] [INFO] [1794911407.412797128] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911408.479880190] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911409.546525226] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911410.613175413] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911411.679841382] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911412.746478339] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911413.813179372] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911414.813179115] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911415.546533024] [controller_server]: Stable final-pose mode APPROACH -> SLOWING (distance 0.123 m, speed 0.113 m/s, yaw error 24.5 deg)
+[controller_server-13] [INFO] [1794911415.879844137] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911415.880080106] [controller_server]: Stable final-pose mode SLOWING -> ROTATING (distance 0.105 m, speed 0.066 m/s, yaw error 23.2 deg)
+[controller_server-13] [INFO] [1794911416.946542198] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911417.015751636] [controller_server]: Reached the goal!
+[bt_navigator-15] [INFO] [1794911417.092378934] [bt_navigator]: Goal succeeded
+[bt_navigator-15] [INFO] [1794911417.093098322] [bt_navigator]: Begin navigating from current location (-0.11, 3.31) to (5.30, -2.20)
+[controller_server-13] [INFO] [1794911417.133618285] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911417.133976247] [controller_server]: Stable final-pose mode ROTATING -> APPROACH (distance 7.725 m, speed 0.000 m/s, yaw error -82.0 deg)
+[controller_server-13] [INFO] [1794911418.200566803] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911419.267237348] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911420.333934824] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911421.400570857] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911422.467280361] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911423.533946321] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911424.600570930] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911425.667269911] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911426.733936169] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911427.733899350] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911428.800555166] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911429.867289624] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911430.933936357] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911432.000577691] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911433.067244506] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911434.002683100] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911434.002738737] [controller_server]: No valid trajectories out of 113! 
+[controller_server-13] [INFO] [1794911434.133912446] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911435.200567977] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911436.200620092] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911437.267235423] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911438.333937858] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911439.400575084] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911440.467235022] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911441.533938384] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911442.533872623] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911443.600570115] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911444.667268099] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911445.733901884] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911446.800574843] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911447.867263476] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911448.933855547] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911450.000567540] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911451.067279308] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911452.133899968] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911453.133903009] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911454.200572111] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911455.267276186] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911456.333905620] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911457.400568175] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911458.467238473] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911459.533901283] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911460.600576396] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911461.667266582] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911462.733950674] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911463.733902127] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911464.800566286] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911465.069637360] [controller_server]: Reached the goal!
+[bt_navigator-15] [INFO] [1794911465.133330428] [bt_navigator]: Goal succeeded
+[bt_navigator-15] [INFO] [1794911465.134092446] [bt_navigator]: Begin navigating from current location (5.28, -2.08) to (-5.30, -3.00)
+[controller_server-13] [INFO] [1794911465.174633416] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911466.241615208] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911467.308331628] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911468.374961271] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911469.441621078] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911470.508319609] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911471.574958462] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911472.641613859] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911473.708303695] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911474.774986630] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911475.774985116] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911476.841613178] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911477.908341777] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911478.974988469] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911480.041624172] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911481.108316553] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911482.174989315] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911482.443718839] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.443793158] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.443822892] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.510378046] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.510409088] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.510434246] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.577178306] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.577214260] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.577242349] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.643939382] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.643973850] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.643997146] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.711574101] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.711612961] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.711646822] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.777392646] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.777423710] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.777445962] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.843711843] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.843739783] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.843760133] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.910515657] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.910552535] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.910572791] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911482.977043045] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911482.977090864] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911482.977114655] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.043677772] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.043714520] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.043737088] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911483.043745644] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911483.043790321] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-13] [INFO] [1794911483.074432236] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-13] [INFO] [1794911483.074899891] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911483.208558798] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911483.344088197] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.344125877] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.344147228] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.411446020] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.411481798] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.411501918] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.477476230] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.477504788] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.477534217] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.544022571] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.544049833] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.544067430] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.610675492] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.610705360] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.610726434] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.677320414] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.677353425] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.677375056] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.743953302] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.743981653] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.744000260] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.810674305] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.810710751] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.810731988] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.877509082] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.877539289] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.877562697] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911483.944147911] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911483.944179747] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911483.944202015] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911483.944210413] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911483.944255604] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-14] [INFO] [1794911483.974540616] [behavior_server]: Running wait
+[behavior_server-14] [INFO] [1794911489.974696757] [behavior_server]: wait completed successfully
+[controller_server-13] [INFO] [1794911490.074642088] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911491.141661648] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911492.208329086] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911493.275036895] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911494.341642961] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911494.610275932] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911494.610332412] [controller_server]: No valid trajectories out of 114! 
+[controller_server-13] [INFO] [1794911495.408348569] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911496.474959240] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911497.541660855] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911498.608327043] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911499.675007624] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911500.674992081] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911501.741663886] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911502.808328732] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911503.875025744] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911504.941666558] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911506.008362755] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911507.075009187] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911507.477430801] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.477461444] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.477486041] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911507.544839384] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.544876101] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.544910990] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911507.611578561] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.611655053] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.611702761] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911507.678080319] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.678120111] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.678154378] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911507.744880066] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.744926753] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.744968224] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911507.810990154] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.811033362] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.811054443] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911507.877211546] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.877245385] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.877263003] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911507.944101188] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911507.944135304] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911507.944157011] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911508.010604264] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911508.010643146] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911508.010663859] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911508.077058015] [controller_server]: DWB rejected 4.3%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911508.077091520] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911508.077111426] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [ERROR] [1794911508.077120596] [controller_server]: Controller patience exceeded
+[controller_server-13] [WARN] [1794911508.077177400] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-13] [INFO] [1794911508.094490984] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [WARN] [1794911508.630080831] [controller_server]: DWB rejected 53.9%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911508.630134061] [controller_server]: DWB rejected 46.1%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911508.630153465] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911509.161453561] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911509.564407246] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911509.564470116] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911509.631111882] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911509.631174012] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911510.228157399] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911511.294785684] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911512.361500562] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911513.428160722] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911514.494822540] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911515.561456894] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911516.628163529] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911517.694787790] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911518.694822056] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911518.697123420] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911518.697141786] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911518.697163222] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911518.763353253] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911518.763380499] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911518.763399172] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911518.831985385] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911518.832044929] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911518.832094992] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911518.897119757] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911518.897162375] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911518.897198235] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911518.963665827] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911518.963697029] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911518.963717378] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911519.030196353] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911519.030255404] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911519.030284970] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911519.430029813] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911519.430057431] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911519.430077574] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911519.496978098] [controller_server]: DWB rejected 4.3%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911519.497014799] [controller_server]: DWB rejected 95.7%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-13] [WARN] [1794911519.497037444] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911519.761500426] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911520.363503735] [controller_server]: DWB rejected 50.4%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911520.363540888] [controller_server]: DWB rejected 49.6%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911520.363561250] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911520.430826302] [controller_server]: DWB rejected 50.4%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911520.430870264] [controller_server]: DWB rejected 49.6%: Oscillation: Trajectory is oscillating.
+[controller_server-13] [WARN] [1794911520.430902922] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911520.828118244] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911521.630024141] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911521.630089493] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911521.894791550] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911522.961503837] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911523.763409684] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911523.763459388] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911523.830340735] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911523.830391103] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911524.028127285] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911525.094822092] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911525.163433481] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911525.163488535] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [WARN] [1794911525.230321446] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911525.230405175] [controller_server]: No valid trajectories out of 115! 
+[controller_server-13] [INFO] [1794911526.094780480] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911527.161448178] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911528.228116247] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911529.294826438] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911530.361498541] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911530.496909459] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911530.496961673] [controller_server]: No valid trajectories out of 114! 
+[controller_server-13] [WARN] [1794911530.696763551] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911530.696809357] [controller_server]: No valid trajectories out of 114! 
+[controller_server-13] [INFO] [1794911531.428127646] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911532.494790949] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911533.561485585] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911534.628116970] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911535.694824339] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911536.694781703] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911537.761508196] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911538.828124765] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911539.894784860] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911540.961449012] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911542.028156229] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911543.094785779] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911543.163131762] [controller_server]: Reached the goal!
+[bt_navigator-15] [INFO] [1794911543.234302867] [bt_navigator]: Goal succeeded
+[bt_navigator-15] [INFO] [1794911543.235183341] [bt_navigator]: Begin navigating from current location (-5.19, -3.00) to (0.00, 0.00)
+[controller_server-13] [INFO] [1794911543.275682979] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-13] [INFO] [1794911544.342670707] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911545.409344699] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911546.476037517] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911547.542673583] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911548.609343709] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911549.676036982] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911550.742667600] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911551.809390213] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911552.876050604] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911553.876047101] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911554.942667819] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911556.009375182] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911557.076007718] [controller_server]: Passing new path to controller.
+[controller_server-13] [WARN] [1794911557.611570401] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911557.611645056] [controller_server]: No valid trajectories out of 114! 
+[controller_server-13] [WARN] [1794911557.811539438] [controller_server]: DWB rejected 100.0%: CachedObstacleFootprint: Trajectory Hits Obstacle.
+[controller_server-13] [WARN] [1794911557.811584966] [controller_server]: No valid trajectories out of 114! 
+[controller_server-13] [INFO] [1794911558.142670590] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911559.209332837] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911560.276008456] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911561.342666522] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911562.409376557] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911563.476005527] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911564.476035303] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911565.542662712] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911566.609395732] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911567.676038871] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911568.742665244] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911569.809379514] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911570.876006813] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911571.942667121] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911573.009384748] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911574.076041760] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911575.076006141] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911576.142680496] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911577.209333778] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911578.276004080] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911579.342669928] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911580.409370672] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911581.409335312] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911582.476035744] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911583.542622529] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911584.609387677] [controller_server]: Passing new path to controller.
+[controller_server-13] [INFO] [1794911584.677856282] [controller_server]: Reached the goal!
+[bt_navigator-15] [INFO] [1794911584.755344896] [bt_navigator]: Goal succeeded
+[planner_server-12] [INFO] [1794911642.154697880] [global_costmap.global_costmap]: Message Filter dropping message: frame 'scan_link' at time 274.210 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-12] [WARN] [1794911642.177999106] [global_costmap.global_costmap]: The /scan observation buffer has not been updated for 0.53 seconds, and it should be updated every 0.50 seconds.
+[planner_server-12] [WARN] [1794911642.678024244] [global_costmap.global_costmap]: The /scan observation buffer has not been updated for 0.95 seconds, and it should be updated every 0.50 seconds.
+[planner_server-12] [WARN] [1794911643.177966098] [global_costmap.global_costmap]: The /scan observation buffer has not been updated for 1.38 seconds, and it should be updated every 0.50 seconds.
+[planner_server-12] [WARN] [1794911643.678028867] [global_costmap.global_costmap]: The /scan observation buffer has not been updated for 1.80 seconds, and it should be updated every 0.50 seconds.
+[planner_server-12] [WARN] [1794911644.178024479] [global_costmap.global_costmap]: The /scan observation buffer has not been updated for 2.23 seconds, and it should be updated every 0.50 seconds.
+[planner_server-12] [WARN] [1794911644.678023357] [global_costmap.global_costmap]: The /scan observation buffer has not been updated for 2.63 seconds, and it should be updated every 0.50 seconds.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[controller_server-13] [INFO] [1794911723.689679767] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-13] [INFO] [1794911723.689732427] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-13] [INFO] [1794911723.689813719] [controller_server]: Deactivating
+[behavior_server-14] [INFO] [1794911723.689677318] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-14] [INFO] [1794911723.689731746] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-14] [INFO] [1794911723.689791985] [behavior_server]: Deactivating
+[behavior_server-14] [INFO] [1794911723.689815930] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [navigation_gate-17]: sending signal 'SIGINT' to process[navigation_gate-17]
+[INFO] [lifecycle_manager-16]: sending signal 'SIGINT' to process[lifecycle_manager-16]
+[INFO] [bt_navigator-15]: sending signal 'SIGINT' to process[bt_navigator-15]
+[INFO] [behavior_server-14]: sending signal 'SIGINT' to process[behavior_server-14]
+[INFO] [controller_server-13]: sending signal 'SIGINT' to process[controller_server-13]
+[INFO] [planner_server-12]: sending signal 'SIGINT' to process[planner_server-12]
+[INFO] [lifecycle_manager-11]: sending signal 'SIGINT' to process[lifecycle_manager-11]
+[INFO] [map_server-10]: sending signal 'SIGINT' to process[map_server-10]
+[INFO] [open3d_localizer-9]: sending signal 'SIGINT' to process[open3d_localizer-9]
+[INFO] [odometry_frame_converter-8]: sending signal 'SIGINT' to process[odometry_frame_converter-8]
+[ERROR] [lifecycle_manager-11]: process has died [pid 112894, exit code -2, cmd '/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -r __node:=lifecycle_manager_map --params-file /tmp/launch_params_x6ierz40'].
+[INFO] [fastlio_mapping-7]: sending signal 'SIGINT' to process[fastlio_mapping-7]
+[ERROR] [map_server-10]: process has died [pid 112892, exit code -2, cmd '/opt/ros/humble/lib/nav2_map_server/map_server --ros-args -r __node:=map_server --params-file /tmp/launch_params_vxr0jify'].
+[INFO] [cloud_to_scan-5]: sending signal 'SIGINT' to process[cloud_to_scan-5]
+[INFO] [command_watchdog-4]: sending signal 'SIGINT' to process[command_watchdog-4]
+[ERROR] [odometry_frame_converter-8]: process has died [pid 112888, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/odometry_frame_converter --ros-args --params-file /home/rain/ros_ws/baobao/install/robot_slam/share/robot_slam/config/converter.yaml --params-file /tmp/launch_params_57yez8g6'].
+[ERROR] [open3d_localizer-9]: process has died [pid 112890, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/open3d_localizer --ros-args --params-file /home/rain/ros_ws/baobao/install/robot_slam/share/robot_slam/config/localization.yaml --params-file /tmp/launch_params_9sa0blci --params-file /tmp/launch_params_p2_280_7'].
+[INFO] [ukf_node-3]: sending signal 'SIGINT' to process[ukf_node-3]
+[ERROR] [cloud_to_scan-5]: process has died [pid 112882, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_sim/lib/robot_sim/cloud_to_scan --ros-args --params-file /tmp/launch_params_rfaqt4vu'].
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[ERROR] [command_watchdog-4]: process has died [pid 112880, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_sim/lib/robot_sim/command_watchdog --ros-args --params-file /tmp/launch_params_q585wq4j'].
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[lifecycle_manager-11] [INFO] [1794911723.689683687] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-11] [INFO] [1794911723.689753895] [lifecycle_manager_map]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_map)
+[lifecycle_manager-11] [INFO] [1794911723.689786488] [lifecycle_manager_map]: [34m[1mTerminating bond timer...[0m[0m
+[ERROR] [ukf_node-3]: process has died [pid 112878, exit code -2, cmd '/opt/ros/humble/lib/robot_localization/ukf_node --ros-args -r __node:=ukf_filter_node --params-file /home/rain/ros_ws/baobao/install/robot_sim/share/robot_sim/config/ukf.yaml --params-file /tmp/launch_params_2vt2lnu9 -r /odometry/filtered:=/odom'].
+[bt_navigator-15] [INFO] [1794911723.689683528] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-15] [INFO] [1794911723.689731720] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-15] [INFO] [1794911723.689791993] [bt_navigator]: Deactivating
+[bt_navigator-15] [INFO] [1794911723.689811760] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[planner_server-12] [INFO] [1794911723.689677572] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1794911723.689733033] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-12] [INFO] [1794911723.689804208] [planner_server]: Deactivating
+[planner_server-12] [INFO] [1794911723.689844292] [global_costmap.global_costmap]: Deactivating
+[ERROR] [robot_state_publisher-2]: process has died [pid 112876, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_11i8gs6g'].
+[odometry_frame_converter-8] [INFO] [1794911723.689689139] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ukf_node-3] [INFO] [1794911723.689687849] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[open3d_localizer-9] [INFO] [1794911723.689694133] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[command_watchdog-4] [INFO] [1794911723.689712956] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-13] [INFO] [1794911723.689849785] [local_costmap.local_costmap]: Deactivating
+[map_server-10] [INFO] [1794911723.689938316] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-10] [INFO] [1794911723.690011680] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-10] [INFO] [1794911723.690063538] [map_server]: Deactivating
+[map_server-10] [INFO] [1794911723.690077322] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[fastlio_mapping-7] [INFO] [1794911723.690248982] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[cloud_to_scan-5] [INFO] [1794911723.690244895] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-16] [INFO] [1794911723.689681085] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-16] [INFO] [1794911723.690774913] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-16] [INFO] [1794911723.690820227] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[robot_state_publisher-2] [INFO] [1794911723.690906590] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-14] [INFO] [1794911723.700049196] [behavior_server]: Cleaning up
+[bt_navigator-15] [INFO] [1794911723.700174076] [bt_navigator]: Cleaning up
+[map_server-10] [INFO] [1794911723.700317626] [map_server]: Cleaning up
+[map_server-10] [INFO] [1794911723.700353028] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[navigation_gate-17] Traceback (most recent call last):
+[navigation_gate-17]   File "/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/navigation_gate", line 107, in <module>
+[navigation_gate-17]     main()
+[navigation_gate-17]   File "/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/navigation_gate", line 101, in main
+[navigation_gate-17]     node.destroy_node()
+[navigation_gate-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1691, in destroy_node
+[navigation_gate-17]     self.destroy_service(self._services[0])
+[navigation_gate-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1615, in destroy_service
+[navigation_gate-17]     service.destroy()
+[navigation_gate-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/service.py", line 93, in destroy
+[navigation_gate-17]     self.__service.destroy_when_not_in_use()
+[navigation_gate-17] KeyboardInterrupt
+[map_server-10] [INFO] [1794911723.704147844] [map_server]: Destroying
+[behavior_server-14] [INFO] [1794911723.708669450] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-14] [INFO] [1794911723.709527694] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-11] [INFO] [1794911723.709748779] [lifecycle_manager_map]: Destroying lifecycle_manager_map
+[behavior_server-14] [INFO] [1794911723.711628831] [behavior_server]: Destroying
+[fastlio_mapping-7] [INFO] [1794911723.723556569] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-13] [INFO] [1794911723.734120804] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[bt_navigator-15] [INFO] [1794911723.737959371] [bt_navigator]: Completed Cleaning up
+[bt_navigator-15] [INFO] [1794911723.738003777] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[ERROR] [navigation_gate-17]: process has died [pid 112980, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/navigation_gate --ros-args --params-file /tmp/launch_params_26st3d6n'].
+[bt_navigator-15] [INFO] [1794911723.738984156] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-16] [INFO] [1794911723.741820476] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-15] [INFO] [1794911723.742107073] [bt_navigator]: Destroying
+[lifecycle_manager-16] [INFO] [1794911723.742409683] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[controller_server-13] [INFO] [1794911723.744358949] [controller_server]: Cleaning up
+[controller_server-13] [INFO] [1794911723.744669116] [local_costmap.local_costmap]: Cleaning up
+[controller_server-13] [INFO] [1794911723.748933047] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-13] [INFO] [1794911723.749647662] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-13] [INFO] [1794911723.751548367] [local_costmap.local_costmap]: Destroying
+[controller_server-13] [INFO] [1794911723.754977770] [controller_server]: Destroying
+[INFO] [behavior_server-14]: process has finished cleanly [pid 112900]
+[fastlio_mapping-7] Rebuild thread terminated normally
+[INFO] [fastlio_mapping-7]: process has finished cleanly [pid 112886]
+[INFO] [lifecycle_manager-16]: process has finished cleanly [pid 112950]
+[INFO] [bt_navigator-15]: process has finished cleanly [pid 112902]
+[INFO] [controller_server-13]: process has finished cleanly [pid 112898]
+[INFO] [gzserver-1]: process has finished cleanly [pid 112874]
+[INFO] [launch]: process[gzserver-1] was required: shutting down launched system
+[planner_server-12] [INFO] [1794911724.178108387] [planner_server]: Deactivating plugin GridBased of type SmacPlanner2D
+[planner_server-12] [INFO] [1794911724.178180913] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-12] [INFO] [1794911724.188347467] [planner_server]: Cleaning up
+[planner_server-12] [INFO] [1794911724.190562253] [global_costmap.global_costmap]: Cleaning up
+[planner_server-12] [INFO] [1794911724.191703243] [planner_server]: Cleaning up plugin GridBased of type SmacPlanner2D
+[planner_server-12] [INFO] [1794911724.191985893] [planner_server]: Destroying plugin GridBased of type SmacPlanner2D
+[planner_server-12] [INFO] [1794911724.194234968] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-12] [INFO] [1794911724.194635824] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1794911724.195332516] [global_costmap.global_costmap]: Destroying
+[planner_server-12] [INFO] [1794911724.197426172] [planner_server]: Destroying
+[INFO] [planner_server-12]: process has finished cleanly [pid 112896]

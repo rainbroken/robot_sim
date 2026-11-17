@@ -1,0 +1,18 @@
+description: Local corridor demonstration map; not full-house coverage
+created_date: '2026-11-17'
+scene: house
+pedestrians: 3
+pedestrian_seed: 42
+sensor_noise_scale: 1.0
+lidar_downsample: 5
+map_frame: map
+base_frame: base_footprint
+frontend: FAST-LIO2
+mapping_backend: SOLiD-small_gicp-GTSAM-iSAM2
+localizer: Open3D-ICP
+full_points: 25746
+localization_points: 3782
+resolution: 0.05
+initialization: Near map origin, otherwise provide initialpose
+sensor_model: Instantaneous PointCloud2 snapshots, zero per-point time offsets
+rgb_camera_available: false

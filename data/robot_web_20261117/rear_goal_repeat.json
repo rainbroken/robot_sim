@@ -1,0 +1,124 @@
+{
+  "map_name": "web_test_20261117_193443",
+  "started_at": "2026-11-17T19:34:43",
+  "checks": {
+    "mapping_ready": true,
+    "deadman": {
+      "before_speed": 0.2199862674369797,
+      "after_speed": -0.0005366448112340549,
+      "stopped": true
+    },
+    "teleop_displacement": 1.0523471290386528,
+    "saved_map": true,
+    "navigation_ready": {
+      "localization": {
+        "state": "TRACKING",
+        "message": "Open3D localization tracking; observation accepted",
+        "fitness": 0.9052095573834704,
+        "rmse": 0.18365409193099685
+      },
+      "pose": [
+        1.0605733436777767,
+        0.0006207251555367134,
+        0.0009648262892156003
+      ]
+    },
+    "occupancy": {
+      "width": 193,
+      "height": 234,
+      "known_cells": 13877
+    }
+  },
+  "success": false,
+  "error": "Timeout waiting for navigation result: {'sim_ready': True, 'scan_fresh': True, 'mapping_ready': True, 'frontend_ready': True, 'navigation_ready': False, 'nav2_active': True, 'manual_ready': False, 'pose': [0.8814354364354002, 0.017292747547163884, 3.033318046950017], 'odom': {'linear': -1.9568699362926267e-05, 'angular': -0.0025283881430120583}, 'localization': {'state': 'LOST', 'message': 'ICP quality gate failed repeatedly; holding last map->odom', 'fitness': 0.25902262130892767, 'rmse': 0.32561124164749056}, 'localization_fresh': True, 'navigation': {'state': 'navigating', 'goal': [0.5105733436777766, 0.0006207251555367134, 0.0], 'distance_remaining': 0.3499999940395355, 'recoveries': 10, 'navigation_seconds': 84}, 'scan': [[1.1136424865298005, 0.8272486053091233], [1.0849431909990852, 0.8370499776905761], [0.987847953649303, 0.825133678103223], [0.9566558538076284, 0.8182012622418404], [0.9452290035187407, 0.8322721424175858], [0.9152382849486093, 0.8275146586267934], [0.8987830074024641, 0.8144634889585215], [0.8823291638685489, 0.7976273758280704], [0.8706839930592871, 0.8135401876501304], [0.8574563889244996, 0.8195241388160728], [0.8433240945267765, 0.8173149041943754], [0.828489753775025, 0.8038982181667053], [0.8014019937319075, 0.8049492370815893], [0.7743197938254381, 0.8077192493421517], [0.7603931978791508, 0.8321253204074706], [0.7468831809807434, 0.815839900393875], [0.719896722999872, 0.8077099922848976], [0.705856364716926, 0.8121977278474773], [0.6917636473770477, 0.8152497613226378], [0.6785320635700849, 0.8097597422861949], [0.6652908927415343, 0.8053397268717191], [0.6360446124816617, 0.814049310115098], [0.6203925032723625, 0.8219277110706152], [0.6088589710049224, 0.8082617610530463], [-0.610900084278652, 4.916159105233821], [-0.9771552396224291, 5.822858302837112], [-1.0902456538038798, 5.829603446408252], [-1.5458188746555788, 5.824383006747572], [-1.5447480166739047, 5.043190688564643], [-1.747593945255189, 5.017260300482659], [-2.201600318191062, 5.017628460888973], [-2.478760375050847, 5.07359714623148], [-2.4773294911646526, 4.883175707629332], [-2.4675946234672432, 4.690532464313645], [-2.466860975918384, 4.204844932485014], [-2.507326587425026, 3.828452428700367], [-3.448441812041019, 4.749785765969649], [-3.6142892098585557, 4.766257775924582], [-5.0612342215048916, 5.903808424365458], [-2.4381571688396044, 2.6474289027216975], [-2.450751288096665, 2.5653468953989527], [-0.5379971224247623, 1.0233967101140813], [-0.5488965139756498, 0.9958144776755953], [-0.5320130216802917, 0.9489505433052087], [-0.523781693350391, 0.9096900906822869], [-0.5351882049704241, 0.884487174340271], [-0.5735453956506978, 0.8764346263235488], [-0.6256141522153443, 0.875538222317429], [-0.6850159513275794, 0.877130576329242], [-0.7477065233667418, 0.8784764055905452], [-0.8108456770170446, 0.877869410351487], [-0.8810000751081136, 0.8786959684907735], [-0.959764434416308, 0.8813179789355231], [-1.0590574437710552, 0.8908311048416468], [-1.127071095640951, 0.8826906313990784], [-1.2211171255320346, 0.8834809594093423], [-1.3489795757091465, 0.8948041226915048], [-1.4864374042438464, 0.9052576346140787], [-1.8615891772436481, 0.895200046267802], [-2.0550045382996167, 0.9044471261214168], [-2.2365582610256887, 0.9034317860076132], [-2.4778125688816464, 0.912345986063315], [-2.6721735902540527, 0.9009237786131338], [-3.8515767750632994, 0.9450222961630147], [-4.16000982799885, 0.9169690915316534], [-5.804234414668889, 1.0948174883793353], [-7.8553415542036245, 0.6634453985957329], [-7.8455953400946115, 0.5116971431223597], [-7.853925865585852, -0.09051895846854054], [-7.866726588356908, -0.2415438288946091], [-6.874844354309481, -0.8819221737251911], [-5.833846563994826, -0.8750526922735961], [-3.1429920897318286, -0.859794122663895], [-2.8640202213396075, -0.8634342277034655], [-2.6034553110143066, -0.8621865741046583], [-2.1955310204539655, -0.866315475378059], [-1.842943504015493, -0.8605720778407079], [-1.7112559091214314, -0.8643997743346753], [-1.5684912735334438, -0.8594428053844133], [-1.339314553069388, -0.8578852399169249], [-1.235253457811825, -0.8556719455605556], [-1.1639598971208405, -0.8649009288477564], [-1.0669183665369468, -0.859326321930516], [-0.9799094310339077, -0.8553071308752753], [-0.9114965314535489, -0.857954634881279], [-0.8452417407061182, -0.8594270371965711], [-0.7864308933951573, -0.8628550006928306], [-0.7244210455444459, -0.862371714040424], [-0.6468667016294273, -0.8500544446364657], [-0.6037008446946556, -0.8568886610935367], [-0.5426003433325096, -0.8503501477783947], [-0.5488835080368627, -0.8883237603812522], [-0.5646129911923837, -0.934263690483705], [-0.548359623329617, -0.9580086829737533], [-0.5357672007305795, -0.9846462447733969], [-2.4857079561434343, -2.5892305796267743], [-4.946886915164117, -5.082809643164307], [-4.704032358575373, -5.040390937063439], [-3.8596199580279356, -5.077405933778758], [-2.583885570624932, -3.803020251530319], [-2.503205262865727, -4.13154185218032], [-2.494526580342063, -4.599927272805576], [-2.5067618204133577, -4.79381411999546], [-2.523639286026088, -5.202498228175848], [-2.513015028879577, -5.39323704784326], [-2.5531054760283873, -5.68203374349694], [-2.1024782201765673, -5.810370326049009], [-1.4150778891167692, -4.616606101844469], [-0.9023981691104696, -3.875498061937775], [-0.7651005671041281, -3.7353323627081387], [-0.6391869129048687, -3.6069789018049665], [-0.8509976931213238, -4.628867894481705], [-1.000613202432873, -5.359358524621936], [-0.6704306394962293, -4.627711261086721], [-0.6909122415251122, -5.35179686067513], [-0.2591240724458709, -4.042551679949651], [0.6030843161944888, -0.8211736807938531], [0.6344913911293175, -0.8165038831989209], [0.6513543687018577, -0.8043280470110458], [0.68082114818342, -0.8052325392575604], [0.6932443308780569, -0.8303384962552226], [0.7082042466934408, -0.83230478693463], [0.7236095371795924, -0.8268558736163801], [0.7389850248259652, -0.8164631344090973], [0.7537770697172052, -0.8155930422507829], [0.7684889021845397, -0.8256462260500743], [0.7832551202989094, -0.8144728037601037], [0.7983068387460831, -0.8246252443914024], [0.8431796252687722, -0.8246959188460223], [0.8737586217859064, -0.828562850540839], [0.8888066358013444, -0.8273265471046188], [0.964126854459871, -0.818741900277363]], 'path': [[0.875000087544322, 0.025000182911753654], [0.825000086799264, 0.025000182911753654], [0.7750000860542059, 0.025000182911753654], [0.7250000853091478, 0.025000182911753654], [0.6750000845640898, 0.025000182911753654], [0.6250000838190317, 0.025000182911753654], [0.5750000830739737, 0.025000182911753654], [0.5250000823289156, 0.025000182911753654]], 'transitioning': False, 'sim_time': 121.63, 'map_revision': 5, 'backend': {'mode': 'navigation', 'map_name': 'web_test_20261117_193443', 'pid': 126921, 'exit_code': None, 'log_path': '/home/rain/.local/share/baobao/web_logs/1794915313356558359_navigation.log'}, 'map_root': '/home/rain/ros_ws/baobao/maps', 'job': {'id': '4a482c1155e04c83be32bc54e29f1abc', 'action': 'goal', 'state': 'succeeded', 'message': 'Nav2 已接受目标', 'started_at': '2026-11-17T19:35:28'}}",
+  "last_state": {
+    "sim_ready": true,
+    "scan_fresh": true,
+    "mapping_ready": true,
+    "frontend_ready": true,
+    "navigation_ready": false,
+    "nav2_active": true,
+    "manual_ready": false,
+    "pose": [
+      0.881437243680934,
+      0.017292550881185188,
+      3.033297665269495
+    ],
+    "odom": {
+      "linear": 1.5766711013887047e-05,
+      "angular": 0.0003495078840919945
+    },
+    "localization": {
+      "state": "LOST",
+      "message": "ICP quality gate failed repeatedly; holding last map->odom",
+      "fitness": 0.2499565141763785,
+      "rmse": 0.3132554090828477
+    },
+    "localization_fresh": true,
+    "navigation": {
+      "state": "navigating",
+      "goal": [
+        0.5105733436777766,
+        0.0006207251555367134,
+        0.0
+      ],
+      "distance_remaining": 0.3499999940395355,
+      "recoveries": 10,
+      "navigation_seconds": 84
+    },
+    "scan": 0,
+    "path": [
+      [
+        0.875000087544322,
+        0.025000182911753654
+      ],
+      [
+        0.825000086799264,
+        0.025000182911753654
+      ],
+      [
+        0.7750000860542059,
+        0.025000182911753654
+      ],
+      [
+        0.7250000853091478,
+        0.025000182911753654
+      ],
+      [
+        0.6750000845640898,
+        0.025000182911753654
+      ],
+      [
+        0.6250000838190317,
+        0.025000182911753654
+      ],
+      [
+        0.5750000830739737,
+        0.025000182911753654
+      ],
+      [
+        0.5250000823289156,
+        0.025000182911753654
+      ]
+    ],
+    "transitioning": false,
+    "sim_time": 121.83,
+    "map_revision": 5,
+    "backend": {
+      "mode": "navigation",
+      "map_name": "web_test_20261117_193443",
+      "pid": 126921,
+      "exit_code": null,
+      "log_path": "/home/rain/.local/share/baobao/web_logs/1794915313356558359_navigation.log"
+    },
+    "map_root": "/home/rain/ros_ws/baobao/maps",
+    "job": {
+      "id": "4a482c1155e04c83be32bc54e29f1abc",
+      "action": "goal",
+      "state": "succeeded",
+      "message": "Nav2 已接受目标",
+      "started_at": "2026-11-17T19:35:28"
+    }
+  },
+  "log_tail": "costmap.local_costmap]: Received request to clear entirely the local_costmap\n[planner_server-6] [INFO] [1794915417.961417499] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap\n[controller_server-7] [INFO] [1794915418.061379203] [controller_server]: Received a goal, begin computing control effort.\n[open3d_localizer-3] [WARN] [1794915418.227594265] [open3d_localizer]: ICP REJECT generation=795 phase=LOST fitness=0.2431(min=0.3000) rmse=0.3128(max=0.4500) inliers=1409(min=150) correction=1.028m/0.554rad(max=2.500m/0.800rad) min_eigen=6.627e-03(min=1.000e-04) condition=1.144e+03(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915418.728564006] [open3d_localizer]: ICP REJECT generation=799 phase=LOST fitness=0.2515(min=0.3000) rmse=0.3086(max=0.4500) inliers=1467(min=150) correction=0.868m/0.559rad(max=2.500m/0.800rad) min_eigen=8.044e-03(min=1.000e-04) condition=9.040e+02(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915419.128441012] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915419.227451564] [open3d_localizer]: ICP REJECT generation=804 phase=LOST fitness=0.2647(min=0.3000) rmse=0.3193(max=0.4500) inliers=1540(min=150) correction=0.675m/0.598rad(max=2.500m/0.800rad) min_eigen=1.345e-02(min=1.000e-04) condition=4.718e+02(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915419.725197255] [open3d_localizer]: ICP REJECT generation=808 phase=LOST fitness=0.2512(min=0.3000) rmse=0.3069(max=0.4500) inliers=1407(min=150) correction=1.008m/0.545rad(max=2.500m/0.800rad) min_eigen=6.264e-03(min=1.000e-04) condition=1.221e+03(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915420.195085564] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915420.228783876] [open3d_localizer]: ICP REJECT generation=812 phase=LOST fitness=0.2671(min=0.3000) rmse=0.3175(max=0.4500) inliers=1554(min=150) correction=0.680m/0.586rad(max=2.500m/0.800rad) min_eigen=1.181e-02(min=1.000e-04) condition=5.405e+02(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915420.729287825] [open3d_localizer]: ICP REJECT generation=817 phase=LOST fitness=0.2654(min=0.3000) rmse=0.3159(max=0.4500) inliers=1543(min=150) correction=0.779m/0.592rad(max=2.500m/0.800rad) min_eigen=1.536e-02(min=1.000e-04) condition=4.298e+02(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915421.228726142] [open3d_localizer]: ICP REJECT generation=821 phase=LOST fitness=0.2677(min=0.3000) rmse=0.3201(max=0.4500) inliers=1548(min=150) correction=0.791m/0.589rad(max=2.500m/0.800rad) min_eigen=1.062e-02(min=1.000e-04) condition=6.264e+02(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915421.261723991] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915421.726412339] [open3d_localizer]: ICP REJECT generation=825 phase=LOST fitness=0.2472(min=0.3000) rmse=0.3114(max=0.4500) inliers=1439(min=150) correction=1.025m/0.560rad(max=2.500m/0.800rad) min_eigen=6.916e-03(min=1.000e-04) condition=1.095e+03(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915422.232938931] [open3d_localizer]: ICP REJECT generation=829 phase=LOST fitness=0.2580(min=0.3000) rmse=0.3079(max=0.4500) inliers=1492(min=150) correction=0.785m/0.566rad(max=2.500m/0.800rad) min_eigen=1.006e-02(min=1.000e-04) condition=6.769e+02(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915422.328384671] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915422.728395508] [open3d_localizer]: ICP REJECT generation=834 phase=LOST fitness=0.2497(min=0.3000) rmse=0.3124(max=0.4500) inliers=1445(min=150) correction=1.008m/0.552rad(max=2.500m/0.800rad) min_eigen=6.258e-03(min=1.000e-04) condition=1.209e+03(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915423.227552527] [open3d_localizer]: ICP REJECT generation=838 phase=LOST fitness=0.2522(min=0.3000) rmse=0.3134(max=0.4500) inliers=1410(min=150) correction=1.014m/0.548rad(max=2.500m/0.800rad) min_eigen=6.386e-03(min=1.000e-04) condition=1.187e+03(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915423.395114593] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915423.728317189] [open3d_localizer]: ICP REJECT generation=842 phase=LOST fitness=0.2505(min=0.3000) rmse=0.3108(max=0.4500) inliers=1451(min=150) correction=0.959m/0.556rad(max=2.500m/0.800rad) min_eigen=8.269e-03(min=1.000e-04) condition=9.014e+02(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915424.227055840] [open3d_localizer]: ICP REJECT generation=846 phase=LOST fitness=0.2504(min=0.3000) rmse=0.3088(max=0.4500) inliers=1448(min=150) correction=1.004m/0.557rad(max=2.500m/0.800rad) min_eigen=6.662e-03(min=1.000e-04) condition=1.151e+03(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915424.461718432] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915424.724280030] [open3d_localizer]: ICP REJECT generation=851 phase=LOST fitness=0.2493(min=0.3000) rmse=0.3069(max=0.4500) inliers=1438(min=150) correction=1.009m/0.538rad(max=2.500m/0.800rad) min_eigen=6.064e-03(min=1.000e-04) condition=1.282e+03(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915425.232837786] [open3d_localizer]: ICP REJECT generation=855 phase=LOST fitness=0.2661(min=0.3000) rmse=0.3173(max=0.4500) inliers=1550(min=150) correction=0.777m/0.602rad(max=2.500m/0.800rad) min_eigen=1.378e-02(min=1.000e-04) condition=4.762e+02(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915425.528417892] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915425.730062551] [open3d_localizer]: ICP REJECT generation=859 phase=LOST fitness=0.2694(min=0.3000) rmse=0.3198(max=0.4500) inliers=1570(min=150) correction=0.794m/0.596rad(max=2.500m/0.800rad) min_eigen=1.247e-02(min=1.000e-04) condition=5.306e+02(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915426.229587876] [open3d_localizer]: ICP REJECT generation=863 phase=LOST fitness=0.2678(min=0.3000) rmse=0.3150(max=0.4500) inliers=1509(min=150) correction=0.801m/0.595rad(max=2.500m/0.800rad) min_eigen=1.208e-02(min=1.000e-04) condition=5.409e+02(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915426.595050680] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915426.726996380] [open3d_localizer]: ICP REJECT generation=868 phase=LOST fitness=0.2475(min=0.3000) rmse=0.3129(max=0.4500) inliers=1359(min=150) correction=1.050m/0.550rad(max=2.500m/0.800rad) min_eigen=6.258e-03(min=1.000e-04) condition=1.283e+03(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915427.229946016] [open3d_localizer]: ICP REJECT generation=872 phase=LOST fitness=0.2436(min=0.3000) rmse=0.3161(max=0.4500) inliers=1395(min=150) correction=1.016m/0.564rad(max=2.500m/0.800rad) min_eigen=6.404e-03(min=1.000e-04) condition=1.194e+03(max=1.000e+06) failed_gates=fitness\n[controller_server-7] [INFO] [1794915427.661718104] [controller_server]: Passing new path to controller.\n[open3d_localizer-3] [WARN] [1794915427.730288316] [open3d_localizer]: ICP REJECT generation=876 phase=LOST fitness=0.2590(min=0.3000) rmse=0.3256(max=0.4500) inliers=1500(min=150) correction=0.767m/0.595rad(max=2.500m/0.800rad) min_eigen=1.288e-02(min=1.000e-04) condition=5.256e+02(max=1.000e+06) failed_gates=fitness\n[open3d_localizer-3] [WARN] [1794915428.232719000] [open3d_localizer]: ICP REJECT generation=880 phase=LOST fitness=0.2500(min=0.3000) rmse=0.3133(max=0.4500) inliers=1437(min=150) correction=0.977m/0.537rad(max=2.500m/0.800rad) min_eigen=4.773e-03(min=1.000e-04) condition=1.601e+03(max=1.000e+06) failed_gates=fitness\n"
+}

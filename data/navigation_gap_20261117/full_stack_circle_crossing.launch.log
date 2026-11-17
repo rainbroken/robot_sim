@@ -1,0 +1,411 @@
+[INFO] [launch]: All log files can be found below /home/rain/.ros/log/2026-11-17-22-49-28-665260-rain-12839
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Baobao differential DWB + footprint-checked clearance scoring + SmacPlanner2D; external localization owns map -> odom.
+[INFO] [planner_server-1]: process started with pid [12840]
+[INFO] [controller_server-2]: process started with pid [12842]
+[INFO] [behavior_server-3]: process started with pid [12844]
+[INFO] [bt_navigator-4]: process started with pid [12846]
+[INFO] [lifecycle_manager-5]: process started with pid [12848]
+[lifecycle_manager-5] [INFO] [1794926968.714036678] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-5] [INFO] [1794926968.715649962] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[behavior_server-3] [INFO] [1794926968.719277870] [behavior_server]: 
+[behavior_server-3] 	behavior_server lifecycle node launched. 
+[behavior_server-3] 	Waiting on external lifecycle transitions to activate
+[behavior_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-4] [INFO] [1794926968.721529878] [bt_navigator]: 
+[bt_navigator-4] 	bt_navigator lifecycle node launched. 
+[bt_navigator-4] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-4] [INFO] [1794926968.721594521] [bt_navigator]: Creating
+[planner_server-1] [INFO] [1794926968.724975072] [planner_server]: 
+[planner_server-1] 	planner_server lifecycle node launched. 
+[planner_server-1] 	Waiting on external lifecycle transitions to activate
+[planner_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-1] [INFO] [1794926968.725906572] [planner_server]: Creating
+[controller_server-2] [INFO] [1794926968.726554270] [controller_server]: 
+[controller_server-2] 	controller_server lifecycle node launched. 
+[controller_server-2] 	Waiting on external lifecycle transitions to activate
+[controller_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-1] [INFO] [1794926968.728384806] [global_costmap.global_costmap]: 
+[planner_server-1] 	global_costmap lifecycle node launched. 
+[planner_server-1] 	Waiting on external lifecycle transitions to activate
+[planner_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-1] [INFO] [1794926968.728727190] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-2] [INFO] [1794926968.730921297] [controller_server]: Creating controller server
+[controller_server-2] [INFO] [1794926968.736001272] [local_costmap.local_costmap]: 
+[controller_server-2] 	local_costmap lifecycle node launched. 
+[controller_server-2] 	Waiting on external lifecycle transitions to activate
+[controller_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-2] [INFO] [1794926968.736412585] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-5] [INFO] [1794926968.826137417] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-5] [INFO] [1794926968.826177440] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-1] [INFO] [1794926968.826338035] [planner_server]: Configuring
+[planner_server-1] [INFO] [1794926968.826362489] [global_costmap.global_costmap]: Configuring
+[planner_server-1] [INFO] [1794926968.828354401] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-1] [INFO] [1794926968.830014923] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-1] [INFO] [1794926968.830496967] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-1] [INFO] [1794926968.830510210] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-1] [INFO] [1794926968.830613654] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-1] [INFO] [1794926968.831525587] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-1] [INFO] [1794926968.831538601] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-1] [INFO] [1794926968.831719385] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-1] [INFO] [1794926968.836281148] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlanner2D
+[planner_server-1] [INFO] [1794926968.836305036] [planner_server]: Configuring GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926968.836837208] [planner_server]: Configured plugin GridBased of type SmacPlanner2D with tolerance 0.15, maximum iterations 1000000, max on approach iterations 1000, and not allowing unknown traversal.
+[planner_server-1] [INFO] [1794926968.836853689] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-5] [INFO] [1794926968.839181851] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-2] [INFO] [1794926968.839311100] [controller_server]: Configuring controller interface
+[controller_server-2] [INFO] [1794926968.839370595] [controller_server]: getting goal checker plugins..
+[controller_server-2] [INFO] [1794926968.839390365] [controller_server]: Controller frequency set to 15.0000Hz
+[controller_server-2] [INFO] [1794926968.839402390] [local_costmap.local_costmap]: Configuring
+[planner_server-1] [INFO] [1794926968.840765926] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 120 X 120 at 0.050000 m/pix
+[controller_server-2] [INFO] [1794926968.841241641] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-2] [INFO] [1794926968.842764832] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-2] [INFO] [1794926968.843657471] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-2] [INFO] [1794926968.843668995] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-2] [INFO] [1794926968.843858151] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-2] [INFO] [1794926968.846788404] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-2] [INFO] [1794926968.847057334] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-2] [INFO] [1794926968.847124839] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-2] [INFO] [1794926968.848587702] [controller_server]: Created controller : FollowPath of type dog_nav::ParallelDwbLocalPlanner
+[controller_server-2] [INFO] [1794926968.848799550] [controller_server]: Setting transform_tolerance to 0.500000
+[controller_server-2] [INFO] [1794926968.851434708] [controller_server]: Velocity iterator: BPX threshold enforcement disabled (threshold 0.210)
+[controller_server-2] [INFO] [1794926968.851813714] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[controller_server-2] [INFO] [1794926968.851907777] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[controller_server-2] [INFO] [1794926968.851923376] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.851978233] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[controller_server-2] [INFO] [1794926968.852229089] [controller_server]: RotateToPath critic enabled: enter 68.8 deg, exit 25.8 deg, disabled within 0.30 m of goal
+[controller_server-2] [INFO] [1794926968.852246330] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.852301120] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[controller_server-2] [INFO] [1794926968.852757471] [controller_server]: Stable final-pose critic: enter 0.15 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.05..0.60 rad/s
+[controller_server-2] [INFO] [1794926968.852776080] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.852837811] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-2] [INFO] [1794926968.853025899] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.853087419] [controller_server]: Using critic "PredictiveObstacle" (dog_nav::PredictiveObstacleCritic)
+[controller_server-2] [INFO] [1794926968.853336785] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.853411058] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[controller_server-2] [INFO] [1794926968.853536604] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.853599081] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[controller_server-2] [INFO] [1794926968.853799445] [controller_server]: Forward progress critic enabled: minimum x 0.10 m/s, goal distance 0.30 m, heading error 40.1 deg
+[controller_server-2] [INFO] [1794926968.853815034] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.853897257] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[controller_server-2] [INFO] [1794926968.854044205] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[controller_server-2] [INFO] [1794926968.854058120] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.854129760] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-2] [INFO] [1794926968.854348667] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.854412372] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-2] [INFO] [1794926968.854617636] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.854679116] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-2] [INFO] [1794926968.854850319] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.854922488] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-2] [INFO] [1794926968.855102948] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926968.855118729] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-5] [INFO] [1794926968.858695947] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-3] [INFO] [1794926968.858819140] [behavior_server]: Configuring
+[behavior_server-3] [INFO] [1794926968.864017727] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-3] [INFO] [1794926968.864644859] [behavior_server]: Configuring spin
+[behavior_server-3] [INFO] [1794926968.867095527] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-3] [INFO] [1794926968.867672866] [behavior_server]: Configuring wait
+[lifecycle_manager-5] [INFO] [1794926968.869649630] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-4] [INFO] [1794926968.869831266] [bt_navigator]: Configuring
+[lifecycle_manager-5] [INFO] [1794926968.900259869] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-1] [INFO] [1794926968.900369312] [planner_server]: Activating
+[planner_server-1] [INFO] [1794926968.900410543] [global_costmap.global_costmap]: Activating
+[planner_server-1] [INFO] [1794926968.900424727] [global_costmap.global_costmap]: Checking transform
+[planner_server-1] [INFO] [1794926968.900545862] [global_costmap.global_costmap]: start
+[planner_server-1] [INFO] [1794926969.451051939] [planner_server]: Activating plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926969.451697059] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926969.553590203] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-5] [INFO] [1794926969.553639665] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-2] [INFO] [1794926969.553971433] [controller_server]: Activating
+[controller_server-2] [INFO] [1794926969.554011177] [local_costmap.local_costmap]: Activating
+[controller_server-2] [INFO] [1794926969.554024576] [local_costmap.local_costmap]: Checking transform
+[controller_server-2] [INFO] [1794926969.554119943] [local_costmap.local_costmap]: start
+[controller_server-2] [INFO] [1794926969.704729890] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926969.806627292] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-5] [INFO] [1794926969.806682909] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-3] [INFO] [1794926969.806836634] [behavior_server]: Activating
+[behavior_server-3] [INFO] [1794926969.806862905] [behavior_server]: Activating spin
+[behavior_server-3] [INFO] [1794926969.806872686] [behavior_server]: Activating wait
+[behavior_server-3] [INFO] [1794926969.806887074] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926969.908771635] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-5] [INFO] [1794926969.908826427] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-4] [INFO] [1794926969.908926125] [bt_navigator]: Activating
+[bt_navigator-4] [INFO] [1794926969.918272081] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926970.019694134] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-5] [INFO] [1794926970.019779401] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-5] [INFO] [1794926970.019792277] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[bt_navigator-4] [INFO] [1794926970.898634869] [bt_navigator]: Begin navigating from current location (-1.80, 0.00) to (1.80, 0.00)
+[controller_server-2] [INFO] [1794926970.939263462] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-2] [INFO] [1794926971.539691742] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926972.073015973] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926972.673042939] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926973.206358574] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926973.739645434] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926974.339730538] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926974.873021545] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926975.473074101] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926975.876968331] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926975.877045395] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926975.943603034] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926975.943644056] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926976.006316761] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926976.010394354] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.010422378] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.077185926] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.077241438] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.143675835] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.143716839] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.210195797] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.210238365] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.277047888] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.277100843] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.343486067] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.343532415] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.411522584] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.411564542] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.477856159] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.477906436] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926976.539647950] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926976.544805062] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.544833184] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.611436065] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.611481889] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.677879161] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.677952293] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.744549139] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.744585914] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.810235337] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.810294822] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.876804755] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.876859466] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926976.943425458] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926976.943489151] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.010148680] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.010190913] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.076521688] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.076575232] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [ERROR] [1794926977.076591083] [controller_server]: Controller patience exceeded
+[controller_server-2] [WARN] [1794926977.076634925] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-2] [INFO] [1794926977.099053102] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-2] [INFO] [1794926977.099766325] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-2] [INFO] [1794926977.160042227] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926977.165585513] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.165619187] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.170111029] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.170149123] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.236869303] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.236916069] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.303550787] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.303593381] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.370241968] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.370308797] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.436829378] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.436888804] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.503472111] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.503514268] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.570191325] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.570247317] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.636879235] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.636937181] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926977.700042586] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926977.703533459] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.703575228] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.770749583] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.770814079] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.836621264] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.836676712] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.903404203] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.903455778] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926977.970014095] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926977.970057509] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.036634971] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.036683158] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.103377270] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.103421507] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.170341213] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.170397849] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926978.233334384] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926978.236779352] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.236810955] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.303341385] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.303387608] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.370405805] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.370458901] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [ERROR] [1794926978.370467762] [controller_server]: Controller patience exceeded
+[controller_server-2] [WARN] [1794926978.370508429] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-2] [INFO] [1794926978.398959558] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-1] [INFO] [1794926978.399317334] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-2] [INFO] [1794926978.439167811] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-2] [WARN] [1794926978.463760139] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.463790333] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.463809906] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.510095996] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.510123618] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.510152295] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.576584152] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.576617642] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.576641585] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.643049283] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.643075060] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.643094229] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.710049286] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.710072511] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.710091148] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.776633479] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.776669819] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.776689016] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.843283199] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.843310391] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.843331404] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.910235089] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.910269547] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.910290623] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926978.976836137] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926978.976884476] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926978.976914432] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926979.039455556] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926979.043390709] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.043402740] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.043420995] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.110181581] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.110207569] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.110233098] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.176786001] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.176818267] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.176839767] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.243337709] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.243362719] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.243380410] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.310046200] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.310078865] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.310101814] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.376727851] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.376760370] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.376786270] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.442603392] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.442630055] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.442651960] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.509570841] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.509595936] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.509616375] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926979.572850923] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926979.576220054] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.576234926] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.576253763] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.642635079] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.642657549] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.642675684] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926979.709657864] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926979.709685527] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926979.709706454] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [ERROR] [1794926979.709713795] [controller_server]: Controller patience exceeded
+[controller_server-2] [WARN] [1794926979.709744095] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-2] [INFO] [1794926979.739014633] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-2] [INFO] [1794926979.739480577] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-2] [INFO] [1794926980.139804269] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926980.739763527] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926980.809814980] [controller_server]: DWB rejected 3.1%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926980.809856125] [controller_server]: DWB rejected 96.9%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926980.809882852] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926980.876440261] [controller_server]: DWB rejected 2.6%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926980.876480240] [controller_server]: DWB rejected 97.4%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926980.876501948] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926981.273316781] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926981.343523882] [controller_server]: DWB rejected 3.1%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926981.343551558] [controller_server]: DWB rejected 96.9%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926981.343576995] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926981.476786054] [controller_server]: DWB rejected 3.1%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926981.476822130] [controller_server]: DWB rejected 96.9%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926981.476841992] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926981.543081140] [controller_server]: DWB rejected 3.1%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926981.543108826] [controller_server]: DWB rejected 96.9%: RotateToPath: trajectory does not perform the required in-place turn toward the path
+[controller_server-2] [WARN] [1794926981.543128833] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926981.806426748] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926982.406458010] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926982.410380041] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.410409031] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926982.476738936] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.476793668] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926982.543511591] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.543548996] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926982.609987262] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.610026672] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926982.676552303] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.676600795] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926982.743165283] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.743212925] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926982.810127769] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.810177905] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926982.876575239] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.876621342] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926982.939811156] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926982.943314535] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926982.943341431] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926983.009934671] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926983.009977625] [controller_server]: No valid trajectories out of 416! 
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[bt_navigator-4] [INFO] [1794926983.058806401] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-4] [INFO] [1794926983.058889625] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-4] [INFO] [1794926983.058917749] [bt_navigator]: Deactivating
+[bt_navigator-4] [WARN] [1794926983.058925715] [bt_navigator]: [navigate_to_pose] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
+[controller_server-2] [INFO] [1794926983.058803702] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-2] [INFO] [1794926983.058889765] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-2] [INFO] [1794926983.058937296] [controller_server]: Deactivating
+[controller_server-2] [WARN] [1794926983.058958346] [controller_server]: [follow_path] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
+[INFO] [lifecycle_manager-5]: sending signal 'SIGINT' to process[lifecycle_manager-5]
+[INFO] [bt_navigator-4]: sending signal 'SIGINT' to process[bt_navigator-4]
+[INFO] [behavior_server-3]: sending signal 'SIGINT' to process[behavior_server-3]
+[INFO] [controller_server-2]: sending signal 'SIGINT' to process[controller_server-2]
+[INFO] [planner_server-1]: sending signal 'SIGINT' to process[planner_server-1]
+[lifecycle_manager-5] [INFO] [1794926983.058846081] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-5] [INFO] [1794926983.058912072] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-5] [INFO] [1794926983.058939790] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[planner_server-1] [INFO] [1794926983.058868816] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-1] [INFO] [1794926983.058899652] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-1] [INFO] [1794926983.058925930] [planner_server]: Deactivating
+[planner_server-1] [INFO] [1794926983.058939488] [global_costmap.global_costmap]: Deactivating
+[behavior_server-3] [INFO] [1794926983.058873927] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-3] [INFO] [1794926983.058932930] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-3] [INFO] [1794926983.058975220] [behavior_server]: Deactivating
+[behavior_server-3] [INFO] [1794926983.058995912] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-3] [INFO] [1794926983.069264174] [behavior_server]: Cleaning up
+[behavior_server-3] [INFO] [1794926983.070723821] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-3] [INFO] [1794926983.070980884] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-2] [WARN] [1794926983.073135018] [controller_server]: [follow_path] [ActionServer] Stopping the thread per request.
+[controller_server-2] [INFO] [1794926983.073157304] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[bt_navigator-4] [INFO] [1794926983.073258139] [bt_navigator]: [navigate_to_pose] [ActionServer] Client requested to cancel the goal. Cancelling.
+[controller_server-2] [INFO] [1794926983.073327982] [local_costmap.local_costmap]: Deactivating
+[bt_navigator-4] [INFO] [1794926983.073382917] [bt_navigator]: Goal canceled
+[bt_navigator-4] [WARN] [1794926983.073404894] [bt_navigator]: [navigate_to_pose] [ActionServer] Stopping the thread per request.
+[bt_navigator-4] [INFO] [1794926983.073468564] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[behavior_server-3] [INFO] [1794926983.073748951] [behavior_server]: Destroying
+[bt_navigator-4] [INFO] [1794926983.083646644] [bt_navigator]: Cleaning up
+[bt_navigator-4] [INFO] [1794926983.096761060] [bt_navigator]: Completed Cleaning up
+[bt_navigator-4] [INFO] [1794926983.096803413] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-4] [INFO] [1794926983.097394392] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-4] [INFO] [1794926983.099499920] [bt_navigator]: Destroying
+[lifecycle_manager-5] [INFO] [1794926983.102285424] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-5] [INFO] [1794926983.102747098] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[controller_server-2] [INFO] [1794926983.154498393] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-2] [INFO] [1794926983.164647804] [controller_server]: Cleaning up
+[controller_server-2] [INFO] [1794926983.165006745] [local_costmap.local_costmap]: Cleaning up
+[controller_server-2] [INFO] [1794926983.170827265] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-2] [INFO] [1794926983.171391661] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-2] [INFO] [1794926983.172500630] [local_costmap.local_costmap]: Destroying
+[controller_server-2] [INFO] [1794926983.173715421] [controller_server]: Destroying
+[INFO] [behavior_server-3]: process has finished cleanly [pid 12844]
+[INFO] [bt_navigator-4]: process has finished cleanly [pid 12846]
+[INFO] [lifecycle_manager-5]: process has finished cleanly [pid 12848]
+[INFO] [controller_server-2]: process has finished cleanly [pid 12842]
+[planner_server-1] [INFO] [1794926983.400791954] [planner_server]: Deactivating plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926983.400824465] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-1] [INFO] [1794926983.411038826] [planner_server]: Cleaning up
+[planner_server-1] [INFO] [1794926983.412552968] [global_costmap.global_costmap]: Cleaning up
+[planner_server-1] [INFO] [1794926983.413479834] [planner_server]: Cleaning up plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926983.413664607] [planner_server]: Destroying plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926983.414942125] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-1] [INFO] [1794926983.415551216] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-1] [INFO] [1794926983.416304484] [global_costmap.global_costmap]: Destroying
+[planner_server-1] [INFO] [1794926983.418860963] [planner_server]: Destroying
+[INFO] [planner_server-1]: process has finished cleanly [pid 12840]

@@ -1,0 +1,60 @@
+{
+  "map_name": "web_test_20261117_192935",
+  "started_at": "2026-11-17T19:29:35",
+  "checks": {
+    "mapping_ready": true,
+    "deadman": {
+      "before_speed": 0.2200027198725833,
+      "after_speed": -6.356186638440265e-05,
+      "stopped": true
+    },
+    "teleop_displacement": 1.039830860127241,
+    "saved_map": true
+  },
+  "success": false,
+  "error": "RuntimeError: initial pose rejected: waiting for FAST-LIO data",
+  "last_state": {
+    "sim_ready": true,
+    "scan_fresh": true,
+    "mapping_ready": false,
+    "navigation_ready": false,
+    "nav2_active": false,
+    "manual_ready": false,
+    "pose": null,
+    "odom": {
+      "linear": -2.5006437564454502e-05,
+      "angular": 0.0006974065781477634
+    },
+    "localization": {
+      "state": "UNINITIALIZED",
+      "message": "map loaded; waiting for /initialpose",
+      "fitness": 0.0,
+      "rmse": null
+    },
+    "localization_fresh": true,
+    "navigation": {
+      "state": "idle"
+    },
+    "scan": 0,
+    "path": [],
+    "transitioning": false,
+    "sim_time": 112.59,
+    "map_revision": 5,
+    "backend": {
+      "mode": "navigation",
+      "map_name": "web_test_20261117_192935",
+      "pid": 124150,
+      "exit_code": null,
+      "log_path": "/home/rain/.local/share/baobao/web_logs/1794914996610388663_navigation.log"
+    },
+    "map_root": "/home/rain/ros_ws/baobao/maps",
+    "job": {
+      "id": "f397053d0391444faeb2aff646aebe7e",
+      "action": "initial_pose",
+      "state": "failed",
+      "message": "RuntimeError: initial pose rejected: waiting for FAST-LIO data",
+      "started_at": "2026-11-17T19:30:01"
+    }
+  },
+  "log_tail": "[INFO] [launch]: All log files can be found below /home/rain/.ros/log/2026-11-17-19-29-56-804935-rain-124150\n[INFO] [launch]: Default logging verbosity is set to INFO\n[INFO] [launch.user]: JUNIOR custom DWB + BPX 0.21 + SmacPlanner2D; external localization owns map -> odom.\n[INFO] [fastlio_mapping-1]: process started with pid [124158]\n[INFO] [odometry_frame_converter-2]: process started with pid [124160]\n[INFO] [open3d_localizer-3]: process started with pid [124162]\n[INFO] [map_server-4]: process started with pid [124164]\n[INFO] [lifecycle_manager-5]: process started with pid [124166]\n[INFO] [planner_server-6]: process started with pid [124168]\n[INFO] [controller_server-7]: process started with pid [124170]\n[INFO] [behavior_server-8]: process started with pid [124172]\n[INFO] [bt_navigator-9]: process started with pid [124174]\n[INFO] [lifecycle_manager-10]: process started with pid [124176]\n[INFO] [navigation_gate-11]: process started with pid [124178]\n[lifecycle_manager-5] [INFO] [1794914996.904434407] [lifecycle_manager_map]: Creating\n[lifecycle_manager-5] [INFO] [1794914996.909642396] [lifecycle_manager_map]: \u001b[34m\u001b[1mCreating and initializing lifecycle service clients\u001b[0m\u001b[0m\n[odometry_frame_converter-2] [INFO] [1794914996.914387240] [odometry_frame_converter]: Waiting for stationary IMU samples on /livox/imu before publishing mapping data\n[bt_navigator-9] [INFO] [1794914996.926302168] [bt_navigator]: \n[bt_navigator-9] \tbt_navigator lifecycle node launched. \n[bt_navigator-9] \tWaiting on external lifecycle transitions to activate\n[bt_navigator-9] \tSee https://design.ros2.org/articles/node_lifecycle.html for more information.\n[bt_navigator-9] [INFO] [1794914996.926440723] [bt_navigator]: Creating\n[planner_server-6] [INFO] [1794914996.928689327] [planner_server]: \n[planner_server-6] \tplanner_server lifecycle node launched. \n[planner_server-6] \tWaiting on external lifecycle transitions to activate\n[planner_server-6] \tSee https://design.ros2.org/articles/node_lifecycle.html for more information.\n[planner_server-6] [INFO] [1794914996.930880740] [planner_server]: Creating\n[controller_server-7] [INFO] [1794914996.936503989] [controller_server]: \n[controller_server-7] \tcontroller_server lifecycle node launched. \n[controller_server-7] \tWaiting on external lifecycle transitions to activate\n[controller_server-7] \tSee https://design.ros2.org/articles/node_lifecycle.html for more information.\n[map_server-4] [INFO] [1794914996.937456740] [map_server]: \n[map_server-4] \tmap_server lifecycle node launched. \n[map_server-4] \tWaiting on external lifecycle transitions to activate\n[map_server-4] \tSee https://design.ros2.org/articles/node_lifecycle.html for more information.\n[map_server-4] [INFO] [1794914996.937585069] [map_server]: Creating\n[lifecycle_manager-10] [INFO] [1794914996.940723660] [lifecycle_manager_navigation]: Creating\n[controller_server-7] [INFO] [1794914996.946740035] [controller_server]: Creating controller server\n[lifecycle_manager-10] [INFO] [1794914996.948219009] [lifecycle_manager_navigation]: \u001b[34m\u001b[1mCreating and initializing lifecycle service clients\u001b[0m\u001b[0m\n[planner_server-6] [INFO] [1794914996.961921372] [global_costmap.global_costmap]: \n[planner_server-6] \tglobal_costmap lifecycle node launched. \n[planner_server-6] \tWaiting on external lifecycle transitions to activate\n[planner_server-6] \tSee https://design.ros2.org/articles/node_lifecycle.html for more information.\n[planner_server-6] [INFO] [1794914996.962598938] [global_costmap.global_costmap]: Creating Costmap\n[behavior_server-8] [INFO] [1794914996.964697743] [behavior_server]: \n[behavior_server-8] \tbehavior_server lifecycle node launched. \n[behavior_server-8] \tWaiting on external lifecycle transitions to activate\n[behavior_server-8] \tSee https://design.ros2.org/articles/node_lifecycle.html for more information.\n[controller_server-7] [INFO] [1794914996.965850783] [local_costmap.local_costmap]: \n[controller_server-7] \tlocal_costmap lifecycle node launched. \n[controller_server-7] \tWaiting on external lifecycle transitions to activate\n[controller_server-7] \tSee https://design.ros2.org/articles/node_lifecycle.html for more information.\n[controller_server-7] [INFO] [1794914996.966240415] [local_costmap.local_costmap]: Creating Costmap\n[fastlio_mapping-1] [INFO] [1794914996.991314824] [fastlio_frontend]: Scan matching threads: 2\n[fastlio_mapping-1] [INFO] [1794914996.992483008] [fastlio_frontend]: p_pre->lidar_type 5\n[odometry_frame_converter-2] [INFO] [1794914996.995301217] [odometry_frame_converter]: Waiting for FAST-LIO odometry before collecting IMU\n[fastlio_mapping-1] [INFO] [1794914997.006654959] [fastlio_frontend]: Node init finished.\n[open3d_localizer-3] [INFO] [1794914997.018557769] [open3d_localizer]: Loaded Open3D map web_test_20261117_192935 with 754 fine points\n[lifecycle_manager-5] [INFO] [1794914997.026419218] [lifecycle_manager_map]: \u001b[34m\u001b[1mStarting managed nodes bringup...\u001b[0m\u001b[0m\n[lifecycle_manager-5] [INFO] [1794914997.026465419] [lifecycle_manager_map]: \u001b[34m\u001b[1mConfiguring map_server\u001b[0m\u001b[0m\n[map_server-4] [INFO] [1794914997.026690699] [map_server]: Configuring\n[map_server-4] [INFO] [1794914997.026739224] [map_io]: Loading yaml file: /home/rain/ros_ws/baobao/maps/web_test_20261117_192935/occupancy.yaml\n[map_server-4] [INFO] [1794914997.026940708] [map_io]: resolution: 0.05\n[map_server-4] [INFO] [1794914997.026946434] [map_io]: origin[0]: -1.55\n[map_server-4] [INFO] [1794914997.026949004] [map_io]: origin[1]: -5.85\n[map_server-4] [INFO] [1794914997.026951313] [map_io]: origin[2]: 0\n[map_server-4] [INFO] [1794914997.026954009] [map_io]: free_thresh: 0.196\n[map_server-4] [INFO] [1794914997.026957592] [map_io]: occupied_thresh: 0.65\n[map_server-4] [INFO] [1794914997.026961620] [map_io]: mode: trinary\n[map_server-4] [INFO] [1794914997.026966047] [map_io]: negate: 0\n[map_server-4] [INFO] [1794914997.027118176] [map_io]: Loading image_file: /home/rain/ros_ws/baobao/maps/web_test_20261117_192935/occupancy.pgm\n[map_server-4] [INFO] [1794914997.031220415] [map_io]: Read map /home/rain/ros_ws/baobao/maps/web_test_20261117_192935/occupancy.pgm: 188 X 234 map @ 0.05 m/cell\n[lifecycle_manager-5] [INFO] [1794914997.035130265] [lifecycle_manager_map]: \u001b[34m\u001b[1mActivating map_server\u001b[0m\u001b[0m\n[map_server-4] [INFO] [1794914997.035346219] [map_server]: Activating\n[map_server-4] [INFO] [1794914997.035504155] [map_server]: Creating bond (map_server) to lifecycle manager.\n[lifecycle_manager-5] [INFO] [1794914997.138599169] [lifecycle_manager_map]: Server map_server connected with bond.\n[lifecycle_manager-5] [INFO] [1794914997.138638039] [lifecycle_manager_map]: \u001b[34m\u001b[1mManaged nodes are active\u001b[0m\u001b[0m\n[lifecycle_manager-5] [INFO] [1794914997.138649953] [lifecycle_manager_map]: \u001b[34m\u001b[1mCreating bond timer...\u001b[0m\u001b[0m\n[fastlio_mapping-1] Multi thread started \n[fastlio_mapping-1] IMU Initial Done\n[fastlio_mapping-1] [WARN] [1794914997.362038626] [fastlio_frontend]: No point, skip this scan!\n[fastlio_mapping-1] \n[fastlio_mapping-1] [INFO] [1794914997.479616967] [fastlio_frontend]: Initialize the map kdtree\n[odometry_frame_converter-2] [WARN] [1794914997.599633852] [odometry_frame_converter]: Waiting for gravity alignment before publishing the leveled cloud\n[odometry_frame_converter-2] [INFO] [1794914997.600641497] [odometry_frame_converter]: Collecting stationary gravity samples: 1 samples, 0.00 s\n"
+}

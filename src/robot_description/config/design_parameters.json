@@ -1,0 +1,21 @@
+{
+  "wheel_radius": 0.065,
+  "wheel_separation": 0.35,
+  "caster_radius": 0.025,
+  "caster_trail": 0.015,
+  "height": 0.8,
+  "lidar_pitch_deg": 30,
+  "lidar_origin_base_link": [
+    0.11054145010560751,
+    0.0,
+    0.7196403552549564
+  ],
+  "total_estimated_mass_kg": 7.585,
+  "mass_note": "Provisional lumped values, not measured or CAD material masses",
+  "hand_limits_rad": [
+    -0.6,
+    0.6
+  ],
+  "hand_effort_nm": 0.5,
+  "warning": "Hand limits/effort are placeholders pending servo and swept-clearance verification"
+}

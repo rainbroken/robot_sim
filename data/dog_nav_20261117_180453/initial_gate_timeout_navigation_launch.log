@@ -1,0 +1,209 @@
+[INFO] [launch]: All log files can be found below /home/rain/.ros/log/2026-11-17-18-17-49-098211-rain-110252
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: JUNIOR custom DWB + BPX 0.21 + SmacPlanner2D; external localization owns map -> odom.
+[INFO] [gzserver-1]: process started with pid [110272]
+[INFO] [robot_state_publisher-2]: process started with pid [110274]
+[INFO] [ukf_node-3]: process started with pid [110276]
+[INFO] [command_watchdog-4]: process started with pid [110278]
+[INFO] [cloud_to_scan-5]: process started with pid [110280]
+[INFO] [spawn_entity.py-6]: process started with pid [110282]
+[INFO] [fastlio_mapping-7]: process started with pid [110284]
+[INFO] [odometry_frame_converter-8]: process started with pid [110286]
+[INFO] [open3d_localizer-9]: process started with pid [110288]
+[INFO] [map_server-10]: process started with pid [110290]
+[INFO] [lifecycle_manager-11]: process started with pid [110292]
+[INFO] [planner_server-12]: process started with pid [110294]
+[INFO] [controller_server-13]: process started with pid [110296]
+[INFO] [behavior_server-14]: process started with pid [110298]
+[INFO] [bt_navigator-15]: process started with pid [110300]
+[INFO] [lifecycle_manager-16]: process started with pid [110308]
+[INFO] [navigation_gate-17]: process started with pid [110322]
+[odometry_frame_converter-8] [INFO] [1794910669.460263250] [odometry_frame_converter]: Waiting for stationary IMU samples on /livox/imu before publishing mapping data
+[bt_navigator-15] [INFO] [1794910669.466501534] [bt_navigator]: 
+[bt_navigator-15] 	bt_navigator lifecycle node launched. 
+[bt_navigator-15] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-15] [INFO] [1794910669.466577426] [bt_navigator]: Creating
+[controller_server-13] [INFO] [1794910669.472194587] [controller_server]: 
+[controller_server-13] 	controller_server lifecycle node launched. 
+[controller_server-13] 	Waiting on external lifecycle transitions to activate
+[controller_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-10] [INFO] [1794910669.484677903] [map_server]: 
+[map_server-10] 	map_server lifecycle node launched. 
+[map_server-10] 	Waiting on external lifecycle transitions to activate
+[map_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-10] [INFO] [1794910669.484853051] [map_server]: Creating
+[controller_server-13] [INFO] [1794910669.488420561] [controller_server]: Creating controller server
+[planner_server-12] [INFO] [1794910669.491130370] [planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-11] [INFO] [1794910669.491501387] [lifecycle_manager_map]: Creating
+[planner_server-12] [INFO] [1794910669.493043825] [planner_server]: Creating
+[lifecycle_manager-11] [INFO] [1794910669.498104511] [lifecycle_manager_map]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[behavior_server-14] [INFO] [1794910669.511296719] [behavior_server]: 
+[behavior_server-14] 	behavior_server lifecycle node launched. 
+[behavior_server-14] 	Waiting on external lifecycle transitions to activate
+[behavior_server-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-11] [INFO] [1794910669.515129031] [lifecycle_manager_map]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-11] [INFO] [1794910669.515219081] [lifecycle_manager_map]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-13] [INFO] [1794910669.524462197] [local_costmap.local_costmap]: 
+[controller_server-13] 	local_costmap lifecycle node launched. 
+[controller_server-13] 	Waiting on external lifecycle transitions to activate
+[controller_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1794910669.525863128] [lifecycle_manager_navigation]: Creating
+[controller_server-13] [INFO] [1794910669.526825138] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-16] [INFO] [1794910669.529172956] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[fastlio_mapping-7] [INFO] [1794910669.532460040] [fastlio_frontend]: Scan matching threads: 2
+[fastlio_mapping-7] [INFO] [1794910669.535522408] [fastlio_frontend]: p_pre->lidar_type 5
+[planner_server-12] [INFO] [1794910669.537918869] [global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1794910669.538859126] [global_costmap.global_costmap]: Creating Costmap
+[fastlio_mapping-7] [INFO] [1794910669.546997663] [fastlio_frontend]: Node init finished.
+[robot_state_publisher-2] [INFO] [1794910669.553602473] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-2] [INFO] [1794910669.553794309] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1794910669.553800906] [robot_state_publisher]: got segment front_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794910669.553804541] [robot_state_publisher]: got segment front_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794910669.553807330] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1794910669.553810138] [robot_state_publisher]: got segment left_hand_link
+[robot_state_publisher-2] [INFO] [1794910669.553812802] [robot_state_publisher]: got segment left_wheel_link
+[robot_state_publisher-2] [INFO] [1794910669.553815370] [robot_state_publisher]: got segment mid360_link
+[robot_state_publisher-2] [INFO] [1794910669.553817820] [robot_state_publisher]: got segment rear_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794910669.553820879] [robot_state_publisher]: got segment rear_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794910669.553823466] [robot_state_publisher]: got segment right_hand_link
+[robot_state_publisher-2] [INFO] [1794910669.553826163] [robot_state_publisher]: got segment right_wheel_link
+[robot_state_publisher-2] [INFO] [1794910669.553828635] [robot_state_publisher]: got segment scan_link
+[open3d_localizer-9] [INFO] [1794910669.595982222] [open3d_localizer]: Loaded Open3D map map with 11609 fine points
+[map_server-10] [INFO] [1794910669.611810453] [map_server]: Configuring
+[map_server-10] [INFO] [1794910669.611884240] [map_io]: Loading yaml file: /home/rain/ros_ws/baobao/data/dog_nav_20261117_180453/map/occupancy.yaml
+[map_server-10] [INFO] [1794910669.612144962] [map_io]: resolution: 0.05
+[map_server-10] [INFO] [1794910669.612155199] [map_io]: origin[0]: -7.95
+[map_server-10] [INFO] [1794910669.612159995] [map_io]: origin[1]: -5.9
+[map_server-10] [INFO] [1794910669.612164798] [map_io]: origin[2]: 0
+[map_server-10] [INFO] [1794910669.612169739] [map_io]: free_thresh: 0.196
+[map_server-10] [INFO] [1794910669.612174539] [map_io]: occupied_thresh: 0.65
+[map_server-10] [INFO] [1794910669.612179512] [map_io]: mode: trinary
+[map_server-10] [INFO] [1794910669.612184182] [map_io]: negate: 0
+[map_server-10] [INFO] [1794910669.612368619] [map_io]: Loading image_file: /home/rain/ros_ws/baobao/data/dog_nav_20261117_180453/map/occupancy.pgm
+[map_server-10] [INFO] [1794910669.621036279] [map_io]: Read map /home/rain/ros_ws/baobao/data/dog_nav_20261117_180453/map/occupancy.pgm: 317 X 237 map @ 0.05 m/cell
+[lifecycle_manager-11] [INFO] [1794910669.625095110] [lifecycle_manager_map]: [34m[1mActivating map_server[0m[0m
+[map_server-10] [INFO] [1794910669.625198639] [map_server]: Activating
+[map_server-10] [INFO] [1794910669.625383837] [map_server]: Creating bond (map_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1794910669.729134404] [lifecycle_manager_map]: Server map_server connected with bond.
+[lifecycle_manager-11] [INFO] [1794910669.729162901] [lifecycle_manager_map]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-11] [INFO] [1794910669.729168205] [lifecycle_manager_map]: [34m[1mCreating bond timer...[0m[0m
+[spawn_entity.py-6] [INFO] [1794910669.794377588] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-6] [INFO] [1794910669.794675399] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-6] [INFO] [1794910669.796415526] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-6] [INFO] [1794910669.807214087] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-6] [INFO] [1794910669.807384863] [spawn_entity]: Waiting for service /spawn_entity
+[gzserver-1] [INFO] [1794910670.186389601] [gazebo.gazebo_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-1] [INFO] [1794910670.186916831] [gazebo.gazebo_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[spawn_entity.py-6] [INFO] [1794910670.310453619] [spawn_entity]: Calling service /spawn_entity
+[command_watchdog-4] [WARN] [1794910670.390327246] [command_watchdog.rclcpp]: failed to send response to /command_watchdog/set_parameters (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+[gzserver-1] [INFO] [1794910670.668501637] [Mid360Plugin]: 加载扫描模式文件: /home/rain/ros_ws/baobao/install/mid360_simulation/share/mid360_simulation/scan_mode/mid360.csv
+[gzserver-1] [CsvReader] 成功读取 800000 条扫描数据
+[gzserver-1] [INFO] [1794910671.069402884] [Mid360Plugin]: ROS 话题: /livox/lidar
+[gzserver-1] [INFO] [1794910671.084289986] [Mid360Plugin]: 扫描点数: 800000
+[gzserver-1] [INFO] [1794910671.084922422] [Mid360Plugin]: 采样数: 20000, 降采样: 5
+[gzserver-1] [INFO] [1794910671.606137848] [Mid360Plugin]: Mid-360 仿真插件加载完成
+[spawn_entity.py-6] [INFO] [1794910671.628547790] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [robot]
+[gzserver-1] [INFO] [1794910671.654975711] [baobao_diff_drive]: Wheel pair 1 separation set to [0.350000m]
+[gzserver-1] [INFO] [1794910671.655025171] [baobao_diff_drive]: Wheel pair 1 diameter set to [0.130000m]
+[gzserver-1] [INFO] [1794910671.656503124] [baobao_diff_drive]: Subscribed to [/cmd_vel_safe]
+[gzserver-1] [INFO] [1794910671.658128765] [baobao_diff_drive]: Advertise odometry on [/wheel_odom]
+[gzserver-1] [INFO] [1794910671.666696651] [baobao_joint_states]: Going to publish joint [left_wheel_joint]
+[gzserver-1] [INFO] [1794910671.666733477] [baobao_joint_states]: Going to publish joint [right_wheel_joint]
+[gzserver-1] [INFO] [1794910671.666738093] [baobao_joint_states]: Going to publish joint [left_hand_joint]
+[gzserver-1] [INFO] [1794910671.666741700] [baobao_joint_states]: Going to publish joint [right_hand_joint]
+[gzserver-1] [INFO] [1794910671.666744794] [baobao_joint_states]: Going to publish joint [front_caster_swivel_joint]
+[gzserver-1] [INFO] [1794910671.666747998] [baobao_joint_states]: Going to publish joint [front_caster_roll_joint]
+[gzserver-1] [INFO] [1794910671.666751067] [baobao_joint_states]: Going to publish joint [rear_caster_swivel_joint]
+[gzserver-1] [INFO] [1794910671.666754259] [baobao_joint_states]: Going to publish joint [rear_caster_roll_joint]
+[INFO] [spawn_entity.py-6]: process has finished cleanly [pid 110282]
+[fastlio_mapping-7] Multi thread started 
+[fastlio_mapping-7] IMU Initial Done
+[fastlio_mapping-7] [WARN] [1794910671.906625585] [fastlio_frontend]: No point, skip this scan!
+[fastlio_mapping-7] 
+[fastlio_mapping-7] [INFO] [1794910672.025340510] [fastlio_frontend]: Initialize the map kdtree
+[odometry_frame_converter-8] [INFO] [1794910677.189691878] [odometry_frame_converter]: Collecting stationary gravity samples: 854 samples, 4.26 s; last reset: mean gravity direction stable for 1.26 of 2.00 s
+[odometry_frame_converter-8] [WARN] [1794910677.238741499] [odometry_frame_converter]: Waiting for gravity alignment before publishing the leveled cloud
+[odometry_frame_converter-8] [INFO] [1794910678.072792346] [odometry_frame_converter]: Gravity alignment locked: 1001 samples over 5.00 s, accel norm 9.8105 (input units), gyro RMS 0.0021 rad/s, direction spread 0.592 deg, up=(-0.50249, 0.00011, 0.86458), correction rpy=(0.007, 30.165, 0.167) deg
+[open3d_localizer-9] [INFO] [1794910678.558756740] [open3d_localizer]: Automatic localization started from map origin: x=0.00 y=0.00 z=0.00 yaw=0.00
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [navigation_gate-17]: sending signal 'SIGINT' to process[navigation_gate-17]
+[INFO] [lifecycle_manager-16]: sending signal 'SIGINT' to process[lifecycle_manager-16]
+[INFO] [bt_navigator-15]: sending signal 'SIGINT' to process[bt_navigator-15]
+[ERROR] [lifecycle_manager-16]: process has died [pid 110308, exit code -2, cmd '/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -r __node:=lifecycle_manager_navigation --params-file /tmp/launch_params_cbja7plp'].
+[ERROR] [navigation_gate-17]: process has died [pid 110322, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/navigation_gate --ros-args --params-file /tmp/launch_params_2604okpo'].
+[INFO] [behavior_server-14]: sending signal 'SIGINT' to process[behavior_server-14]
+[INFO] [controller_server-13]: sending signal 'SIGINT' to process[controller_server-13]
+[ERROR] [bt_navigator-15]: process has died [pid 110300, exit code -2, cmd '/opt/ros/humble/lib/nav2_bt_navigator/bt_navigator --ros-args -r __node:=bt_navigator --params-file /home/rain/ros_ws/baobao/install/robot_navigation/share/robot_navigation/config/nav2.yaml --params-file /tmp/launch_params_e2o97v7d'].
+[INFO] [planner_server-12]: sending signal 'SIGINT' to process[planner_server-12]
+[ERROR] [behavior_server-14]: process has died [pid 110298, exit code -2, cmd '/opt/ros/humble/lib/nav2_behaviors/behavior_server --ros-args -r __node:=behavior_server --params-file /home/rain/ros_ws/baobao/install/robot_navigation/share/robot_navigation/config/nav2.yaml --params-file /tmp/launch_params_5pjo44ci'].
+[INFO] [lifecycle_manager-11]: sending signal 'SIGINT' to process[lifecycle_manager-11]
+[ERROR] [controller_server-13]: process has died [pid 110296, exit code -2, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args -r __node:=controller_server --params-file /home/rain/ros_ws/baobao/install/robot_navigation/share/robot_navigation/config/nav2.yaml --params-file /tmp/launch_params_nyvt8no4'].
+[INFO] [map_server-10]: sending signal 'SIGINT' to process[map_server-10]
+[INFO] [open3d_localizer-9]: sending signal 'SIGINT' to process[open3d_localizer-9]
+[ERROR] [planner_server-12]: process has died [pid 110294, exit code -2, cmd '/opt/ros/humble/lib/nav2_planner/planner_server --ros-args -r __node:=planner_server --params-file /home/rain/ros_ws/baobao/install/robot_navigation/share/robot_navigation/config/nav2.yaml --params-file /tmp/launch_params_5o4csjln'].
+[INFO] [odometry_frame_converter-8]: sending signal 'SIGINT' to process[odometry_frame_converter-8]
+[ERROR] [lifecycle_manager-11]: process has died [pid 110292, exit code -2, cmd '/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -r __node:=lifecycle_manager_map --params-file /tmp/launch_params_yvelvgjv'].
+[ERROR] [map_server-10]: process has died [pid 110290, exit code -2, cmd '/opt/ros/humble/lib/nav2_map_server/map_server --ros-args -r __node:=map_server --params-file /tmp/launch_params_9s5xcxg4'].
+[INFO] [fastlio_mapping-7]: sending signal 'SIGINT' to process[fastlio_mapping-7]
+[INFO] [cloud_to_scan-5]: sending signal 'SIGINT' to process[cloud_to_scan-5]
+[ERROR] [open3d_localizer-9]: process has died [pid 110288, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/open3d_localizer --ros-args --params-file /home/rain/ros_ws/baobao/install/robot_slam/share/robot_slam/config/localization.yaml --params-file /tmp/launch_params_y58y6ict --params-file /tmp/launch_params_ibqbiiqr'].
+[ERROR] [odometry_frame_converter-8]: process has died [pid 110286, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_slam/lib/robot_slam/odometry_frame_converter --ros-args --params-file /home/rain/ros_ws/baobao/install/robot_slam/share/robot_slam/config/converter.yaml --params-file /tmp/launch_params_0lvmsgzl'].
+[INFO] [command_watchdog-4]: sending signal 'SIGINT' to process[command_watchdog-4]
+[INFO] [ukf_node-3]: sending signal 'SIGINT' to process[ukf_node-3]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[ERROR] [cloud_to_scan-5]: process has died [pid 110280, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_sim/lib/robot_sim/cloud_to_scan --ros-args --params-file /tmp/launch_params_olhfgols'].
+[ERROR] [command_watchdog-4]: process has died [pid 110278, exit code -2, cmd '/home/rain/ros_ws/baobao/install/robot_sim/lib/robot_sim/command_watchdog --ros-args --params-file /tmp/launch_params_davkffv7'].
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[lifecycle_manager-16] [INFO] [1794910880.849954066] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-16] [INFO] [1794910880.850043557] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[ERROR] [ukf_node-3]: process has died [pid 110276, exit code -2, cmd '/opt/ros/humble/lib/robot_localization/ukf_node --ros-args -r __node:=ukf_filter_node --params-file /home/rain/ros_ws/baobao/install/robot_sim/share/robot_sim/config/ukf.yaml --params-file /tmp/launch_params_jyivh429 -r /odometry/filtered:=/odom'].
+[ERROR] [robot_state_publisher-2]: process has died [pid 110274, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_x489nfo0'].
+[odometry_frame_converter-8] [INFO] [1794910880.849966877] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[open3d_localizer-9] [INFO] [1794910880.849957079] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-15] [INFO] [1794910880.849978769] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-15] [INFO] [1794910880.850065268] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-15] [INFO] [1794910880.850108993] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1794910880.849984170] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-11] [INFO] [1794910880.850063179] [lifecycle_manager_map]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_map)
+[lifecycle_manager-11] [INFO] [1794910880.850095460] [lifecycle_manager_map]: [34m[1mTerminating bond timer...[0m[0m
+[command_watchdog-4] [INFO] [1794910880.849985526] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ukf_node-3] [INFO] [1794910880.849978215] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-10] [INFO] [1794910880.850005867] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-10] [INFO] [1794910880.850064878] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-10] [INFO] [1794910880.850122850] [map_server]: Deactivating
+[map_server-10] [INFO] [1794910880.850136410] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[behavior_server-14] [INFO] [1794910880.850195015] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-14] [INFO] [1794910880.850270299] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-14] [INFO] [1794910880.850310822] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-14] [INFO] [1794910880.851023139] [behavior_server]: Destroying
+[controller_server-13] [INFO] [1794910880.850243705] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-13] [INFO] [1794910880.850304059] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-13] [INFO] [1794910880.850341848] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-13] [INFO] [1794910880.851626411] [local_costmap.local_costmap]: Destroying
+[controller_server-13] [INFO] [1794910880.864713035] [controller_server]: Destroying
+[cloud_to_scan-5] [INFO] [1794910880.850465500] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[fastlio_mapping-7] [INFO] [1794910880.850584239] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1794910880.851048674] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1794910880.851099119] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-12] [INFO] [1794910880.851122323] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-12] [INFO] [1794910880.855219651] [global_costmap.global_costmap]: Destroying
+[planner_server-12] [INFO] [1794910880.870623899] [planner_server]: Destroying
+[robot_state_publisher-2] [INFO] [1794910880.851166663] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-15] [INFO] [1794910880.854263694] [bt_navigator]: Destroying
+[map_server-10] [INFO] [1794910880.860759767] [map_server]: Cleaning up
+[map_server-10] [INFO] [1794910880.860819892] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-10] [INFO] [1794910880.866759159] [map_server]: Destroying
+[lifecycle_manager-16] [INFO] [1794910880.862410204] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[lifecycle_manager-11] [INFO] [1794910880.867870491] [lifecycle_manager_map]: Destroying lifecycle_manager_map
+[fastlio_mapping-7] [INFO] [1794910880.898534921] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[fastlio_mapping-7] Rebuild thread terminated normally
+[INFO] [fastlio_mapping-7]: process has finished cleanly [pid 110284]
+[INFO] [gzserver-1]: process has finished cleanly [pid 110272]
+[INFO] [launch]: process[gzserver-1] was required: shutting down launched system

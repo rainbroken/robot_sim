@@ -1,0 +1,20 @@
+{
+  "mapping_pid": 103472,
+  "ROS_DOMAIN_ID": 71,
+  "GAZEBO_MASTER_URI": "http://127.0.0.1:11375",
+  "mapping_nav_pid": 104731,
+  "navigation_pid": 112854,
+  "navigation_domain": 74,
+  "navigation_gazebo_master": "http://127.0.0.1:11378",
+  "navigation_initial_pid": 110252,
+  "navigation_pedestrian_deadlock_pid": 111285,
+  "test_launches_stop_requested": true,
+  "verified_stopped_at": "2026-11-17T18:39:24.247344+08:00",
+  "recorded_launch_pids_alive": {
+    "103472": false,
+    "104731": false,
+    "112854": false,
+    "110252": false,
+    "111285": false
+  }
+}

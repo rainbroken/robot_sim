@@ -1,0 +1,7 @@
+string map_id
+string pcd_path
+string visualization_pcd_path
+---
+bool success
+string message
+uint64 point_count

@@ -1,0 +1,35 @@
+Starting >>> mid360_simulation
+Starting >>> robot_description
+Finished <<< robot_description [0.08s]
+Starting >>> livox_ros_driver2
+Finished <<< mid360_simulation [0.13s]
+Starting >>> robot_sim
+Finished <<< robot_sim [0.11s]
+Starting >>> robot_interfaces
+Finished <<< livox_ros_driver2 [0.41s]
+Starting >>> robot_navigation
+Finished <<< robot_interfaces [0.35s]
+Starting >>> fast_lio
+Finished <<< fast_lio [0.36s]
+Starting >>> robot_bringup
+Finished <<< robot_bringup [0.07s]
+Finished <<< robot_navigation [1.37s]
+Starting >>> robot_slam
+--- stderr: robot_slam
+CMake Warning (dev) at CMakeLists.txt:13 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+---
+Finished <<< robot_slam [1.54s]
+
+Summary: 9 packages finished [3.63s]
+  1 package had stderr output: robot_slam

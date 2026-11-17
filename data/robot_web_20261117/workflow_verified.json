@@ -1,0 +1,78 @@
+{
+  "map_name": "web_test_20261117_193900",
+  "goal_offset": 0.55,
+  "started_at": "2026-11-17T19:39:00",
+  "checks": {
+    "mapping_ready": true,
+    "deadman": {
+      "before_speed": 0.22012000645736407,
+      "after_speed": -0.0005176751532829371,
+      "stopped": true
+    },
+    "teleop_displacement": 1.050804684467445,
+    "saved_map": true,
+    "navigation_ready": {
+      "localization": {
+        "state": "TRACKING",
+        "message": "Open3D localization tracking; observation accepted",
+        "fitness": 0.934741606940777,
+        "rmse": 0.19781261029508376
+      },
+      "pose": [
+        1.0544984706552274,
+        -0.009227647229545626,
+        0.0031579569446904755
+      ]
+    },
+    "occupancy": {
+      "width": 196,
+      "height": 234,
+      "known_cells": 13672
+    },
+    "navigation_goal": {
+      "goal": {
+        "x": 1.6044984706552274,
+        "y": -0.009227647229545626,
+        "yaw": 0.0
+      },
+      "result": {
+        "state": "succeeded",
+        "goal": [
+          1.6044984706552274,
+          -0.009227647229545626,
+          0.0
+        ],
+        "distance_remaining": 0.15000000596046448,
+        "recoveries": 0,
+        "navigation_seconds": 2,
+        "status": 4
+      },
+      "final_pose": [
+        1.488622397102599,
+        -0.011843934546860654,
+        -0.0693081106125941
+      ],
+      "xy_error": 0.11590560547834138
+    },
+    "cancel": {
+      "state": "canceled",
+      "goal": [
+        2.038622397102599,
+        -0.011843934546860654,
+        0.0
+      ],
+      "distance_remaining": 0.550000011920929,
+      "recoveries": 0,
+      "navigation_seconds": 0,
+      "status": 5
+    },
+    "backend_stop": {
+      "mode": "idle",
+      "map_name": "",
+      "pid": null,
+      "exit_code": null,
+      "log_path": "/home/rain/.local/share/baobao/web_logs/1794915571413185835_navigation.log"
+    }
+  },
+  "success": true
+}

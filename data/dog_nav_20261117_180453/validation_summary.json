@@ -1,0 +1,24 @@
+{
+  "mapping": {
+    "moving_speed_threshold_m_s": 0.02,
+    "speed_time_basis": "finite difference of latest truth XY / sample simulation time",
+    "moving_samples": 1186,
+    "moving_xy_mean_m": 0.03546886369290095,
+    "moving_xy_max_m": 0.08322184803263877,
+    "min_pedestrian_center_distance_m": 0.38425585492094627
+  },
+  "navigation": {
+    "moving_speed_threshold_m_s": 0.02,
+    "speed_time_basis": "finite difference of latest truth XY / sample simulation time",
+    "moving_samples": 986,
+    "moving_xy_mean_m": 0.03590379659190447,
+    "moving_xy_max_m": 0.0712934921184981,
+    "min_pedestrian_center_distance_m": 0.5868182849593283
+  },
+  "regression_cases": {
+    "robot_navigation": 31,
+    "robot_sim": 3,
+    "navigation_gate_python": 4,
+    "total": 38
+  }
+}

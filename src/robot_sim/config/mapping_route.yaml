@@ -1,0 +1,6 @@
+mapping_route:
+  ros__parameters:
+    use_sim_time: true
+    speed: 0.30
+    # Fixed office tour in SLAM map coordinates. Never run while Nav2 controls cmd_vel.
+    waypoints: [-2.6, 0.0, -2.6, -4.7, -4.8, -4.7, -5.35, 0.0, -5.35, 4.8, -2.0, 4.8, 1.1, 4.8, 1.1, 1.0, 4.8, 1.0, 4.8, -2.6, 3.0, -2.6, 3.0, -4.8, 0.0, -4.8, 0.0, 0.0, 1.1, 1.0, 4.8, 1.0, 4.8, 4.8, 1.1, 4.8, 1.1, 0.0, 0.0, 0.0]

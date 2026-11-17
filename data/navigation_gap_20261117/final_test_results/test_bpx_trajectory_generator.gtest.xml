@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="28" failures="0" disabled="0" errors="0" time="0.023" timestamp="2026-11-17T23:01:42" name="AllTests">
+  <testsuite name="BpxVelocityConstraint" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="AllowsStopAndExecutableCommands" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.BpxVelocityConstraint" />
+    <testcase name="PluginLoads" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.BpxVelocityConstraint" />
+  </testsuite>
+  <testsuite name="DifferentialSampling" tests="1" failures="0" disabled="0" errors="0" time="0.011" timestamp="2026-11-17T23:01:42">
+    <testcase name="DisablesFirmwareDeadZoneAndRetainsStop" status="run" result="completed" time="0.011" timestamp="2026-11-17T23:01:42" classname="robot_navigation.DifferentialSampling" />
+  </testsuite>
+  <testsuite name="ForwardProgressPenalty" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="PenalizesOnlyForwardSpeedDeficit" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.ForwardProgressPenalty" />
+  </testsuite>
+  <testsuite name="ForwardProgressCondition" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="RequiresDistanceAndPathAlignment" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.ForwardProgressCondition" />
+  </testsuite>
+  <testsuite name="ForwardProgressCritic" tests="1" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-11-17T23:01:42">
+    <testcase name="PluginLoads" status="run" result="completed" time="0.001" timestamp="2026-11-17T23:01:42" classname="robot_navigation.ForwardProgressCritic" />
+  </testsuite>
+  <testsuite name="GoalApproachMotion" tests="4" failures="0" disabled="0" errors="0" time="0.003" timestamp="2026-11-17T23:01:42">
+    <testcase name="OutsideAreaAllowsOnlyForwardStopAndRotation" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.GoalApproachMotion" />
+    <testcase name="WithinAreaAndAtBoundaryAllowsReverseAndLateral" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.GoalApproachMotion" />
+    <testcase name="UsesPlanarDistanceAndRejectsUnknownDistance" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.GoalApproachMotion" />
+    <testcase name="PluginLoadsAndReadsConfiguredDistance" status="run" result="completed" time="0.003" timestamp="2026-11-17T23:01:42" classname="robot_navigation.GoalApproachMotion" />
+  </testsuite>
+  <testsuite name="LateralVelocityPenalty" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="AppliesOnlyOutsideDeadband" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.LateralVelocityPenalty" />
+    <testcase name="IsDisabledNearGoal" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.LateralVelocityPenalty" />
+  </testsuite>
+  <testsuite name="LateralVelocityCritic" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="PluginLoads" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.LateralVelocityCritic" />
+  </testsuite>
+  <testsuite name="RotateToPathState" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="OnlyActivatesForLargeHeadingErrorsAwayFromGoal" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.RotateToPathState" />
+  </testsuite>
+  <testsuite name="RotateToPathVelocity" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="ActiveModeOnlyAllowsCorrectInPlaceRotation" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.RotateToPathVelocity" />
+    <testcase name="ZeroTranslationLimitRejectsCombinedMotion" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.RotateToPathVelocity" />
+  </testsuite>
+  <testsuite name="RotateToPathCritic" tests="1" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-11-17T23:01:42">
+    <testcase name="PluginLoads" status="run" result="completed" time="0.001" timestamp="2026-11-17T23:01:42" classname="robot_navigation.RotateToPathCritic" />
+  </testsuite>
+  <testsuite name="StableFinalPoseMode" tests="3" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="PersistsUntilPositionExitsTolerance" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseMode" />
+    <testcase name="GoalChangeClearsOldRotationState" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseMode" />
+    <testcase name="RepositionsAfterYawIsNearlyAligned" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseMode" />
+  </testsuite>
+  <testsuite name="StableFinalPoseVelocity" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="RotatingAllowsOnlyBoundedCorrectRotation" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseVelocity" />
+    <testcase name="SlowingRequiresStrictlyLowerLinearSpeed" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseVelocity" />
+  </testsuite>
+  <testsuite name="StableFinalPoseRotationDirection" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="DoesNotFlipAtAngleWrap" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseRotationDirection" />
+  </testsuite>
+  <testsuite name="StableRotateToGoalCritic" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="PluginLoads" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableRotateToGoalCritic" />
+  </testsuite>
+  <testsuite name="StableFinalPoseScoring" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-11-17T23:01:42">
+    <testcase name="ShortHorizonUsesTimestampedYawAndHandlesMissingDuplicateTime" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseScoring" />
+    <testcase name="InterpolationUsesShortestAngleAtPiBoundary" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:42" classname="robot_navigation.StableFinalPoseScoring" />
+  </testsuite>
+  <testsuite name="MotionDirections/BpxStartupTest" tests="2" failures="0" disabled="0" errors="0" time="0.007" timestamp="2026-11-17T23:01:42">
+    <testcase name="GeneratedTwistsExcludeSdkDeadZone/0" value_param="false" status="run" result="completed" time="0.004" timestamp="2026-11-17T23:01:42" classname="robot_navigation.MotionDirections/BpxStartupTest" />
+    <testcase name="GeneratedTwistsExcludeSdkDeadZone/1" value_param="true" status="run" result="completed" time="0.003" timestamp="2026-11-17T23:01:42" classname="robot_navigation.MotionDirections/BpxStartupTest" />
+  </testsuite>
+</testsuites>

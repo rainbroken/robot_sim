@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="baobaowan_B_800mm">
+  <!--Metres, radians, kilograms. Concept envelopes; inertias and hand limits are provisional.-->
+  <link name="base_footprint" />
+  <link name="base_link">
+    <visual name="Chassis">
+      <origin xyz="0 0 -0.065" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/chassis_shell.stl" scale="1 1 1" />
+      </geometry>
+      <material name="chassis_shell_color">
+        <color rgba="0.9 0.93 0.89 1" />
+      </material>
+    </visual>
+    <collision name="Chassis_collision">
+      <origin xyz="0 0 -0.065" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/chassis_shell.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="BellBody">
+      <origin xyz="0 0 0.103" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/bell_body.stl" scale="1 1 1" />
+      </geometry>
+      <material name="bell_body_color">
+        <color rgba="0.9 0.93 0.89 1" />
+      </material>
+    </visual>
+    <collision name="BellBody_collision">
+      <origin xyz="0 0 0.103" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/bell_body.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="Torso">
+      <origin xyz="0 0 0.278" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/torso_shell.stl" scale="1 1 1" />
+      </geometry>
+      <material name="torso_shell_color">
+        <color rgba="0.9 0.93 0.89 1" />
+      </material>
+    </visual>
+    <collision name="Torso_collision">
+      <origin xyz="0 0 0.278" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/torso_shell.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="Neck">
+      <origin xyz="0 0 0.449" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/neck.stl" scale="1 1 1" />
+      </geometry>
+      <material name="neck_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="Neck_collision">
+      <origin xyz="0 0 0.449" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/neck.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="Head">
+      <origin xyz="0 0 0.559" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/head_shell.stl" scale="1 1 1" />
+      </geometry>
+      <material name="head_shell_color">
+        <color rgba="0.9 0.93 0.89 1" />
+      </material>
+    </visual>
+    <collision name="Head_collision">
+      <origin xyz="0 0 0.559" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/head_shell.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="Face">
+      <origin xyz="0.1045 0 0.562" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/face_screen.stl" scale="1 1 1" />
+      </geometry>
+      <material name="face_screen_color">
+        <color rgba="0.055 0.12 0.15 1" />
+      </material>
+    </visual>
+    <collision name="Face_collision">
+      <origin xyz="0.1045 0 0.562" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/face_screen.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="EyeLeft">
+      <origin xyz="0.1095 0.049 0.568" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/eye.stl" scale="1 1 1" />
+      </geometry>
+      <material name="eye_color">
+        <color rgba="0.54 0.92 0.84 1" />
+      </material>
+    </visual>
+    <collision name="EyeLeft_collision">
+      <origin xyz="0.1095 0.049 0.568" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/eye.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="EyeRight">
+      <origin xyz="0.1095 -0.049 0.568" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/eye.stl" scale="1 1 1" />
+      </geometry>
+      <material name="eye_color">
+        <color rgba="0.54 0.92 0.84 1" />
+      </material>
+    </visual>
+    <collision name="EyeRight_collision">
+      <origin xyz="0.1095 -0.049 0.568" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/eye.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="Smile">
+      <origin xyz="0.1095 0 0.529" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/mouth.stl" scale="1 1 1" />
+      </geometry>
+      <material name="mouth_color">
+        <color rgba="0.54 0.92 0.84 1" />
+      </material>
+    </visual>
+    <collision name="Smile_collision">
+      <origin xyz="0.1095 0 0.529" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/mouth.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="Chest">
+      <origin xyz="0.0885 0 0.367" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/chest_panel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="chest_panel_color">
+        <color rgba="0.43 0.69 0.78 1" />
+      </material>
+    </visual>
+    <collision name="Chest_collision">
+      <origin xyz="0.0885 0 0.367" rpy="1.57079632679 -0 1.57079632679" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/chest_panel.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="ChestLight">
+      <origin xyz="0.0925 0 0.367" rpy="0 1.57079632679 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/chest_indicator.stl" scale="1 1 1" />
+      </geometry>
+      <material name="chest_indicator_color">
+        <color rgba="0.54 0.92 0.84 1" />
+      </material>
+    </visual>
+    <collision name="ChestLight_collision">
+      <origin xyz="0.0925 0 0.367" rpy="0 1.57079632679 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/chest_indicator.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="LeftShoulder">
+      <origin xyz="0 0.136 0.412" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/shoulder_cover.stl" scale="1 1 1" />
+      </geometry>
+      <material name="shoulder_cover_color">
+        <color rgba="0.43 0.69 0.78 1" />
+      </material>
+    </visual>
+    <collision name="LeftShoulder_collision">
+      <origin xyz="0 0.136 0.412" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/shoulder_cover.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="RightShoulder">
+      <origin xyz="0 -0.136 0.412" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/shoulder_cover.stl" scale="1 1 1" />
+      </geometry>
+      <material name="shoulder_cover_color">
+        <color rgba="0.43 0.69 0.78 1" />
+      </material>
+    </visual>
+    <collision name="RightShoulder_collision">
+      <origin xyz="0 -0.136 0.412" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/shoulder_cover.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="LidarMount">
+      <origin xyz="0.0812376025283 0 0.656884602394" rpy="0 0.523598775598 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/lidar_saddle.stl" scale="1 1 1" />
+      </geometry>
+      <material name="lidar_saddle_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="LidarMount_collision">
+      <origin xyz="0.0812376025283 0 0.656884602394" rpy="0 0.523598775598 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/lidar_saddle.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="NeckUpperSpacer">
+      <origin xyz="0 0 0.464" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/neck.stl" scale="1 1 1" />
+      </geometry>
+      <material name="neck_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="NeckUpperSpacer_collision">
+      <origin xyz="0 0 0.464" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/neck.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="LidarPedestal">
+      <origin xyz="0.0525 0 0.653" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/neck.stl" scale="1 1 1" />
+      </geometry>
+      <material name="neck_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="LidarPedestal_collision">
+      <origin xyz="0.0525 0 0.653" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/neck.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0.342218580557" rpy="0 0 0" />
+      <mass value="6" />
+      <inertia ixx="0.33238437489" iyy="0.341031617257" izz="0.177184277349" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="left_hand_link">
+    <visual name="LeftHand">
+      <origin xyz="0 0 0" rpy="0 -0 3.14159265359" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/right_flipper.stl" scale="1 1 1" />
+      </geometry>
+      <material name="right_flipper_color">
+        <color rgba="0.43 0.69 0.78 1" />
+      </material>
+    </visual>
+    <collision name="LeftHand_collision">
+      <origin xyz="0 0 0" rpy="0 -0 3.14159265359" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/right_flipper.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.00117976590991 0.0175656215288 -0.082999996841" rpy="0 0 0" />
+      <mass value="0.12" />
+      <inertia ixx="0.000316277521801" iyy="0.000337319641348" izz="0.000102477205101" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="left_wheel_link">
+    <visual name="LeftWheel">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/drive_tire.stl" scale="1 1 1" />
+      </geometry>
+      <material name="drive_tire_color">
+        <color rgba="0.09 0.12 0.13 1" />
+      </material>
+    </visual>
+    <collision name="LeftWheel_collision">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/drive_tire.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="LeftHub">
+      <origin xyz="0 0.0215 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/drive_hub.stl" scale="1 1 1" />
+      </geometry>
+      <material name="drive_hub_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="LeftHub_collision">
+      <origin xyz="0 0.0215 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/drive_hub.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0.00150000023004 0" rpy="0 0 0" />
+      <mass value="0.35" />
+      <inertia ixx="0.000546845796085" iyy="0.000985833261013" izz="0.000546845796085" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="right_hand_link">
+    <visual name="RightHand">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/right_flipper.stl" scale="1 1 1" />
+      </geometry>
+      <material name="right_flipper_color">
+        <color rgba="0.43 0.69 0.78 1" />
+      </material>
+    </visual>
+    <collision name="RightHand_collision">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/right_flipper.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.00117976590991 -0.0175656215288 -0.082999996841" rpy="0 0 0" />
+      <mass value="0.12" />
+      <inertia ixx="0.000316277521801" iyy="0.000337319641348" izz="0.000102477205101" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="right_wheel_link">
+    <visual name="RightWheel">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/drive_tire.stl" scale="1 1 1" />
+      </geometry>
+      <material name="drive_tire_color">
+        <color rgba="0.09 0.12 0.13 1" />
+      </material>
+    </visual>
+    <collision name="RightWheel_collision">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/drive_tire.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="RightHub">
+      <origin xyz="0 -0.0215 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/drive_hub.stl" scale="1 1 1" />
+      </geometry>
+      <material name="drive_hub_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="RightHub_collision">
+      <origin xyz="0 -0.0215 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/drive_hub.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 -0.00150000023004 0" rpy="0 0 0" />
+      <mass value="0.35" />
+      <inertia ixx="0.000546845796085" iyy="0.000985833261013" izz="0.000546845796085" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="front_caster_swivel_link">
+    <visual name="front_bearing">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_bearing.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_bearing_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="front_bearing_collision">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_bearing.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="front_fork">
+      <origin xyz="0 0 -0.011" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_fork.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_fork_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="front_fork_collision">
+      <origin xyz="0 0 -0.011" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_fork.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="front_fork_plate_L">
+      <origin xyz="-0.0075 0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_fork_side_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="front_fork_plate_L_collision">
+      <origin xyz="-0.0075 0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="front_fork_plate_R">
+      <origin xyz="-0.0075 -0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_fork_side_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="front_fork_plate_R_collision">
+      <origin xyz="-0.0075 -0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.00274999937043 0 -0.0295000001602" rpy="0 0 0" />
+      <mass value="0.12" />
+      <inertia ixx="7.54100013481e-05" iyy="6.6012501068e-05" izz="4.060250121e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="front_caster_wheel_link">
+    <visual name="front_wheel">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_wheel_color">
+        <color rgba="0.09 0.12 0.13 1" />
+      </material>
+    </visual>
+    <collision name="front_wheel_collision">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_wheel.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.07" />
+      <inertia ixx="1.74066670707e-05" iyy="2.91666675359e-05" izz="1.74066670707e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="rear_caster_swivel_link">
+    <visual name="rear_bearing">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_bearing.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_bearing_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="rear_bearing_collision">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_bearing.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="rear_fork">
+      <origin xyz="0 0 -0.011" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_fork.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_fork_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="rear_fork_collision">
+      <origin xyz="0 0 -0.011" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_fork.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="rear_fork_plate_L">
+      <origin xyz="-0.0075 0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_fork_side_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="rear_fork_plate_L_collision">
+      <origin xyz="-0.0075 0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="rear_fork_plate_R">
+      <origin xyz="-0.0075 -0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_fork_side_color">
+        <color rgba="0.48 0.59 0.59 1" />
+      </material>
+    </visual>
+    <collision name="rear_fork_plate_R_collision">
+      <origin xyz="-0.0075 -0.02 -0.04" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_fork_side.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.00274999937043 0 -0.0295000001602" rpy="0 0 0" />
+      <mass value="0.12" />
+      <inertia ixx="7.54100013481e-05" iyy="6.6012501068e-05" izz="4.060250121e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="rear_caster_wheel_link">
+    <visual name="rear_wheel">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/caster_wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="caster_wheel_color">
+        <color rgba="0.09 0.12 0.13 1" />
+      </material>
+    </visual>
+    <collision name="rear_wheel_collision">
+      <origin xyz="0 0 0" rpy="-1.57079632679 -0 0" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/collision/caster_wheel.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.07" />
+      <inertia ixx="1.74066670707e-05" iyy="2.91666675359e-05" izz="1.74066670707e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="mid360_link">
+    <visual name="Mid360">
+      <origin xyz="7.21182715304e-19 0 -0.0210829002112" rpy="1.57079632679 -7.43708407167e-18 3.14159265359" />
+      <geometry>
+        <mesh filename="package://robot_description/meshes/visual/mid360_native.stl" scale="1 1 1" />
+      </geometry>
+      <material name="mid360_native_color">
+        <color rgba="0.055 0.12 0.15 1" />
+      </material>
+    </visual>
+    <collision name="mid360_envelope">
+      <origin xyz="-0.00393153913319 3.46944695195e-18 -0.0169514498934" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0727369226515 0.0648738443851 0.0600971002132" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.00393153913319 3.46944695195e-18 -0.0169514498934" rpy="0 0 0" />
+      <mass value="0.265" />
+      <inertia ixx="0.000172697786827" iyy="0.000196592930273" izz="0.000209775669547" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin xyz="0 0 0.065" rpy="0 -0 0" />
+  </joint>
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="left_wheel_link" />
+    <origin xyz="0 0.175 0" rpy="0 -0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction=".01" />
+    <limit effort="2" velocity="12" />
+  </joint>
+  <joint name="left_hand_joint" type="revolute">
+    <parent link="base_link" />
+    <child link="left_hand_link" />
+    <origin xyz="0 0.157 0.412" rpy="0 -0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction=".01" />
+    <limit lower="-0.6" upper="0.6" effort="0.5" velocity="1.5" />
+  </joint>
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="right_wheel_link" />
+    <origin xyz="0 -0.175 0" rpy="0 -0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction=".01" />
+    <limit effort="2" velocity="12" />
+  </joint>
+  <joint name="right_hand_joint" type="revolute">
+    <parent link="base_link" />
+    <child link="right_hand_link" />
+    <origin xyz="0 -0.157 0.412" rpy="0 -0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction=".01" />
+    <limit lower="-0.6" upper="0.6" effort="0.5" velocity="1.5" />
+  </joint>
+  <joint name="front_caster_swivel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="front_caster_swivel_link" />
+    <origin xyz="0.165 0 0.025" rpy="0 -0 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping=".05" friction=".01" />
+    <limit effort="2" velocity="12" />
+  </joint>
+  <joint name="front_caster_roll_joint" type="continuous">
+    <parent link="front_caster_swivel_link" />
+    <child link="front_caster_wheel_link" />
+    <origin xyz="-0.015 0 -0.065" rpy="0 -0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction=".01" />
+    <limit effort="2" velocity="12" />
+  </joint>
+  <joint name="rear_caster_swivel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="rear_caster_swivel_link" />
+    <origin xyz="-0.165 0 0.025" rpy="0 -0 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping=".05" friction=".01" />
+    <limit effort="2" velocity="12" />
+  </joint>
+  <joint name="rear_caster_roll_joint" type="continuous">
+    <parent link="rear_caster_swivel_link" />
+    <child link="rear_caster_wheel_link" />
+    <origin xyz="-0.015 0 -0.065" rpy="0 -0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping=".05" friction=".01" />
+    <limit effort="2" velocity="12" />
+  </joint>
+  <joint name="mid360_mount_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="mid360_link" />
+    <origin xyz="0.110541450106 0 0.719640355255" rpy="0 0.523598775598 0" />
+  </joint>
+</robot>

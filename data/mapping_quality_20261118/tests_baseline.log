@@ -1,0 +1,36 @@
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from MapOccupancy
+[ RUN      ] MapOccupancy.FurnitureSurvivesRaysAboveIt
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:67: Failure
+Expected equality of these values:
+  cell(*grid, 1.025, 0.025)
+    Which is: 0
+  100
+[  FAILED  ] MapOccupancy.FurnitureSurvivesRaysAboveIt (0 ms)
+[ RUN      ] MapOccupancy.EndpointOrderDoesNotChangeMap
+[       OK ] MapOccupancy.EndpointOrderDoesNotChangeMap (0 ms)
+[ RUN      ] MapOccupancy.SavedAndIncrementalMapsAgree
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:89: Failure
+Expected equality of these values:
+  saved->data
+    Which is: { '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', ... }
+  live.occupancy->data
+    Which is: { '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', ... }
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:90: Failure
+Expected equality of these values:
+  cell(*live.occupancy, 1.025, 0.025)
+    Which is: 0
+  100
+[  FAILED  ] MapOccupancy.SavedAndIncrementalMapsAgree (0 ms)
+[----------] 3 tests from MapOccupancy (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] MapOccupancy.FurnitureSurvivesRaysAboveIt
+[  FAILED  ] MapOccupancy.SavedAndIncrementalMapsAgree
+
+ 2 FAILED TESTS

@@ -1,0 +1,20 @@
+{
+  "model": "ideal differential plant + synthetic scans; real Nav2 servers/BT",
+  "person": "standing",
+  "wall": 0.85,
+  "status": null,
+  "params_file": "/home/rain/ros_ws/baobao/data/navigation_gap_20261117/standing65_res025.params.yaml",
+  "succeeded": false,
+  "collision": false,
+  "min_padded_footprint_clearance": null,
+  "min_physical_footprint_clearance": null,
+  "padding_margin_violated": false,
+  "sim_seconds": null,
+  "final_pose": [
+    -1.8,
+    0.0,
+    0.0
+  ],
+  "max_recoveries": 0,
+  "samples": []
+}

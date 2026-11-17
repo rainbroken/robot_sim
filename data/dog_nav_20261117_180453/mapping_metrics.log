@@ -1,0 +1,50 @@
+{
+  "wall_seconds": 629.6103271979991,
+  "counts": {
+    "/cmd_vel_safe": 12585,
+    "/gazebo/model_states": 10518,
+    "/map": 24,
+    "/cmd_vel": 5609
+  },
+  "commands": {
+    "/cmd_vel_safe": {
+      "samples": 12585,
+      "nonzero": 6228,
+      "below_021": 0,
+      "startup_021": 348,
+      "max_abs_y": 0.0,
+      "min_nonzero_norm": 0.21,
+      "max_abs_x": 0.3,
+      "max_abs_yaw": 0.65
+    },
+    "/cmd_vel": {
+      "samples": 5609,
+      "nonzero": 4725,
+      "below_021": 0,
+      "startup_021": 256,
+      "max_abs_y": 0.0,
+      "min_nonzero_norm": 0.21,
+      "max_abs_x": 0.3,
+      "max_abs_yaw": 0.65
+    }
+  },
+  "transitions": [],
+  "measurement_note": "Latest TF versus latest Gazebo model_states; no strict time alignment or trajectory alignment. Diagnostic only.",
+  "xy_error_m": {
+    "mean": 0.026728851246454723,
+    "max": 0.08322184803263877,
+    "last": 0.02703898413290401
+  },
+  "yaw_error_rad": {
+    "mean": 0.005578674411840691,
+    "max": 0.06547247463025097,
+    "last": 0.0006622392585972775
+  },
+  "occupancy": {
+    "width": 317,
+    "height": 237,
+    "resolution": 0.05000000074505806,
+    "known": 70706,
+    "occupied": 3936
+  }
+}

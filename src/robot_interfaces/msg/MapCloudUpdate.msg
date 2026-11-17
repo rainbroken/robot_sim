@@ -1,0 +1,10 @@
+std_msgs/Header header
+uint64 version
+uint64 base_version
+bool reset
+bool has_cloud
+sensor_msgs/PointCloud2 cloud
+bool has_occupancy
+nav_msgs/OccupancyGrid occupancy
+bool has_occupancy_update
+map_msgs/OccupancyGridUpdate occupancy_update

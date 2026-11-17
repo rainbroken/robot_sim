@@ -1,0 +1,56 @@
+{
+  "wall_seconds": 211.7133488670006,
+  "counts": {
+    "/cmd_vel_safe": 4225,
+    "/map": 1,
+    "/gazebo/model_states": 3477,
+    "/localization/status": 614
+  },
+  "commands": {
+    "/cmd_vel_safe": {
+      "samples": 4225,
+      "nonzero": 0,
+      "below_021": 0,
+      "startup_021": 0,
+      "max_abs_y": 0.0,
+      "min_nonzero_norm": null,
+      "max_abs_x": 0.0,
+      "max_abs_yaw": 0.0
+    }
+  },
+  "transitions": [
+    {
+      "wall_seconds": 1.3756274650004343,
+      "state": "UNINITIALIZED",
+      "message": "map loaded; waiting for /initialpose"
+    },
+    {
+      "wall_seconds": 9.376539959999718,
+      "state": "LOCALIZING",
+      "message": "automatic localization from map origin; confirming with ICP"
+    },
+    {
+      "wall_seconds": 10.39315185399937,
+      "state": "TRACKING",
+      "message": "Open3D localization tracking; observation accepted"
+    }
+  ],
+  "measurement_note": "Latest TF versus latest Gazebo model_states; no strict time alignment or trajectory alignment. Diagnostic only.",
+  "xy_error_m": {
+    "mean": 0.01249328411364629,
+    "max": 0.036374917963061304,
+    "last": 0.01798172047793795
+  },
+  "yaw_error_rad": {
+    "mean": 0.0016077083095075355,
+    "max": 0.003942965080236521,
+    "last": 0.0007434095809035254
+  },
+  "occupancy": {
+    "width": 317,
+    "height": 237,
+    "resolution": 0.05000000074505806,
+    "known": 70706,
+    "occupied": 3936
+  }
+}

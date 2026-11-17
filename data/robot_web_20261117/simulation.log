@@ -1,0 +1,70 @@
+[INFO] [launch]: All log files can be found below /home/rain/.ros/log/2026-11-17-19-38-59-954635-rain-128339
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [128354]
+[INFO] [robot_state_publisher-2]: process started with pid [128356]
+[INFO] [ukf_node-3]: process started with pid [128358]
+[INFO] [command_watchdog-4]: process started with pid [128360]
+[INFO] [cloud_to_scan-5]: process started with pid [128362]
+[INFO] [spawn_entity.py-6]: process started with pid [128364]
+[INFO] [robot_web_server-7]: process started with pid [128366]
+[robot_state_publisher-2] [INFO] [1794915540.352201349] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-2] [INFO] [1794915540.352310756] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1794915540.352317417] [robot_state_publisher]: got segment front_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794915540.352321394] [robot_state_publisher]: got segment front_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794915540.352324249] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-2] [INFO] [1794915540.352327112] [robot_state_publisher]: got segment left_hand_link
+[robot_state_publisher-2] [INFO] [1794915540.352329908] [robot_state_publisher]: got segment left_wheel_link
+[robot_state_publisher-2] [INFO] [1794915540.352332706] [robot_state_publisher]: got segment mid360_link
+[robot_state_publisher-2] [INFO] [1794915540.352335401] [robot_state_publisher]: got segment rear_caster_swivel_link
+[robot_state_publisher-2] [INFO] [1794915540.352338115] [robot_state_publisher]: got segment rear_caster_wheel_link
+[robot_state_publisher-2] [INFO] [1794915540.352340791] [robot_state_publisher]: got segment right_hand_link
+[robot_state_publisher-2] [INFO] [1794915540.352343478] [robot_state_publisher]: got segment right_wheel_link
+[robot_state_publisher-2] [INFO] [1794915540.352346150] [robot_state_publisher]: got segment scan_link
+[spawn_entity.py-6] [INFO] [1794915540.607973763] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-6] [INFO] [1794915540.608365918] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-6] [INFO] [1794915540.609937535] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-6] [INFO] [1794915540.620765795] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-6] [INFO] [1794915540.620928732] [spawn_entity]: Waiting for service /spawn_entity
+[robot_web_server-7] [INFO] [1794915540.718074936] [robot_web]: Baobao web: http://127.0.0.1:8080; maps=/home/rain/ros_ws/baobao/maps
+[gzserver-1] [INFO] [1794915541.001741420] [gazebo.gazebo_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-1] [INFO] [1794915541.002441840] [gazebo.gazebo_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[spawn_entity.py-6] [INFO] [1794915541.124156622] [spawn_entity]: Calling service /spawn_entity
+[gzserver-1] [INFO] [1794915541.426227957] [Mid360Plugin]: 加载扫描模式文件: /home/rain/ros_ws/baobao/install/mid360_simulation/share/mid360_simulation/scan_mode/mid360.csv
+[gzserver-1] [CsvReader] 成功读取 800000 条扫描数据
+[gzserver-1] [INFO] [1794915541.829913436] [Mid360Plugin]: ROS 话题: /livox/lidar
+[gzserver-1] [INFO] [1794915541.841209797] [Mid360Plugin]: 扫描点数: 800000
+[gzserver-1] [INFO] [1794915541.841639471] [Mid360Plugin]: 采样数: 20000, 降采样: 5
+[gzserver-1] [INFO] [1794915542.403108032] [Mid360Plugin]: Mid-360 仿真插件加载完成
+[spawn_entity.py-6] [INFO] [1794915542.431070917] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [robot]
+[gzserver-1] [INFO] [1794915542.454506628] [baobao_diff_drive]: Wheel pair 1 separation set to [0.350000m]
+[gzserver-1] [INFO] [1794915542.454568388] [baobao_diff_drive]: Wheel pair 1 diameter set to [0.130000m]
+[gzserver-1] [INFO] [1794915542.455639162] [baobao_diff_drive]: Subscribed to [/cmd_vel_safe]
+[gzserver-1] [INFO] [1794915542.457713233] [baobao_diff_drive]: Advertise odometry on [/wheel_odom]
+[gzserver-1] [INFO] [1794915542.463296428] [baobao_joint_states]: Going to publish joint [left_wheel_joint]
+[gzserver-1] [INFO] [1794915542.463315622] [baobao_joint_states]: Going to publish joint [right_wheel_joint]
+[gzserver-1] [INFO] [1794915542.463319378] [baobao_joint_states]: Going to publish joint [left_hand_joint]
+[gzserver-1] [INFO] [1794915542.463322718] [baobao_joint_states]: Going to publish joint [right_hand_joint]
+[gzserver-1] [INFO] [1794915542.463325406] [baobao_joint_states]: Going to publish joint [front_caster_swivel_joint]
+[gzserver-1] [INFO] [1794915542.463328239] [baobao_joint_states]: Going to publish joint [front_caster_roll_joint]
+[gzserver-1] [INFO] [1794915542.463334334] [baobao_joint_states]: Going to publish joint [rear_caster_swivel_joint]
+[gzserver-1] [INFO] [1794915542.463337445] [baobao_joint_states]: Going to publish joint [rear_caster_roll_joint]
+[INFO] [spawn_entity.py-6]: process has finished cleanly [pid 128364]
+[ukf_node-3] Failed to meet update rate! Took 0.11999999999999999556seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [robot_web_server-7]: sending signal 'SIGINT' to process[robot_web_server-7]
+[INFO] [cloud_to_scan-5]: sending signal 'SIGINT' to process[cloud_to_scan-5]
+[INFO] [command_watchdog-4]: sending signal 'SIGINT' to process[command_watchdog-4]
+[INFO] [ukf_node-3]: sending signal 'SIGINT' to process[ukf_node-3]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[cloud_to_scan-5] [INFO] [1794915711.473793573] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[command_watchdog-4] [INFO] [1794915711.474401541] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ukf_node-3] [INFO] [1794915711.475026087] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1794915711.475662059] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [command_watchdog-4]: process has finished cleanly [pid 128360]
+[INFO] [cloud_to_scan-5]: process has finished cleanly [pid 128362]
+[INFO] [ukf_node-3]: process has finished cleanly [pid 128358]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 128356]
+[INFO] [gzserver-1]: process has finished cleanly [pid 128354]
+[INFO] [launch]: process[gzserver-1] was required: shutting down launched system
+[INFO] [robot_web_server-7]: process has finished cleanly [pid 128366]

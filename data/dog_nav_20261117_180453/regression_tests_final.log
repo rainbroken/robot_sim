@@ -1,0 +1,287 @@
+Starting >>> robot_navigation
+Starting >>> robot_sim
+UpdateCTestConfiguration  from :/home/rain/ros_ws/baobao/build/robot_navigation/CTestConfiguration.ini
+Parse Config file:/home/rain/ros_ws/baobao/build/robot_navigation/CTestConfiguration.ini
+   Site: rain
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261117-1035 - Experimental
+UpdateCTestConfiguration  from :/home/rain/ros_ws/baobao/build/robot_navigation/CTestConfiguration.ini
+Parse Config file:/home/rain/ros_ws/baobao/build/robot_navigation/CTestConfiguration.ini
+Test project /home/rain/ros_ws/baobao/build/robot_navigation
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_bpx_trajectory_generator
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_bpx_trajectory_generator.gtest.xml" "--package-name" "robot_navigation" "--output-file" "/home/rain/ros_ws/baobao/build/robot_navigation/ament_cmake_gtest/test_bpx_trajectory_generator.txt" "--command" "/home/rain/ros_ws/baobao/build/robot_navigation/test_bpx_trajectory_generator" "--gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_bpx_trajectory_generator.gtest.xml"
+1: Test timeout computed to be: 60
+UpdateCTestConfiguration  from :/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+Parse Config file:/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+   Site: rain
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261117-1035 - Experimental
+UpdateCTestConfiguration  from :/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+Parse Config file:/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+Test project /home/rain/ros_ws/baobao/build/robot_sim
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_pedestrian_clearance
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml" "--package-name" "robot_sim" "--output-file" "/home/rain/ros_ws/baobao/build/robot_sim/ament_cmake_gtest/test_pedestrian_clearance.txt" "--command" "/home/rain/ros_ws/baobao/build/robot_sim/test_pedestrian_clearance" "--gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/rain/ros_ws/baobao/build/robot_navigation':
+1:  - /home/rain/ros_ws/baobao/build/robot_navigation/test_bpx_trajectory_generator --gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_bpx_trajectory_generator.gtest.xml
+1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+1: [==========] Running 25 tests from 15 test suites.
+1: [----------] Global test environment set-up.
+1: [----------] 2 tests from BpxVelocityConstraint
+1: [ RUN      ] BpxVelocityConstraint.AllowsStopAndExecutableCommands
+1: [       OK ] BpxVelocityConstraint.AllowsStopAndExecutableCommands (0 ms)
+1: [ RUN      ] BpxVelocityConstraint.PluginLoads
+1: [       OK ] BpxVelocityConstraint.PluginLoads (1 ms)
+1: [----------] 2 tests from BpxVelocityConstraint (1 ms total)
+1: 
+1: [----------] 1 test from ForwardProgressPenalty
+1: [ RUN      ] ForwardProgressPenalty.PenalizesOnlyForwardSpeedDeficit
+1: [       OK ] ForwardProgressPenalty.PenalizesOnlyForwardSpeedDeficit (0 ms)
+1: [----------] 1 test from ForwardProgressPenalty (0 ms total)
+1: 
+1: [----------] 1 test from ForwardProgressCondition
+1: [ RUN      ] ForwardProgressCondition.RequiresDistanceAndPathAlignment
+1: [       OK ] ForwardProgressCondition.RequiresDistanceAndPathAlignment (0 ms)
+1: [----------] 1 test from ForwardProgressCondition (0 ms total)
+1: 
+1: [----------] 1 test from ForwardProgressCritic
+1: [ RUN      ] ForwardProgressCritic.PluginLoads
+1: [       OK ] ForwardProgressCritic.PluginLoads (0 ms)
+1: [----------] 1 test from ForwardProgressCritic (0 ms total)
+1: 
+1: [----------] 4 tests from GoalApproachMotion
+1: [ RUN      ] GoalApproachMotion.OutsideAreaAllowsOnlyForwardStopAndRotation
+1: [       OK ] GoalApproachMotion.OutsideAreaAllowsOnlyForwardStopAndRotation (0 ms)
+1: [ RUN      ] GoalApproachMotion.WithinAreaAndAtBoundaryAllowsReverseAndLateral
+1: [       OK ] GoalApproachMotion.WithinAreaAndAtBoundaryAllowsReverseAndLateral (0 ms)
+1: [ RUN      ] GoalApproachMotion.UsesPlanarDistanceAndRejectsUnknownDistance
+1: [       OK ] GoalApproachMotion.UsesPlanarDistanceAndRejectsUnknownDistance (0 ms)
+1: [ RUN      ] GoalApproachMotion.PluginLoadsAndReadsConfiguredDistance
+1: -- run_test.py: invoking following command in '/home/rain/ros_ws/baobao/build/robot_sim':
+1:  - /home/rain/ros_ws/baobao/build/robot_sim/test_pedestrian_clearance --gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml
+1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+1: [==========] Running 3 tests from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 3 tests from PedestrianClearance
+1: [ RUN      ] PedestrianClearance.KeepsApproachingActorsOutsideExclusionCircle
+1: [       OK ] PedestrianClearance.KeepsApproachingActorsOutsideExclusionCircle (0 ms)
+1: [ RUN      ] PedestrianClearance.AllowsAnActorToEscapeAfterRobotApproaches
+1: [       OK ] PedestrianClearance.AllowsAnActorToEscapeAfterRobotApproaches (0 ms)
+1: [ RUN      ] PedestrianClearance.StillBlocksCloserOrStationaryStepsInsideCircle
+1: [       OK ] PedestrianClearance.StillBlocksCloserOrStationaryStepsInsideCircle (0 ms)
+1: [----------] 3 tests from PedestrianClearance (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 3 tests from 1 test suite ran. (0 ms total)
+1: [  PASSED  ] 3 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml'
+1: -- run_test.py: verify result file '/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml'
+1/1 Test #1: test_pedestrian_clearance ........   Passed    0.05 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+gtest    =   0.05 sec*proc (1 test)
+
+Total Test time (real) =   0.05 sec
+1: [INFO] [1794911729.046925218] [approach_critic_test]: 
+1: 	approach_critic_test lifecycle node launched. 
+1: 	Waiting on external lifecycle transitions to activate
+1: 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+1: [INFO] [1794911729.047311569] [approach_critic_test]: Reverse and lateral navigation allowed only within 0.10 m of goal
+1: [INFO] [1794911729.047336847] [approach_critic_test]: Destroying
+1: [       OK ] GoalApproachMotion.PluginLoadsAndReadsConfiguredDistance (13 ms)
+1: [----------] 4 tests from GoalApproachMotion (13 ms total)
+1: 
+1: [----------] 2 tests from LateralVelocityPenalty
+1: [ RUN      ] LateralVelocityPenalty.AppliesOnlyOutsideDeadband
+1: [       OK ] LateralVelocityPenalty.AppliesOnlyOutsideDeadband (0 ms)
+1: [ RUN      ] LateralVelocityPenalty.IsDisabledNearGoal
+1: [       OK ] LateralVelocityPenalty.IsDisabledNearGoal (0 ms)
+1: [----------] 2 tests from LateralVelocityPenalty (0 ms total)
+1: 
+1: [----------] 1 test from LateralVelocityCritic
+1: [ RUN      ] LateralVelocityCritic.PluginLoads
+1: [       OK ] LateralVelocityCritic.PluginLoads (1 ms)
+1: [----------] 1 test from LateralVelocityCritic (1 ms total)
+1: 
+1: [----------] 1 test from RotateToPathState
+1: [ RUN      ] RotateToPathState.OnlyActivatesForLargeHeadingErrorsAwayFromGoal
+1: [       OK ] RotateToPathState.OnlyActivatesForLargeHeadingErrorsAwayFromGoal (0 ms)
+1: [----------] 1 test from RotateToPathState (0 ms total)
+1: 
+1: [----------] 2 tests from RotateToPathVelocity
+1: [ RUN      ] RotateToPathVelocity.ActiveModeOnlyAllowsCorrectInPlaceRotation
+1: [       OK ] RotateToPathVelocity.ActiveModeOnlyAllowsCorrectInPlaceRotation (0 ms)
+1: [ RUN      ] RotateToPathVelocity.ZeroTranslationLimitRejectsCombinedMotion
+1: [       OK ] RotateToPathVelocity.ZeroTranslationLimitRejectsCombinedMotion (0 ms)
+1: [----------] 2 tests from RotateToPathVelocity (0 ms total)
+1: 
+1: [----------] 1 test from RotateToPathCritic
+1: [ RUN      ] RotateToPathCritic.PluginLoads
+1: [       OK ] RotateToPathCritic.PluginLoads (0 ms)
+1: [----------] 1 test from RotateToPathCritic (0 ms total)
+1: 
+1: [----------] 3 tests from StableFinalPoseMode
+1: [ RUN      ] StableFinalPoseMode.PersistsUntilPositionExitsTolerance
+1: [       OK ] StableFinalPoseMode.PersistsUntilPositionExitsTolerance (0 ms)
+1: [ RUN      ] StableFinalPoseMode.GoalChangeClearsOldRotationState
+1: [       OK ] StableFinalPoseMode.GoalChangeClearsOldRotationState (0 ms)
+1: [ RUN      ] StableFinalPoseMode.RepositionsAfterYawIsNearlyAligned
+1: [       OK ] StableFinalPoseMode.RepositionsAfterYawIsNearlyAligned (0 ms)
+1: [----------] 3 tests from StableFinalPoseMode (0 ms total)
+1: 
+1: [----------] 2 tests from StableFinalPoseVelocity
+1: [ RUN      ] StableFinalPoseVelocity.RotatingAllowsOnlyBoundedCorrectRotation
+1: [       OK ] StableFinalPoseVelocity.RotatingAllowsOnlyBoundedCorrectRotation (0 ms)
+1: [ RUN      ] StableFinalPoseVelocity.SlowingRequiresStrictlyLowerLinearSpeed
+1: [       OK ] StableFinalPoseVelocity.SlowingRequiresStrictlyLowerLinearSpeed (0 ms)
+1: [----------] 2 tests from StableFinalPoseVelocity (0 ms total)
+1: 
+1: [----------] 1 test from StableFinalPoseRotationDirection
+1: [ RUN      ] StableFinalPoseRotationDirection.DoesNotFlipAtAngleWrap
+1: [       OK ] StableFinalPoseRotationDirection.DoesNotFlipAtAngleWrap (0 ms)
+1: [----------] 1 test from StableFinalPoseRotationDirection (0 ms total)
+1: 
+1: [----------] 1 test from StableRotateToGoalCritic
+1: [ RUN      ] StableRotateToGoalCritic.PluginLoads
+1: [       OK ] StableRotateToGoalCritic.PluginLoads (0 ms)
+1: [----------] 1 test from StableRotateToGoalCritic (0 ms total)
+1: 
+1: [----------] 2 tests from MotionDirections/BpxStartupTest
+1: [ RUN      ] MotionDirections/BpxStartupTest.GeneratedTwistsExcludeSdkDeadZone/0
+Finished <<< robot_sim [0.08s]
+1: [INFO] [1794911729.052035298] [bpx_generator_test]: 
+1: 	bpx_generator_test lifecycle node launched. 
+1: 	Waiting on external lifecycle transitions to activate
+1: 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+1: [INFO] [1794911729.052423385] [bpx_generator_test]: BPX velocity iterator enabled with combined startup threshold 0.210
+1: [INFO] [1794911729.052515005] [bpx_generator_test]: Destroying
+1: [       OK ] MotionDirections/BpxStartupTest.GeneratedTwistsExcludeSdkDeadZone/0 (4 ms)
+1: [ RUN      ] MotionDirections/BpxStartupTest.GeneratedTwistsExcludeSdkDeadZone/1
+1: [INFO] [1794911729.055711209] [bpx_generator_test]: 
+1: 	bpx_generator_test lifecycle node launched. 
+1: 	Waiting on external lifecycle transitions to activate
+1: 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+1: [INFO] [1794911729.056055394] [bpx_generator_test]: BPX velocity iterator enabled with combined startup threshold 0.210
+1: [INFO] [1794911729.056099319] [bpx_generator_test]: Destroying
+1: [       OK ] MotionDirections/BpxStartupTest.GeneratedTwistsExcludeSdkDeadZone/1 (4 ms)
+1: [----------] 2 tests from MotionDirections/BpxStartupTest (8 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 25 tests from 15 test suites ran. (23 ms total)
+1: [  PASSED  ] 25 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_bpx_trajectory_generator.gtest.xml'
+1: -- run_test.py: verify result file '/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_bpx_trajectory_generator.gtest.xml'
+1/3 Test #1: test_bpx_trajectory_generator .....   Passed    0.18 sec
+test 2
+    Start 2: test_parallel_dwb_local_planner
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_parallel_dwb_local_planner.gtest.xml" "--package-name" "robot_navigation" "--output-file" "/home/rain/ros_ws/baobao/build/robot_navigation/ament_cmake_gtest/test_parallel_dwb_local_planner.txt" "--env" "ROS_DOMAIN_ID=219" "ROS_LOCALHOST_ONLY=1" "--command" "/home/rain/ros_ws/baobao/build/robot_navigation/test_parallel_dwb_local_planner" "--gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_parallel_dwb_local_planner.gtest.xml"
+2: Test timeout computed to be: 60
+2: -- run_test.py: extra environment variables:
+2:  - ROS_DOMAIN_ID=219
+2:  - ROS_LOCALHOST_ONLY=1
+2: -- run_test.py: invoking following command in '/home/rain/ros_ws/baobao/build/robot_navigation':
+2:  - /home/rain/ros_ws/baobao/build/robot_navigation/test_parallel_dwb_local_planner --gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_parallel_dwb_local_planner.gtest.xml
+2: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+2: [==========] Running 4 tests from 1 test suite.
+2: [----------] Global test environment set-up.
+2: [----------] 4 tests from Scoring
+2: [ RUN      ] Scoring.SerialSkipsCollisionWorkForRejectedAndWorseCommands
+2: [       OK ] Scoring.SerialSkipsCollisionWorkForRejectedAndWorseCommands (1 ms)
+2: [ RUN      ] Scoring.RejectedCommandsRemainRejectedAndKeepTheirReason
+2: [WARN] [1794911729.207817662] [DWBLocalPlanner]: DWB rejected 100.0%: MotionGate: forbidden command
+2: [       OK ] Scoring.RejectedCommandsRemainRejectedAndKeepTheirReason (0 ms)
+2: [ RUN      ] Scoring.ParallelAndSerialSelectTheSameCommand
+2: [       OK ] Scoring.ParallelAndSerialSelectTheSameCommand (1 ms)
+2: [ RUN      ] Scoring.SingleCpuAffinityOverridesRequestedParallelWorkers
+2: [       OK ] Scoring.SingleCpuAffinityOverridesRequestedParallelWorkers (1 ms)
+2: [----------] 4 tests from Scoring (3 ms total)
+2: 
+2: [----------] Global test environment tear-down
+2: [==========] 4 tests from 1 test suite ran. (3 ms total)
+2: [  PASSED  ] 4 tests.
+2: -- run_test.py: return code 0
+2: -- run_test.py: inject classname prefix into gtest result file '/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_parallel_dwb_local_planner.gtest.xml'
+2: -- run_test.py: verify result file '/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_parallel_dwb_local_planner.gtest.xml'
+2/3 Test #2: test_parallel_dwb_local_planner ...   Passed    0.05 sec
+test 3
+    Start 3: test_switchback_pruning
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_switchback_pruning.gtest.xml" "--package-name" "robot_navigation" "--output-file" "/home/rain/ros_ws/baobao/build/robot_navigation/ament_cmake_gtest/test_switchback_pruning.txt" "--env" "ROS_DOMAIN_ID=219" "ROS_LOCALHOST_ONLY=1" "--command" "/home/rain/ros_ws/baobao/build/robot_navigation/test_switchback_pruning" "--gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_switchback_pruning.gtest.xml"
+3: Test timeout computed to be: 60
+3: -- run_test.py: extra environment variables:
+3:  - ROS_DOMAIN_ID=219
+3:  - ROS_LOCALHOST_ONLY=1
+3: -- run_test.py: invoking following command in '/home/rain/ros_ws/baobao/build/robot_navigation':
+3:  - /home/rain/ros_ws/baobao/build/robot_navigation/test_switchback_pruning --gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_switchback_pruning.gtest.xml
+3: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+3: [==========] Running 2 tests from 1 test suite.
+3: [----------] Global test environment set-up.
+3: [----------] 2 tests from SwitchbackPruning
+3: [ RUN      ] SwitchbackPruning.ShortPassedPortionKeepsCurrentReturnFlight
+3: [INFO] [1794911729.275144553] [pruning_test_controller]: 
+3: 	pruning_test_controller lifecycle node launched. 
+3: 	Waiting on external lifecycle transitions to activate
+3: 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+3: [INFO] [1794911729.276488746] [pruning_test_costmap.pruning_test_costmap]: 
+3: 	pruning_test_costmap lifecycle node launched. 
+3: 	Waiting on external lifecycle transitions to activate
+3: 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+3: [INFO] [1794911729.276731186] [pruning_test_costmap.pruning_test_costmap]: Creating Costmap
+3: [INFO] [1794911729.279274147] [pruning_test_controller]: Destroying
+3: [INFO] [1794911729.280469821] [pruning_test_costmap.pruning_test_costmap]: Destroying
+3: [       OK ] SwitchbackPruning.ShortPassedPortionKeepsCurrentReturnFlight (14 ms)
+3: [ RUN      ] SwitchbackPruning.OldTwoMetreRetentionCanLoseReturnFlight
+3: [INFO] [1794911729.284449546] [pruning_test_controller]: 
+3: 	pruning_test_controller lifecycle node launched. 
+3: 	Waiting on external lifecycle transitions to activate
+3: 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+3: [INFO] [1794911729.285386397] [pruning_test_costmap.pruning_test_costmap]: 
+3: 	pruning_test_costmap lifecycle node launched. 
+3: 	Waiting on external lifecycle transitions to activate
+3: 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+3: [INFO] [1794911729.285594198] [pruning_test_costmap.pruning_test_costmap]: Creating Costmap
+3: [INFO] [1794911729.286316160] [pruning_test_controller]: Destroying
+3: [INFO] [1794911729.287348973] [pruning_test_costmap.pruning_test_costmap]: Destroying
+3: [       OK ] SwitchbackPruning.OldTwoMetreRetentionCanLoseReturnFlight (7 ms)
+3: [----------] 2 tests from SwitchbackPruning (21 ms total)
+3: 
+3: [----------] Global test environment tear-down
+3: [==========] 2 tests from 1 test suite ran. (27 ms total)
+3: [  PASSED  ] 2 tests.
+3: -- run_test.py: return code 0
+3: -- run_test.py: inject classname prefix into gtest result file '/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_switchback_pruning.gtest.xml'
+3: -- run_test.py: verify result file '/home/rain/ros_ws/baobao/build/robot_navigation/test_results/robot_navigation/test_switchback_pruning.gtest.xml'
+3/3 Test #3: test_switchback_pruning ...........   Passed    0.18 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Label Time Summary:
+gtest    =   0.41 sec*proc (3 tests)
+
+Total Test time (real) =   0.41 sec
+Finished <<< robot_navigation [0.43s]
+
+Summary: 2 packages finished [0.62s]

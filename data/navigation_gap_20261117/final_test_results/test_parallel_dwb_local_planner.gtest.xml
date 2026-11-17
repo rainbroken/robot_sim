@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="0" disabled="0" errors="0" time="0.003" timestamp="2026-11-17T23:01:43" name="AllTests">
+  <testsuite name="Scoring" tests="4" failures="0" disabled="0" errors="0" time="0.003" timestamp="2026-11-17T23:01:43">
+    <testcase name="SerialSkipsCollisionWorkForRejectedAndWorseCommands" status="run" result="completed" time="0.001" timestamp="2026-11-17T23:01:43" classname="robot_navigation.Scoring" />
+    <testcase name="RejectedCommandsRemainRejectedAndKeepTheirReason" status="run" result="completed" time="0.001" timestamp="2026-11-17T23:01:43" classname="robot_navigation.Scoring" />
+    <testcase name="ParallelAndSerialSelectTheSameCommand" status="run" result="completed" time="0.001" timestamp="2026-11-17T23:01:43" classname="robot_navigation.Scoring" />
+    <testcase name="SingleCpuAffinityOverridesRequestedParallelWorkers" status="run" result="completed" time="0" timestamp="2026-11-17T23:01:43" classname="robot_navigation.Scoring" />
+  </testsuite>
+</testsuites>

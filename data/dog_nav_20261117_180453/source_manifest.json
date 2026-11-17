@@ -1,0 +1,98 @@
+{
+  "reference": "/home/rain/Desktop/\u9a6d\u7075\u5de5\u4f5c\u8bb0\u5f55/JUNIOR_DOG_WS/src/dog_nav",
+  "files": [
+    {
+      "file": "src/robot_navigation/src/forward_progress_critic.cpp",
+      "sha256": "ebff5751dc6644c546cde2eb034cef6eeabb7d99d29d9faf3bd884c8df3fed46",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/src/rotate_to_path_critic.cpp",
+      "sha256": "4304907a6c96d97ee4b109246a49915410fe6a250ba93219020b942eb43a7797",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/src/goal_approach_motion_critic.cpp",
+      "sha256": "5a39688c02137a9edd0f96b05ba0ebd728965033d5653033bb3df271fec20617",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/src/stable_rotate_to_goal_critic.cpp",
+      "sha256": "a056fb0a9add914f9aa58a1fb011a46afa44bdd447ce17596e0178fdab4aeb2d",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/src/lateral_velocity_critic.cpp",
+      "sha256": "0e621e91653afdea995ebebfb7dd1b6b682ff7dfb76c7f2989efab513f9fba92",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/src/cached_obstacle_footprint_critic.cpp",
+      "sha256": "16670de972a60e8f7e3a8603f8b895dbba2453671298fe007f13251638e50f93",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/src/bpx_trajectory_generator.cpp",
+      "sha256": "d30eb7e659a2d16ce11c35023ae480bbea9483125b11e885380b1bc2529b063f",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/src/parallel_dwb_local_planner.cpp",
+      "sha256": "6cae7902a0af264c890a47a472e12f82de665404b3ebb72d2793660f6228da5a",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/rotate_to_path_critic.hpp",
+      "sha256": "a7b0aa7916cbf7318c06cd6aebf9930572ab0fff756ad21c1f4f95f21c526dbe",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/parallel_dwb_local_planner.hpp",
+      "sha256": "acca2d9703bf5e60ff2f97e0039e0ec477a98c6443e7c1714fa23af23569b16f",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/cached_obstacle_footprint_critic.hpp",
+      "sha256": "4d37fffd0d0633b9d255669f4dff1e2e85edcfb36acf462ffe9d5c01447adac1",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/bpx_trajectory_generator.hpp",
+      "sha256": "41a559ea30a238f15e046dfe3abec7e7c7bb949883b8d84b523841eba4f35552",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/lateral_velocity_critic.hpp",
+      "sha256": "8e0667bed0b4c2fea4b34e1e211d0c430ae68ee19ffe6de28fd78ad8c593d237",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/stable_rotate_to_goal_critic.hpp",
+      "sha256": "ad98569eee7db556e716507c0ccecd0b0f788e1aa0ff235a84fab221905f6083",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/goal_approach_motion_critic.hpp",
+      "sha256": "c40192d7132edf10a56d0fd99fbb838cef320d7d99ff386f2503996945086242",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/trajectory_cache.hpp",
+      "sha256": "e6249d8d0ea0805cf7405c723434745e9e6feb06f49109b069c543a39f74e39b",
+      "identical_to_reference": true
+    },
+    {
+      "file": "src/robot_navigation/include/dog_nav/forward_progress_critic.hpp",
+      "sha256": "ed5c910821627ff97312f155b38e4a359afbfa2cf837171b995c5bf643347f8e",
+      "identical_to_reference": true
+    }
+  ],
+  "packages": {
+    "robot_navigation": "/home/rain/ros_ws/baobao/install/robot_navigation",
+    "nav2_controller": "/opt/ros/humble",
+    "nav2_smac_planner": "/opt/ros/humble",
+    "dwb_core": "/opt/ros/humble",
+    "spatio_temporal_voxel_layer": null,
+    "nav2_route": "/opt/ros/humble"
+  }
+}

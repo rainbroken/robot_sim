@@ -1,0 +1,64 @@
+/**:
+  ros__parameters:
+    common:
+      lid_topic: /livox/lidar
+      imu_topic: /livox/imu
+      time_sync_en: false
+      time_offset_lidar_to_imu: 0.0
+    preprocess:
+      lidar_type: 5  # Gazebo instantaneous PointCloud2; not real Livox CustomMsg.
+      scan_line: 64
+      blind: 0.35
+      timestamp_unit: 3
+      scan_rate: 10
+    mapping:
+      acc_cov: 0.1
+      gyr_cov: 0.1
+      b_acc_cov: 0.0001
+      b_gyr_cov: 0.0001
+      fov_degree: 360.0
+      det_range: 80.0
+      extrinsic_est_en: false
+      map_update_motion_gate_enabled: true
+      map_update_min_translation: 0.03
+      map_update_min_rotation: 0.02
+      map_update_max_interval: 0.5
+      # Simulation only: imu_link and mid360_link coincide in this URDF.
+      # Body installation translation/pitch is applied separately through TF.
+      extrinsic_T:
+      - 0.0
+      - 0.0
+      - 0.0
+      extrinsic_R:
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      match_threads: 2
+    publish:
+      path_en: true
+      scan_publish_en: true
+      dense_publish_en: false
+      scan_bodyframe_pub_en: false
+      tf_en: false
+      world_frame: fastlio
+      body_frame: imu_link
+      odom_topic: /fastlio/odom
+    feature_extract_enable: false
+    point_filter_num: 1
+    max_iteration: 3
+    filter_size_surf: 0.15
+    filter_size_map: 0.15
+    cube_side_length: 200.0
+    runtime_pos_log_enable: false
+    pcd_save:
+      pcd_save_en: false
+      interval: -1
+    traj_save:
+      traj_save_en: false
+      traj_file_path: ''

@@ -1,0 +1,237 @@
+[INFO] [launch]: All log files can be found below /home/rain/.ros/log/2026-11-17-22-46-00-222329-rain-11709
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Baobao differential DWB + footprint-checked clearance scoring + SmacPlanner2D; external localization owns map -> odom.
+[INFO] [planner_server-1]: process started with pid [11721]
+[INFO] [controller_server-2]: process started with pid [11723]
+[INFO] [behavior_server-3]: process started with pid [11725]
+[INFO] [bt_navigator-4]: process started with pid [11727]
+[INFO] [lifecycle_manager-5]: process started with pid [11729]
+[lifecycle_manager-5] [INFO] [1794926760.268104279] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-5] [INFO] [1794926760.268878448] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-1] [INFO] [1794926760.269272727] [planner_server]: 
+[planner_server-1] 	planner_server lifecycle node launched. 
+[planner_server-1] 	Waiting on external lifecycle transitions to activate
+[planner_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-1] [INFO] [1794926760.270117125] [planner_server]: Creating
+[planner_server-1] [INFO] [1794926760.272597761] [global_costmap.global_costmap]: 
+[planner_server-1] 	global_costmap lifecycle node launched. 
+[planner_server-1] 	Waiting on external lifecycle transitions to activate
+[planner_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-1] [INFO] [1794926760.272960759] [global_costmap.global_costmap]: Creating Costmap
+[behavior_server-3] [INFO] [1794926760.279263360] [behavior_server]: 
+[behavior_server-3] 	behavior_server lifecycle node launched. 
+[behavior_server-3] 	Waiting on external lifecycle transitions to activate
+[behavior_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-2] [INFO] [1794926760.282972052] [controller_server]: 
+[controller_server-2] 	controller_server lifecycle node launched. 
+[controller_server-2] 	Waiting on external lifecycle transitions to activate
+[controller_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-4] [INFO] [1794926760.283591280] [bt_navigator]: 
+[bt_navigator-4] 	bt_navigator lifecycle node launched. 
+[bt_navigator-4] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-4] [INFO] [1794926760.283641691] [bt_navigator]: Creating
+[lifecycle_manager-5] [INFO] [1794926760.284130919] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-5] [INFO] [1794926760.284162519] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-1] [INFO] [1794926760.284335147] [planner_server]: Configuring
+[planner_server-1] [INFO] [1794926760.284368690] [global_costmap.global_costmap]: Configuring
+[controller_server-2] [INFO] [1794926760.286293844] [controller_server]: Creating controller server
+[planner_server-1] [INFO] [1794926760.287545224] [global_costmap.global_costmap]: Using plugin "static_layer"
+[controller_server-2] [INFO] [1794926760.289409113] [local_costmap.local_costmap]: 
+[controller_server-2] 	local_costmap lifecycle node launched. 
+[controller_server-2] 	Waiting on external lifecycle transitions to activate
+[controller_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-2] [INFO] [1794926760.289635036] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-1] [INFO] [1794926760.290081112] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-1] [INFO] [1794926760.290915899] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-1] [INFO] [1794926760.290936994] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-1] [INFO] [1794926760.291153947] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-1] [INFO] [1794926760.292568963] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-1] [INFO] [1794926760.292580803] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-1] [INFO] [1794926760.292760021] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-1] [INFO] [1794926760.297146847] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlanner2D
+[planner_server-1] [INFO] [1794926760.297165965] [planner_server]: Configuring GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926760.297655271] [planner_server]: Configured plugin GridBased of type SmacPlanner2D with tolerance 0.15, maximum iterations 1000000, max on approach iterations 1000, and not allowing unknown traversal.
+[planner_server-1] [INFO] [1794926760.297671551] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-5] [INFO] [1794926760.299822974] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-2] [INFO] [1794926760.299952397] [controller_server]: Configuring controller interface
+[controller_server-2] [INFO] [1794926760.300025683] [controller_server]: getting goal checker plugins..
+[controller_server-2] [INFO] [1794926760.300073259] [controller_server]: Controller frequency set to 15.0000Hz
+[controller_server-2] [INFO] [1794926760.300100532] [local_costmap.local_costmap]: Configuring
+[planner_server-1] [INFO] [1794926760.301192340] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 120 X 120 at 0.050000 m/pix
+[controller_server-2] [INFO] [1794926760.303141980] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-2] [INFO] [1794926760.305646708] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-2] [INFO] [1794926760.307249644] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-2] [INFO] [1794926760.307271206] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-2] [INFO] [1794926760.307705357] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-2] [INFO] [1794926760.311890707] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-2] [INFO] [1794926760.312365901] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-2] [INFO] [1794926760.312519671] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-2] [INFO] [1794926760.315429594] [controller_server]: Created controller : FollowPath of type dog_nav::ParallelDwbLocalPlanner
+[controller_server-2] [INFO] [1794926760.315797870] [controller_server]: Setting transform_tolerance to 0.500000
+[controller_server-2] [INFO] [1794926760.319364069] [controller_server]: Velocity iterator: BPX threshold enforcement disabled (threshold 0.210)
+[controller_server-2] [INFO] [1794926760.319707328] [controller_server]: Using critic "GoalApproachMotion" (dog_nav::GoalApproachMotionCritic)
+[controller_server-2] [INFO] [1794926760.319783757] [controller_server]: Reverse and lateral navigation allowed only within 0.30 m of goal
+[controller_server-2] [INFO] [1794926760.319796472] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.319847866] [controller_server]: Using critic "RotateToPath" (dog_nav::RotateToPathCritic)
+[controller_server-2] [INFO] [1794926760.320076065] [controller_server]: RotateToPath critic enabled: enter 68.8 deg, exit 25.8 deg, disabled within 0.30 m of goal
+[controller_server-2] [INFO] [1794926760.320089470] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.320141836] [controller_server]: Using critic "StableRotateToGoal" (dog_nav::StableRotateToGoalCritic)
+[controller_server-2] [INFO] [1794926760.320585989] [controller_server]: Stable final-pose critic: enter 0.15 m, target 0.15 m, hard exit 0.20 m, stopped 0.08 m/s, rotation 0.05..0.60 rad/s
+[controller_server-2] [INFO] [1794926760.320602311] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.320656683] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-2] [INFO] [1794926760.320854261] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.320907999] [controller_server]: Using critic "PredictiveObstacle" (dog_nav::PredictiveObstacleCritic)
+[controller_server-2] [INFO] [1794926760.321126083] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.321177433] [controller_server]: Using critic "CachedObstacleFootprint" (dog_nav::CachedObstacleFootprintCritic)
+[controller_server-2] [INFO] [1794926760.321292606] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.321352067] [controller_server]: Using critic "ForwardProgress" (dog_nav::ForwardProgressCritic)
+[controller_server-2] [INFO] [1794926760.321544563] [controller_server]: Forward progress critic enabled: minimum x 0.10 m/s, goal distance 0.30 m, heading error 40.1 deg
+[controller_server-2] [INFO] [1794926760.321559676] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.321642095] [controller_server]: Using critic "LateralVelocity" (dog_nav::LateralVelocityCritic)
+[controller_server-2] [INFO] [1794926760.321783200] [controller_server]: LateralVelocity critic enabled: deadband 0.03 m/s, disabled within 0.30 m of goal
+[controller_server-2] [INFO] [1794926760.321795659] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.321857581] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-2] [INFO] [1794926760.322056599] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.322123358] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-2] [INFO] [1794926760.322331559] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.322392326] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-2] [INFO] [1794926760.322540742] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.322610359] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-2] [INFO] [1794926760.322755950] [controller_server]: Critic plugin initialized
+[controller_server-2] [INFO] [1794926760.322767887] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-5] [INFO] [1794926760.324883367] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-3] [INFO] [1794926760.325007796] [behavior_server]: Configuring
+[behavior_server-3] [INFO] [1794926760.328134822] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-3] [INFO] [1794926760.328531372] [behavior_server]: Configuring spin
+[behavior_server-3] [INFO] [1794926760.329866676] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-3] [INFO] [1794926760.330262412] [behavior_server]: Configuring wait
+[lifecycle_manager-5] [INFO] [1794926760.331388581] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-4] [INFO] [1794926760.331560880] [bt_navigator]: Configuring
+[lifecycle_manager-5] [INFO] [1794926760.353649729] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-1] [INFO] [1794926760.353734130] [planner_server]: Activating
+[planner_server-1] [INFO] [1794926760.353763781] [global_costmap.global_costmap]: Activating
+[planner_server-1] [INFO] [1794926760.353769652] [global_costmap.global_costmap]: Checking transform
+[planner_server-1] [INFO] [1794926760.353821729] [global_costmap.global_costmap]: start
+[planner_server-1] [INFO] [1794926760.904157174] [planner_server]: Activating plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926760.904639519] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926761.006637533] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-5] [INFO] [1794926761.006681938] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-2] [INFO] [1794926761.006963599] [controller_server]: Activating
+[controller_server-2] [INFO] [1794926761.006992500] [local_costmap.local_costmap]: Activating
+[controller_server-2] [INFO] [1794926761.006998755] [local_costmap.local_costmap]: Checking transform
+[controller_server-2] [INFO] [1794926761.007077659] [local_costmap.local_costmap]: start
+[controller_server-2] [INFO] [1794926761.157582665] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926761.259581936] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-5] [INFO] [1794926761.259660896] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-3] [INFO] [1794926761.259846956] [behavior_server]: Activating
+[behavior_server-3] [INFO] [1794926761.259880513] [behavior_server]: Activating spin
+[behavior_server-3] [INFO] [1794926761.259894338] [behavior_server]: Activating wait
+[behavior_server-3] [INFO] [1794926761.259908901] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926761.362471818] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-5] [INFO] [1794926761.362532851] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-4] [INFO] [1794926761.362834245] [bt_navigator]: Activating
+[bt_navigator-4] [INFO] [1794926761.382345079] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1794926761.484585876] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-5] [INFO] [1794926761.484623317] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-5] [INFO] [1794926761.484636049] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[bt_navigator-4] [INFO] [1794926762.350898073] [bt_navigator]: Begin navigating from current location (-1.80, 0.00) to (1.80, 0.00)
+[controller_server-2] [INFO] [1794926762.391682939] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-2] [INFO] [1794926762.992112039] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926763.525372599] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926764.125440843] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926764.658775330] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926765.192177403] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926765.792116805] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926766.325404877] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926766.925410436] [controller_server]: Passing new path to controller.
+[controller_server-2] [INFO] [1794926767.458781882] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926767.864725695] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926767.864792798] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926767.930776470] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926767.930821064] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [INFO] [1794926767.992110421] [controller_server]: Passing new path to controller.
+[controller_server-2] [WARN] [1794926767.997857061] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926767.997887498] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.064427160] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.064550110] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.130017678] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.130090309] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.196689191] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.196731414] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.263308597] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.263356678] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.329147042] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.329191855] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.395850178] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.395889052] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.462124295] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.462196010] [controller_server]: No valid trajectories out of 416! 
+[controller_server-2] [WARN] [1794926768.528824936] [controller_server]: DWB rejected 100.0%: PredictiveObstacle: Predicted moving obstacle intersection
+[controller_server-2] [WARN] [1794926768.528874493] [controller_server]: No valid trajectories out of 416! 
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [lifecycle_manager-5]: sending signal 'SIGINT' to process[lifecycle_manager-5]
+[INFO] [bt_navigator-4]: sending signal 'SIGINT' to process[bt_navigator-4]
+[INFO] [behavior_server-3]: sending signal 'SIGINT' to process[behavior_server-3]
+[INFO] [controller_server-2]: sending signal 'SIGINT' to process[controller_server-2]
+[INFO] [planner_server-1]: sending signal 'SIGINT' to process[planner_server-1]
+[bt_navigator-4] [INFO] [1794926768.590790438] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-4] [INFO] [1794926768.590877348] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-4] [INFO] [1794926768.590915217] [bt_navigator]: Deactivating
+[bt_navigator-4] [WARN] [1794926768.590931938] [bt_navigator]: [navigate_to_pose] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
+[lifecycle_manager-5] [INFO] [1794926768.590801012] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-5] [INFO] [1794926768.590863080] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-5] [INFO] [1794926768.590880547] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[behavior_server-3] [INFO] [1794926768.590791678] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-3] [INFO] [1794926768.590876500] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-3] [INFO] [1794926768.590915943] [behavior_server]: Deactivating
+[behavior_server-3] [INFO] [1794926768.590935436] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[planner_server-1] [INFO] [1794926768.590901247] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-1] [INFO] [1794926768.590921529] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-1] [INFO] [1794926768.590946992] [planner_server]: Deactivating
+[planner_server-1] [INFO] [1794926768.590962346] [global_costmap.global_costmap]: Deactivating
+[controller_server-2] [INFO] [1794926768.591042647] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-2] [INFO] [1794926768.591094733] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-2] [INFO] [1794926768.591136974] [controller_server]: Deactivating
+[controller_server-2] [WARN] [1794926768.591152933] [controller_server]: [follow_path] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
+[controller_server-2] [WARN] [1794926768.592069147] [controller_server]: [follow_path] [ActionServer] Stopping the thread per request.
+[controller_server-2] [WARN] [1794926768.592084824] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-2] [INFO] [1794926768.592115085] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[bt_navigator-4] [INFO] [1794926768.592204444] [bt_navigator]: [navigate_to_pose] [ActionServer] Client requested to cancel the goal. Cancelling.
+[bt_navigator-4] [INFO] [1794926768.592327997] [bt_navigator]: Goal canceled
+[bt_navigator-4] [WARN] [1794926768.592342732] [bt_navigator]: [navigate_to_pose] [ActionServer] Stopping the thread per request.
+[bt_navigator-4] [INFO] [1794926768.592442411] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[controller_server-2] [INFO] [1794926768.592309146] [local_costmap.local_costmap]: Deactivating
+[behavior_server-3] [INFO] [1794926768.601161848] [behavior_server]: Cleaning up
+[behavior_server-3] [INFO] [1794926768.602379455] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-3] [INFO] [1794926768.602595783] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-4] [INFO] [1794926768.602614265] [bt_navigator]: Cleaning up
+[behavior_server-3] [INFO] [1794926768.604260447] [behavior_server]: Destroying
+[controller_server-2] [INFO] [1794926768.607235789] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-2] [INFO] [1794926768.617363645] [controller_server]: Cleaning up
+[controller_server-2] [INFO] [1794926768.617602630] [local_costmap.local_costmap]: Cleaning up
+[controller_server-2] [INFO] [1794926768.621605301] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-2] [INFO] [1794926768.622051981] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-2] [INFO] [1794926768.623792515] [local_costmap.local_costmap]: Destroying
+[bt_navigator-4] [INFO] [1794926768.625372058] [bt_navigator]: Completed Cleaning up
+[bt_navigator-4] [INFO] [1794926768.625410739] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[controller_server-2] [INFO] [1794926768.626184274] [controller_server]: Destroying
+[bt_navigator-4] [INFO] [1794926768.626202115] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-4] [INFO] [1794926768.628522382] [bt_navigator]: Destroying
+[lifecycle_manager-5] [INFO] [1794926768.633626981] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-5] [INFO] [1794926768.634362192] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[INFO] [behavior_server-3]: process has finished cleanly [pid 11725]
+[INFO] [controller_server-2]: process has finished cleanly [pid 11723]
+[INFO] [bt_navigator-4]: process has finished cleanly [pid 11727]
+[INFO] [lifecycle_manager-5]: process has finished cleanly [pid 11729]
+[planner_server-1] [INFO] [1794926768.854097389] [planner_server]: Deactivating plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926768.854129949] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-1] [INFO] [1794926768.864326847] [planner_server]: Cleaning up
+[planner_server-1] [INFO] [1794926768.866119835] [global_costmap.global_costmap]: Cleaning up
+[planner_server-1] [INFO] [1794926768.867073641] [planner_server]: Cleaning up plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926768.867257599] [planner_server]: Destroying plugin GridBased of type SmacPlanner2D
+[planner_server-1] [INFO] [1794926768.868903560] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-1] [INFO] [1794926768.869257187] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-1] [INFO] [1794926768.869669757] [global_costmap.global_costmap]: Destroying
+[planner_server-1] [INFO] [1794926768.870935405] [planner_server]: Destroying
+[INFO] [planner_server-1]: process has finished cleanly [pid 11721]

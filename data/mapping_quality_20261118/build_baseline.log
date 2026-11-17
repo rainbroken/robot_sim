@@ -1,0 +1,51 @@
+[0.219s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'robot_slam' is in: /home/rain/ros_ws/baobao/install/robot_slam
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding robot_slam
+
+This may be promoted to an error in a future release of colcon-override-check.
+Starting >>> robot_slam
+--- stderr: robot_slam
+CMake Warning (dev) at CMakeLists.txt:13 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp: In member function ‘virtual void {anonymous}::MapOccupancy_FurnitureSurvivesRaysAboveIt_Test::TestBody()’:
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:65:37: warning: converting to ‘const Time’ {aka ‘const builtin_interfaces::msg::Time_<std::allocator<void> >’} from initializer list would use explicit constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   65 |   const auto grid = mapper.occupancy({furnitureScene()}, "map", {});
+      |                     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:65:37: note: in C++11 and above a default constructor can be explicit
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp: In member function ‘virtual void {anonymous}::MapOccupancy_EndpointOrderDoesNotChangeMap_Test::TestBody()’:
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:74:34: warning: converting to ‘const Time’ {aka ‘const builtin_interfaces::msg::Time_<std::allocator<void> >’} from initializer list would use explicit constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   74 |   const auto a = mapper.occupancy({furnitureScene()}, "map", {});
+      |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:74:34: note: in C++11 and above a default constructor can be explicit
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:75:34: warning: converting to ‘const Time’ {aka ‘const builtin_interfaces::msg::Time_<std::allocator<void> >’} from initializer list would use explicit constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   75 |   const auto b = mapper.occupancy({furnitureScene(true)}, "map", {});
+      |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:75:34: note: in C++11 and above a default constructor can be explicit
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp: In member function ‘virtual void {anonymous}::MapOccupancy_SavedAndIncrementalMapsAgree_Test::TestBody()’:
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:84:38: warning: converting to ‘const Time’ {aka ‘const builtin_interfaces::msg::Time_<std::allocator<void> >’} from initializer list would use explicit constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   84 |   const auto saved = mapper.occupancy(ks, "map", {});
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:84:38: note: in C++11 and above a default constructor can be explicit
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:85:46: warning: converting to ‘const Time’ {aka ‘const builtin_interfaces::msg::Time_<std::allocator<void> >’} from initializer list would use explicit constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   85 |   const auto live = mapper.rebuildIncremental(ks, "map", {});
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/rain/ros_ws/baobao/src/robot_slam/test/test_map_occupancy.cpp:85:46: note: in C++11 and above a default constructor can be explicit
+---
+Finished <<< robot_slam [8.73s]
+
+Summary: 1 package finished [8.90s]
+  1 package had stderr output: robot_slam

@@ -1,0 +1,52 @@
+{
+  "wall_duration_s": 12.00309091499912,
+  "/livox/lidar_hz_sim": 10.0,
+  "/livox/lidar_hz_wall_received": 8.38219617100716,
+  "real_time_factor_estimate": 0.8382196171007161,
+  "/livox/imu_hz_sim": 200.00000000000006,
+  "/livox/imu_hz_wall_received": 167.81921496543208,
+  "/scan_hz_sim": 9.999999998913044,
+  "/scan_hz_wall_received": 8.386802198058168,
+  "/odom_hz_sim": 50.00000000000003,
+  "/odom_hz_wall_received": 41.96487597106119,
+  "cloud_frame": "mid360_link",
+  "cloud_points": 2730,
+  "cloud_point_time_error_s": 0.0,
+  "scan_finite_bins": 311,
+  "scan_unobserved_nan_bins": 409,
+  "imu_values": [
+    -0.06666801476362455,
+    -0.005672934649209791,
+    0.11865826031845543,
+    -5.247677304939046,
+    0.03619060790960956,
+    8.363166272146701
+  ],
+  "odom_xy": [
+    -1.0363521632925599,
+    2.305472806350833
+  ],
+  "map_size": [
+    317,
+    237
+  ],
+  "map_known_cells": 70706,
+  "pedestrian_count": 3,
+  "ground_truth_xyz": [
+    -1.0295221950923559,
+    2.3050540569184523,
+    1.0704516464898894e-06
+  ],
+  "pedestrian_displacements_m": {
+    "dynamic_pedestrian_1": 3.754725609581784,
+    "dynamic_pedestrian_2": 1.5103002518607562,
+    "dynamic_pedestrian_3": 2.302060079270016
+  },
+  "tf_map_to_lidar": [
+    -1.1484564312730017,
+    2.383378089859033,
+    0.7846403552549994
+  ],
+  "failures": [],
+  "passed": true
+}

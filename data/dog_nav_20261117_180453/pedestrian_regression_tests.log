@@ -1,0 +1,53 @@
+Starting >>> robot_sim
+UpdateCTestConfiguration  from :/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+Parse Config file:/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+   Site: rain
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261117-1027 - Experimental
+UpdateCTestConfiguration  from :/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+Parse Config file:/home/rain/ros_ws/baobao/build/robot_sim/CTestConfiguration.ini
+Test project /home/rain/ros_ws/baobao/build/robot_sim
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_pedestrian_clearance
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml" "--package-name" "robot_sim" "--output-file" "/home/rain/ros_ws/baobao/build/robot_sim/ament_cmake_gtest/test_pedestrian_clearance.txt" "--command" "/home/rain/ros_ws/baobao/build/robot_sim/test_pedestrian_clearance" "--gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/rain/ros_ws/baobao/build/robot_sim':
+1:  - /home/rain/ros_ws/baobao/build/robot_sim/test_pedestrian_clearance --gtest_output=xml:/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml
+1: Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+1: [==========] Running 3 tests from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 3 tests from PedestrianClearance
+1: [ RUN      ] PedestrianClearance.KeepsApproachingActorsOutsideExclusionCircle
+1: [       OK ] PedestrianClearance.KeepsApproachingActorsOutsideExclusionCircle (0 ms)
+1: [ RUN      ] PedestrianClearance.AllowsAnActorToEscapeAfterRobotApproaches
+1: [       OK ] PedestrianClearance.AllowsAnActorToEscapeAfterRobotApproaches (0 ms)
+1: [ RUN      ] PedestrianClearance.StillBlocksCloserOrStationaryStepsInsideCircle
+1: [       OK ] PedestrianClearance.StillBlocksCloserOrStationaryStepsInsideCircle (0 ms)
+1: [----------] 3 tests from PedestrianClearance (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 3 tests from 1 test suite ran. (0 ms total)
+1: [  PASSED  ] 3 tests.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml'
+1: -- run_test.py: verify result file '/home/rain/ros_ws/baobao/build/robot_sim/test_results/robot_sim/test_pedestrian_clearance.gtest.xml'
+1/1 Test #1: test_pedestrian_clearance ........   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+gtest    =   0.04 sec*proc (1 test)
+
+Total Test time (real) =   0.04 sec
+Finished <<< robot_sim [0.07s]
+
+Summary: 1 package finished [0.26s]
+Summary: 4 tests, 0 errors, 0 failures, 0 skipped

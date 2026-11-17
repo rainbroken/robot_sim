@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>抱抱 · 机器人控制台</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="brand-icon">B</span><div><strong>抱抱 <span>ROBOT CONSOLE</span></strong><small>Gazebo 仿真 · 建图与导航</small></div></div>
+    <div class="top-status"><span id="connection" class="badge">连接中</span><span id="sim-status" class="badge">仿真待就绪</span><span id="mode-status" class="badge">待机</span></div>
+    <button id="emergency" class="danger">■ 停车 / 取消导航</button>
+  </header>
+  <main>
+    <aside class="sidebar">
+      <section class="card"><div class="section-head"><h2>工作模式</h2><span class="eyebrow">01 / MISSION</span></div>
+        <p class="help">先启动建图并采集，再保存地图，最后切换到导航。切换保留当前 Gazebo 场景。</p>
+        <div class="row"><button id="start-mapping" class="primary grow">开始新建图</button><button id="stop-backend">停止后端</button></div>
+        <div class="status-line"><i id="ready-dot"></i><span id="ready-text">等待仿真连接</span></div>
+      </section>
+      <section class="card"><div class="section-head"><h2>地图管理</h2><button id="refresh-maps" class="link">刷新</button></div>
+        <label for="map-name">保存本次建图</label><div class="row"><input id="map-name" maxlength="64" placeholder="my_house"><button id="save-map">保存</button></div>
+        <label for="map-select">已保存地图</label><select id="map-select"><option value="">暂无地图</option></select>
+        <button id="start-navigation" class="primary full">加载地图并启动导航</button>
+        <p id="map-root" class="path-label"></p>
+      </section>
+      <section class="card"><div class="section-head"><h2>遥控移动</h2><span class="eyebrow">HOLD TO DRIVE</span></div>
+        <p class="help">按住按钮或 W/A/S/D、方向键；松开即停。空格停车。建图初始化期间保持静止。</p>
+        <div class="speed-row"><label for="speed">前进速度</label><input id="speed" type="range" min="0.05" max="0.30" step="0.01" value="0.22"><output id="speed-value">0.22 m/s</output></div>
+        <div class="dpad"><button data-drive="forward" aria-label="前进">↑</button><button data-drive="left" aria-label="左转">↶</button><button id="manual-stop" aria-label="停车">■</button><button data-drive="right" aria-label="右转">↷</button><button data-drive="backward" aria-label="后退">↓</button></div>
+        <div class="telemetry"><span>实测线速 <b id="linear">0.00</b> m/s</span><span>实测角速 <b id="angular">0.00</b> rad/s</span></div>
+      </section>
+    </aside>
+    <section class="workspace">
+      <div class="map-toolbar"><div><h1 id="view-title">实时地图</h1><span id="map-meta">等待 /map</span></div><div class="row tools"><button data-tool="pan" class="selected">拖动地图</button><button data-tool="goal">导航目标</button><button data-tool="initial">初始位姿</button><button id="fit-map">适应地图</button><button id="follow">跟随机器人</button></div></div>
+      <div id="map-container"><canvas id="map" aria-label="实时栅格地图，拖动设定位置和朝向"></canvas><div id="empty-map"><strong>地图将在这里出现</strong><span>启动建图，等待重力初始化后遥控采集环境。</span></div><div class="map-legend"><span><i class="legend-robot"></i>机器人</span><span><i class="legend-scan"></i>激光</span><span><i class="legend-plan"></i>规划路径</span><span id="scale-label">1 m</span></div><div id="map-hint">滚轮缩放 · 拖动平移</div></div>
+      <div class="target-bar"><div><strong id="target-title">目标位姿</strong><small id="target-help">选择“导航目标”或“初始位姿”，在地图上按下并拖动设置朝向。</small></div><label>X <input id="target-x" type="number" step="0.05" value="0"></label><label>Y <input id="target-y" type="number" step="0.05" value="0"></label><label>朝向 ° <input id="target-yaw" type="number" step="5" min="-180" max="180" value="0"></label><button id="send-goal" class="primary">发送导航目标</button><button id="set-initial">设置初始位姿</button></div>
+      <section class="card feedback"><div><span class="eyebrow">LOCALIZATION</span><strong id="localization">等待定位</strong><small id="localization-detail">导航模式启动后显示 ICP 定位状态</small></div><div><span class="eyebrow">NAVIGATION</span><strong id="nav-state">无活动目标</strong><small id="nav-detail">等待 Nav2 激活</small></div><div><span class="eyebrow">ROBOT POSE / MAP</span><strong id="robot-pose">—</strong><small id="sim-time">仿真时间 —</small></div></section>
+      <section class="card operation"><div class="section-head"><h2>操作结果</h2><button id="show-log" class="link">查看后端日志</button></div><p id="operation" role="status" aria-live="polite">控制台已加载，等待 ROS 状态。</p><pre id="log" hidden></pre></section>
+    </section>
+  </main>
+</body></html>
